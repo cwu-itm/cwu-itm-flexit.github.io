@@ -118,8 +118,6 @@
 <footer class="article-footer">
     <h3>Sources:</h3>
     <ol>
-         <h3>Sources:</h3>
-    <ol>
         <li>Center for Digital Education. (2024). <em>Artificial intelligence in higher education: Faculty adoption and instructional design impacts.</em> https://www.centerdigitaled.com/</li>
 
         <li>EDUCAUSE. (2023). <em>2023 Horizon Report: Teaching and learning edition.</em> https://www.educause.edu</li>
@@ -156,7 +154,236 @@
             </footer>
          </article>
 
-         <!-- Module 1.2 Blog Post Starts here -->
+         <!-- <header class="article-header">
+    <h2>Module 1.2 Blog Post: Understanding Systems Engineering Life Cycle Models</h2>
+</header>
+
+<p>Systems engineers do much more than design technology—they orchestrate complete systems from concept to retirement. According to <em>Systems Engineering Demystified</em>, systems engineering is fundamentally about directing complex systems through a structured, disciplined, and traceable process called the system life cycle (SE Demystified, 2023).</p>
+
+<p>Life cycle models help engineers understand, predict, plan, and manage how systems develop, how requirements change, and the consequences design decisions will have on later stages of development. This blog explores three major life cycle models: the linear (waterfall), iterative, and incremental models. Each offers its own advantages and trade-offs depending on the system being built, and understanding them helps engineers balance risk, cost, speed, and user expectations.</p>
+
+<h3>The Purpose of Life Cycle Models</h3>
+
+<p>Life cycle models exist because complex systems cannot be designed in a single step. They require:</p>
+
+<ul>
+    <li>Clear phases</li>
+    <li>Defined deliverables</li>
+    <li>Structured reviews</li>
+    <li>Risk management</li>
+    <li>Collaboration across disciplines</li>
+    <li>Accountability</li>
+</ul>
+
+<p>These models are the “maps” that show how an idea becomes a functioning system and how that system is maintained, improved, or eventually retired. As noted in Chapter 3 of <em>Systems Engineering Demystified</em> (2023), life cycle models ensure that each stage informs the next, reducing ambiguity and enabling teams to make decisions with clarity and foresight. Whether designing a spacecraft, medical instrument, aircraft platform, or university database, engineers rely on disciplined frameworks to avoid waste, prevent rework, and deliver systems that truly meet user needs.</p>
+
+<h3>1. Linear Life Cycle Model (Waterfall)</h3>
+
+<p>The linear or waterfall model is the most traditional life cycle structure. It flows in a straight line from requirements → design → development → testing → deployment → maintenance.</p>
+
+<h4>What Makes It Linear?</h4>
+<p>Work progresses forward and generally does not return to previous phases without significant disruption. Each phase must be fully completed before the next begins.</p>
+
+<h4>Strengths of the Linear Model</h4>
+<ul>
+    <li>Highly structured</li>
+    <li>Clear documentation</li>
+    <li>Predictable schedules</li>
+    <li>Works well when requirements are stable</li>
+    <li>Easier to estimate cost and timeline</li>
+    <li>Ideal for regulated or safety-critical systems</li>
+</ul>
+
+<p>Examples include:</p>
+<ul>
+    <li>Aerospace engineering</li>
+    <li>Medical devices</li>
+    <li>Construction</li>
+    <li>Defense systems</li>
+</ul>
+
+<p>NASA, for example, uses a highly controlled version of the linear model when developing spacecraft components because safety cannot be compromised and requirements must be rigorously verified (NASA Systems Engineering Handbook, 2023).</p>
+
+<h4>Limitations of the Linear Model</h4>
+<ul>
+    <li>Difficult to adapt to change</li>
+    <li>Late discovery of problems</li>
+    <li>Limited user feedback early in the process</li>
+    <li>High cost if requirements are misunderstood</li>
+</ul>
+
+<p>As <em>Systems Engineering Demystified</em> notes, linear models “assume stability,” which rarely exists in modern environments where user needs shift rapidly (SE Demystified, 2023).</p>
+
+<h3>2. Iterative Life Cycle Model</h3>
+<p><em>“Build, test, learn, repeat.”</em></p>
+
+<h4>How It Works</h4>
+<p>Each cycle includes:</p>
+<ul>
+    <li>Planning</li>
+    <li>Design</li>
+    <li>Modeling/prototyping</li>
+    <li>Testing</li>
+    <li>Evaluation</li>
+</ul>
+
+<p>Teams learn from each iteration and refine the system repeatedly.</p>
+
+<h4>Strengths of the Iterative Model</h4>
+<ul>
+    <li>Early risk reduction</li>
+    <li>Early user feedback</li>
+    <li>Allows experimentation</li>
+    <li>Adapts well to unclear or evolving requirements</li>
+    <li>Encourages innovation</li>
+</ul>
+
+<p>Systems engineers choose the iterative model when:</p>
+<ul>
+    <li>Requirements are uncertain</li>
+    <li>Technology is emerging</li>
+    <li>Complexity is high</li>
+    <li>User-centered design is essential</li>
+</ul>
+
+<p>This model is widely used in UX design, software engineering, and research-based environments.</p>
+
+<h4>Limitations</h4>
+<ul>
+    <li>Harder to estimate time and cost</li>
+    <li>Requires strong coordination</li>
+    <li>Risk of “endless iteration” without clear control</li>
+</ul>
+
+<p>Despite these challenges, its flexibility makes it one of the most widely adopted modern approaches.</p>
+
+<h3>3. Incremental Life Cycle Model</h3>
+<p><em>“Deliver the system in functional pieces.”</em></p>
+
+<p>The incremental model delivers the system in small but complete pieces (increments) that add functionality over time.</p>
+
+<h4>How It Works</h4>
+<p>For example:</p>
+<ul>
+    <li><strong>Increment 1:</strong> Core functionality</li>
+    <li><strong>Increment 2:</strong> Additional features</li>
+    <li><strong>Increment 3:</strong> Integration with other systems</li>
+    <li><strong>Increment 4:</strong> Full deployment</li>
+</ul>
+
+<p>Each increment goes through its own mini-phases of requirements, design, development, and testing.</p>
+
+<h4>Strengths</h4>
+<ul>
+    <li>Delivers usable components early</li>
+    <li>Reduces schedule risk</li>
+    <li>Provides early value to users</li>
+    <li>Issues are discovered earlier</li>
+    <li>Requirements can evolve over time</li>
+</ul>
+
+<p>This model is common in:</p>
+<ul>
+    <li>IT systems</li>
+    <li>Enterprise applications</li>
+    <li>Cloud platforms</li>
+    <li>Customer-facing products</li>
+</ul>
+
+<p>The U.S. Department of Defense increasingly prefers incremental development for software-intensive systems because it reduces programmatic risk and speeds delivery (DoD Digital Modernization Strategy, 2022).</p>
+
+<h4>Limitations</h4>
+<ul>
+    <li>Requires careful integration</li>
+    <li>Complex planning</li>
+    <li>Early increments may limit later design choices</li>
+    <li>Requires strong coordination among teams</li>
+</ul>
+
+<h3>Linear vs. Iterative vs. Incremental: Key Differences</h3>
+
+<table>
+    <tr>
+        <th>Aspect</th>
+        <th>Linear</th>
+        <th>Iterative</th>
+        <th>Incremental</th>
+    </tr>
+    <tr>
+        <td>Flexibility</td>
+        <td>Low</td>
+        <td>High</td>
+        <td>Moderate</td>
+    </tr>
+    <tr>
+        <td>User Feedback</td>
+        <td>Late</td>
+        <td>Early + continuous</td>
+        <td>After each increment</td>
+    </tr>
+    <tr>
+        <td>Risk Handling</td>
+        <td>Higher</td>
+        <td>Lower</td>
+        <td>Moderate</td>
+    </tr>
+    <tr>
+        <td>Delivery</td>
+        <td>One large release</td>
+        <td>Evolving prototypes</td>
+        <td>Functional increments</td>
+    </tr>
+    <tr>
+        <td>Best For</td>
+        <td>Stable, high-risk systems</td>
+        <td>Evolving or uncertain requirements</td>
+        <td>Medium-complexity systems needing early value</td>
+    </tr>
+</table>
+
+<h3>How Engineers Choose a Life Cycle Model</h3>
+
+<p>Choosing the right model depends on:</p>
+<ul>
+    <li>Complexity</li>
+    <li>Stability of requirements</li>
+    <li>Level of risk</li>
+    <li>Stakeholder involvement</li>
+    <li>Regulations</li>
+    <li>Timeline and budget</li>
+    <li>Technology maturity</li>
+</ul>
+
+<p>Systems engineers often combine models—for example, using incremental releases within an iterative process, or applying linear verification to safety-critical components.</p>
+
+<h3>My Perspective: Why Understanding Life Cycle Models Matters</h3>
+
+<ul>
+    <li>Evaluate which approach best fits a project — Different systems require different structures.</li>
+    <li>Identify risks early — Iterative models help reduce surprises.</li>
+    <li>Improve communication — Life cycle models provide a shared framework for teams.</li>
+    <li>Strengthen planning and documentation — Linear models emphasize traceability and clarity.</li>
+    <li>Think strategically — Life cycles remind us that system retirement is as important as system design.</li>
+</ul>
+
+<p>Most importantly, these models teach us to design with intention rather than rushing into development without a roadmap.</p>
+
+<h3>Conclusion</h3>
+
+<p>Life cycle models form the foundation of systems engineering. The linear, iterative, and incremental models each offer unique advantages depending on requirement stability, system complexity, and risk tolerance. Understanding these models helps engineers guide systems with discipline, creativity, and foresight.</p>
+
+<p>Life cycle thinking ensures that systems are not only built well but maintained, adapted, and evolved responsibly throughout their entire lifespan.</p>
+
+<footer class="article-footer">
+    <h3>Sources:</h3>
+    <ol>
+        <li>Systems Engineering Demystified. (2023). <em>Chapters 1–3: Life Cycle Models.</em></li>
+        <li>NASA. (2023). <em>NASA systems engineering handbook.</em> https://www.nasa.gov/seh/</li>
+        <li>U.S. Department of Defense. (2022). <em>DoD digital modernization strategy.</em> https://dodcio.defense.gov/</li>
+    </ol>
+</footer>
+
+ -->
 
          <!-- Module 2.1 Blog Post Starts here -->
 
