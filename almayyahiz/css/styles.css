@@ -1,12 +1,14 @@
 /* Importing Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 
 /* Global Styles */
 html {
     font-size: 16px;
     color: #333;
-    font-family: Roboto, sans-serif;
+    font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -52,3 +54,39 @@ ol {
     font-size:.875rem;
 
 }
+
+.blog-content img,
+.blog-post img {
+    width: 100%;        
+    max-width: 30rem;   
+    height: auto;       
+    display: block;     
+    margin: 1rem auto;  
+}
+.image-credit {
+    font-size: 0.75rem;         
+    color: #5b94c2;               
+    margin: 0.5rem 0 1rem 0;    
+}
+
+.image-credit a {
+    color: hwb(200 36% 13%);            
+    text-decoration: underline;
+}
+.blog-title-bar {
+    background-color: #f1d2eb; 
+    padding: 2rem;            /* space around text */
+    margin-top: 2rem;         /* spacing from header */
+    margin-bottom: 2rem;
+}
+
+.blog-title-bar h2 {
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+footer.blog-content ul li {
+    margin-bottom: 0.8rem;  /* Adjust to footer. */
+    line-height: 1.4;
+}
+
