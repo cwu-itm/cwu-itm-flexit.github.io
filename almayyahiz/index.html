@@ -1,20 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href="css/styles.css" rel="stylesheet">
-      <title>Zahraa Almayyahi| Portfolio</title>
-   </head>
-   <body>
-<!-- Module 1.1 Blog Post - Systems Thinking-->
-      <header class="page-header">
-         <h1>Portfolio</h1>
-      </header>
-<!-- Main Content Area  -->
-      <main>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zahraa Almayyahi | Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
 
-<h1>Systems Thinking, Linear Thinking, and MBSE</h1>
+<body>
+
+  <!-- ✅ HERO HEADER SECTION -->
+  <header class="hero-header">
+    <div class="overlay"></div>
+
+    <!-- Navigation + Logo -->
+    <div class="header-content">
+
+      <!-- Logo Box -->
+      <div class="logo-box">
+        <h1>DEV/BLOG</h1>
+      </div>
+
+      <!-- Nav Menu -->
+      <nav class="side-nav">
+        <a href="#">Technology</a>
+        <a href="#">Culture</a>
+        <a href="#">Lifestyle</a>
+        <a href="#">People</a>
+        <a href="#">About</a>
+      </nav>
+
+      <!-- Subscribe Button -->
+      <button class="subscribe-btn">Subscribe</button>
+    </div>
+
+    <!-- Hamburger Menu (optional for mobile) -->
+    <div class="hamburger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!--  MAIN PAGE HEADER BELOW HERO -->
+  <div class="page-header">
+    <h1>Portfolio</h1>
+  </div>
+
+
+  <main>
+
+
+    <section class="image-bar">
+      <figure>
+        <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159" alt="Clean UI design">
+        <figcaption>Minimalist UI</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1604176354204-9268737828e4" alt="Interface feedback example">
+        <figcaption>Interface Feedback</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d" alt="Designer workspace">
+        <figcaption>Designer Workspace</figcaption>
+      </figure>
+    </section>
+    <section class="blog-content-wrapper"> </section>
+      <div class="column"></div>
+
+       <article class="blog-post">
+        
+        
+<h2> Module 1.1 Systems Thinking, Linear Thinking, and MBSE</h2>
 
 <p>
 Systems thinking is one of those ideas that seem obvious in retrospect. Yet, the deeper you go, 
@@ -185,26 +242,32 @@ essential.
 </p>
 
 
-<hr>
-<footer>
-<h3>References</h3>
+<footer class="article-footer">
+    <h3>References</h3>
 
-<p>
-Holt, J. (2021). <em>Systems engineering demystified</em> (2nd ed.). Packt Publishing.
-</p>
+    <ol>
+        <li>
+            Holt, J. (2021). <em>Systems engineering demystified</em> (2nd ed.). Packt Publishing.
+        </li>
 
-<p>
-International Council on Systems Engineering. (2023). <em>INCOSE systems engineering vision 2035.</em> 
-https://www.incose.org
-</p>
+        <li>
+            International Council on Systems Engineering. (2023). 
+            <em>INCOSE systems engineering vision 2035.</em> 
+            https://www.incose.org
+        </li>
 
-<p>
-MIT Sloan School of Management. (n.d.). <em>Systems thinking.</em> MIT System Dynamics. 
-https://mitsloan.mit.edu
-</p>
+        <li>
+            MIT Sloan School of Management. (n.d.). 
+            <em>Systems thinking.</em> MIT System Dynamics. 
+            https://mitsloan.mit.edu
+        </li>
+    </ol>
 </footer>
-   
-         <!-- <header class="article-header">
+</article>
+
+
+    <article class="blog-post"> 
+          <header class="article-header">
     <h2>Module 1.2 Blog Post: Understanding Systems Engineering Life Cycle Models</h2>
 </header>
 
@@ -401,7 +464,53 @@ https://mitsloan.mit.edu
     <li>Stakeholder involvement</li>
     <li>Regulations</li>
     <li>Timeline and budget</li>
-    <li>Technology maturity</li>
+      <li>Technology maturity</li>
+    
+  <table class="comparison-table">
+  <caption>Linear vs. Iterative vs. Incremental: Key Differences</caption>
+  <thead>
+    <tr>
+      <th>Aspect</th>
+      <th>Linear</th>
+      <th>Iterative</th>
+      <th>Incremental</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Flexibility</td>
+      <td>Low</td>
+      <td>High</td>
+      <td>Moderate</td>
+    </tr>
+    <tr>
+      <td>User Feedback</td>
+      <td>Late</td>
+      <td>Early + continuous</td>
+      <td>After each increment</td>
+    </tr>
+    <tr>
+      <td>Risk Handling</td>
+      <td>Higher</td>
+      <td>Lower</td>
+      <td>Moderate</td>
+    </tr>
+    <tr>
+      <td>Delivery</td>
+      <td>One large release</td>
+      <td>Evolving prototypes</td>
+      <td>Functional increments</td>
+    </tr>
+    <tr>
+      <td>Best For</td>
+      <td>Stable, high-risk systems</td>
+      <td>Evolving or uncertain requirements</td>
+      <td>Medium-complexity systems needing early value</td>
+    </tr>
+  </tbody>
+</table>
+
+  
 </ul>
 
 <p>Systems engineers often combine models, for example, using incremental releases within an iterative process, or applying linear verification to safety-critical components.</p>
@@ -425,19 +534,18 @@ https://mitsloan.mit.edu
 <p>Life cycle thinking ensures that systems are not only built well but maintained, adapted, and evolved responsibly throughout their entire lifespan.</p>
 
 <footer class="article-footer">
-    <h3>Sources:</h3>
+    <h3>References:</h3>
     <ol>
         <li>Systems Engineering Demystified. (2023). <em>Chapters 1–3: Life Cycle Models.</em></li>
         <li>NASA. (2023). <em>NASA systems engineering handbook.</em> https://www.nasa.gov/seh/</li>
         <li>U.S. Department of Defense. (2022). <em>DoD digital modernization strategy.</em> https://dodcio.defense.gov/</li>
     </ol>
 </footer>
+</article>
 
- -->
+<article class="blog-post">  
 
-         <!-- <article id="module-2.1">
-
-    <h1>Designing for People: How Perception, Attention, and Empathy Shape Better Systems</h1>
+    <h2>Module 2.1 Designing for People: How Perception, Attention, and Empathy Shape Better Systems</h2>
 
     <p>
         Human-centered design (HCD) begins with a mindset: every interface, system, or service should start with people, their needs, limitations, emotions, and environments. Technology is never neutral; it either supports or hinders a user’s ability to understand and act. Understanding perception, attention, empathy, and predictable human behavior is essential to building digital systems that feel natural instead of frustrating.
@@ -448,7 +556,7 @@ https://mitsloan.mit.edu
 <a href="https://www.designkit.org/resources/1-field-guide-to-human-centered-design" target="_blank">Field Guide to Human-Centered Design</a> and discuss how cognitive psychology shapes usability. I also highlight four UX laws (Jakob’s, Fitts’s, Hick’s, and Miller’s) that guide early design decisions. When these elements align, systems feel intuitive instead of forcing users to adapt.
 
 
-    <h2>What It Means to Design for People</h2>
+    <h3>What It Means to Design for People</h3>
 
     <p>
         Designing for people means intentionally aligning an interface with how humans naturally see, think, and behave. ISO 9241-210 describes this as an “explicit understanding of users, tasks, and environments” (International Organization for Standardization, 2019). This requires knowing not only what the system does but <em>why</em> someone uses it and under what conditions.
@@ -464,7 +572,7 @@ https://mitsloan.mit.edu
 
     <h2>ISO 9241-210 vs. IDEO: Two Paths to the Same Goal</h2>
 
-    <h3>ISO 9241-210: Structure, Consistency, and Evaluation</h3>
+    <h4>ISO 9241-210: Structure, Consistency, and Evaluation</h4>
     <p>
         ISO provides a repeatable framework emphasizing user needs, clear requirements, iterative evaluation, and integrated feedback throughout the process (International Organization for Standardization, 2019). It is particularly beneficial in organizations requiring documentation, compliance, and traceability.
     </p>
@@ -479,33 +587,33 @@ https://mitsloan.mit.edu
         IDEO generates empathetic insights; ISO refines insights into testable solutions. A strong design process often uses both.
     </p>
 
-    <h2>How Perception Shapes Usability</h2>
+    <h3>How Perception Shapes Usability</h3>
 
     <p>
         Perception determines what users notice and how they interpret it. As Jeff Johnson explains, people rely on automatic mental shortcuts when processing visual information (Johnson, 2020). These shortcuts shape usability more than most designers realize.
     </p>
 
-    <h3>1. Visual Hierarchy Directs Attention</h3>
+    <h4>1. Visual Hierarchy Directs Attention</h4>
     <p>
         Users notice large before small elements, bold before plain text, and bright before muted colors. Designers use hierarchy to guide users naturally through content.
     </p>
 
-    <h3>2. Grouping Signals Meaning</h3>
+    <h4>2. Grouping Signals Meaning</h4>
     <p>
         The brain groups items that are near each other, visually similar, or aligned. Poor grouping disrupts comprehension and creates friction (Johnson, 2020).
     </p>
 
-    <h3>3. Whitespace Improves Clarity</h3>
+    <h4>3. Whitespace Improves Clarity</h4>
     <p>
         Whitespace reduces cognitive effort. A crowded interface overwhelms the user, while spacing provides clarity and breathing room.
     </p>
 
-    <h3>4. Consistency Reduces Cognitive Load</h3>
+    <h5>4. Consistency Reduces Cognitive Load</h5>
     <p>
         When icons, colors, or patterns shift unpredictably, users must pause and reinterpret. Consistency supports stronger mental models and fewer mistakes.
     </p>
 
-    <h2>Why Attention Matters in Design</h2>
+    <h3>Why Attention Matters in Design</h3>
 
     <p>
         Attention is limited and easily overwhelmed. Designs that ignore attention limits force users to work harder, slowing them down. Research shows users notice visual prominence, motion, and contrast immediately (Interaction Design Foundation, 2024).
@@ -515,7 +623,7 @@ https://mitsloan.mit.edu
         IDEO encourages designers to “follow the energy,” focusing on what matters most emotionally and cognitively at each stage of the user journey (IDEO, 2015). Interfaces that respect human attention feel calm; those that ignore it feel chaotic.
     </p>
 
-    <h2>How Empathy Improves Design</h2>
+    <h3>How Empathy Improves Design</h3>
 
     <p>
         Empathy turns research into meaningful design choices. Designers immerse themselves in users’ daily realities to uncover pain points, emotional triggers, misunderstandings, and unspoken needs.
@@ -547,7 +655,7 @@ https://mitsloan.mit.edu
         Working memory holds about 7 ± 2 items. Chunking information supports better recall and reduces cognitive load (Interaction Design Foundation, 2024).
     </p>
 
-    <h2>Why Early Design Choices Matter</h2>
+    <h3>Why Early Design Choices Matter</h3>
 
     <p>
         Early decisions, layout, spacing, color, naming, and structure, shape the entire user experience. They influence trust, learnability, efficiency, comfort, and error rates (Johnson, 2020).
@@ -568,7 +676,7 @@ https://mitsloan.mit.edu
     </p>
 
     <footer class="article-footer">
-        <h2>References</h2>
+        <h3>References</h3>
 
         <p>
             Johnson, J. (2020). <em>Designing with the mind in mind: Simple guide to understanding user interface design rules</em> (3rd ed.). Morgan Kaufmann.
@@ -591,9 +699,10 @@ https://mitsloan.mit.edu
     </footer>
 
 </article>
- -->
 
-          <h1>2.2 Designing for Cognitive Efficiency: How Memory, Mental Models, and System Feedback Shape Usable Digital Systems</h1>
+
+<article class="blog-post">  
+          <h2>Module 2.2 Designing for Cognitive Efficiency: How Memory, Mental Models, and System Feedback Shape Usable Digital Systems</h2>
 
 <!-- IMAGE 1 -->
 <figure>
@@ -612,7 +721,6 @@ Designing digital systems requires more than aesthetics; it requires an intentio
 This blog critically reflects on the cognitive demands placed on users, describes how consistency and feedback reduce mental load, and integrates principles from both course readings and external research. Drawing from the HCD processes outlined by IDEO:contentReference[oaicite:2] and the ISO 9241-210 framework:contentReference[oaicite:3], along with Johnson’s cognitive principles and Tesler’s Law, this post presents a comprehensive argument for designing digital systems that respect the limits of human attention and memory. 
 </p>
 
-<hr>
 
 <h2>1. Cognitive Demands and the Role of Mental Models</h2>
 
@@ -636,7 +744,6 @@ Similarly, ISO 9241-210 requires designers to understand user characteristics, t
 In practice, poor designs that conflict with mental models, such as unconventional navigation icons, hidden settings, or inconsistent terminology, force users into problem-solving mode rather than task completion. The result is increased error rates, frustration, and abandonment. 
 </p>
 
-<hr>
 
 <h2>2. Recognition, Not Recall: Reducing Memory Burden</h2>
 
@@ -652,7 +759,7 @@ For example, booking platforms that require users to re-enter information after 
 Both ISO 9241-210 and the Field Guide promote the use of prototypes, simulations, and iterative evaluation with users specifically to uncover unnecessary memory burdens:contentReference[oaicite:6]{index=6}:contentReference[oaicite:7]. When designers observe users struggling to remember navigation paths or interpret labels, it indicates a need for clearer cues, stronger affordances, and simplified workflows. 
 </p>
 
-<hr>
+
 
 <h2>3. Interface Consistency: Supporting Mental Shortcuts and Reducing Cognitive Load</h2>
 
@@ -677,7 +784,7 @@ Nielsen Norman Group (2020) identifies consistency as a core usability heuristic
 Inconsistent labeling, unpredictable button placement, or varying visual hierarchies increase cognitive load by forcing users to pause and interpret each new element. For example, when a “Save” button appears in different locations across screens, it disrupts automaticity, users’ ability to perform actions without deliberation, leading to slower task performance and higher error risk.
 </p>
 
-<hr>
+
 
 <h2>4. The Essential Role of Feedback in Supporting Usability</h2>
 
@@ -689,7 +796,7 @@ Feedback is vital for maintaining user orientation and reducing uncertainty. Nie
 ISO 9241-210 reinforces the necessity of evaluating interactions with users to ensure feedback mechanisms support task completion:contentReference[oaicite:9]. Effective feedback includes confirmation messages, loading indicators, input validation, hover states, and undo actions. When feedback is absent, such as silent form submissions or unresponsive buttons,users often repeat actions, leading to duplication, errors, or abandonment.
 </p>
 
-<hr>
+
 
 <h2>5. Tesler’s Law and the Distribution of Complexity</h2>
 
@@ -705,7 +812,7 @@ When systems force users to manage complexity,through manual data entry, confusi
 Tesler’s Law reinforces the importance of iterative prototyping, as highlighted in the Field Guide, where making ideas tangible exposes hidden complexity that users should not be forced to handle:contentReference[oaicite:10].
 </p>
 
-<hr>
+
 
 <h2>6. Cognitive Load and Examples of Poor Design</h2>
 
@@ -735,7 +842,7 @@ Many digital systems inadvertently increase cognitive load by ignoring principle
 These issues contradict the Human-Centered Design guidance from ISO 9241-210, which emphasizes evaluating systems with real users and iteratively refining design solutions to reduce cognitive strain:contentReference[oaicite:11]. They also conflict with IDEO’s emphasis on learning from failure, staying close to user needs, and embracing iteration as a tool for discovering more intuitive patterns:contentReference[oaicite:12]{index=12}.
 </p>
 
-<hr>
+
 
 <h2>7. The Interplay Between Consistency, Memory, and Simplification</h2>
 
@@ -747,37 +854,29 @@ Cognitive psychology underscores that simplification is not the elimination of f
 Designers must respect that human memory is fallible, attention is limited, and habits shape behavior. When systems align with these realities through consistency, feedback, and iterative refinement, they create experiences that feel intuitive and supportive rather than demanding or confusing.
 </p>
 
-<hr>
 
-<!-- FOOTER WITH APA REFERENCES -->
-<footer style="margin-top:40px; padding:20px 0; border-top:1px solid #ccc; font-size:0.9em; color:#555;">
+<footer class="article-footer">
+  <h3>References</h3>
 
-<h2>References</h2>
-
-<p>IDEO.org. (2015). <em>The field guide to human-centered design</em>. IDEO.org. :contentReference[oaicite:13]{index=13}</p>
-
-<p>Nielsen Norman Group. (2020). <em>10 usability heuristics for user interface design</em>. https://www.nngroup.com/articles/ten-usability-heuristics/</p>
-
-<p>Johnson, J. (2020). <em>Designing with the mind in mind: Simple guide to understanding user interface design guidelines</em> (3rd ed.). Morgan Kaufmann.</p>
-
-<p>DIN/ISO. (1999/2010). <em>ISO 9241-210: Ergonomics of human-system interaction, Human-centered design for interactive systems</em>. International Organization for Standardization.</p>
-
-<p>Sikkema, K. (2018). <em>Team collaboration at a desk</em> [Photograph]. Unsplash.</p>
-
-<p>Korpai, D. (2017). <em>Person holding smartphone</em> [Photograph]. Unsplash.</p>
-
-<p>Adair, C. (2019). <em> Dogs Running </em> [Photograph]. Unsplash. https://images.unsplash.com/photo-1548199973-03cce0bbc87b</p>
-
-
+  <ol>
+    <li>IDEO.org. (2015). <em>The field guide to human-centered design</em>. IDEO.org.</li>
+    <li>Nielsen Norman Group. (2020). <em>10 usability heuristics for user interface design</em>. https://www.nngroup.com/articles/ten-usability-heuristics/</li>
+    <li>Johnson, J. (2020). <em>Designing with the mind in mind: Simple guide to understanding user interface design guidelines</em> (3rd ed.). Morgan Kaufmann.</li>
+    <li>DIN/ISO. (1999/2010). <em>ISO 9241-210: Ergonomics of human-system interaction, Human-centered design for interactive systems</em>. International Organization for Standardization.</li>
+    <li>Sikkema, K. (2018). <em>Team collaboration at a desk</em> [Photograph]. Unsplash.</li>
+    <li>Korpai, D. (2017). <em>Person holding smartphone</em> [Photograph]. Unsplash.</li>
+    <li>Adair, C. (2019). <em>Dogs Running</em> [Photograph]. Unsplash. https://images.unsplash.com/photo-1548199973-03cce0bbc87b</li>
+  </ol>
 </footer>
 
+</article>
 
     <div class="blog-heading-box">
-    <span class="blog-label">DEV/BLOG</span>
-    <h1>3.1 How Interface Logic Shapes the Way We Think, Notice, and Act</h1>
+
+    <h1>Module 3.1 How Interface Logic Shapes the Way We Think, Notice, and Act</h1>
 </div>
 
-
+<article class="blog-post"> 
     <div class="blog-content">
 
         <p>
@@ -902,60 +1001,30 @@ Designers must respect that human memory is fallible, attention is limited, and 
     </div>
 
     <!-- Footer Sources -->
-    <footer class="blog-content">
-        <h4>References</h4>
-        <ul>
-            <li>Johnson, J. (2020). <em>Designing with the mind in mind</em> (3rd ed.). Morgan Kaufmann.</li>
-            <li>Laws of UX. (n.d.). Aesthetic–Usability Effect; Von Restorff Effect; Postel’s Law. https://lawsofux.com</li>
-            <li>Norman, D. A. (2013). <em>The design of everyday things</em> (Revised and expanded ed.). Basic Books.</li>
-            <li>Nielsen Norman Group. (2020). 10 usability heuristics for user interface design. https://www.nngroup.com/articles/ten-usability-heuristics</li>
-            <li>Unsplash. (2019). Interface design workspace [Photograph]. https://images.unsplash.com/photo-1559028012-481c04fa702d</li>
-            <li>Unsplash. (2020). Highlighted button demonstrating contrast [Photograph]. https://images.unsplash.com/photo-1604176354204-9268737828e4</li>
-            <li>Unsplash. (2020). Minimalist clean interface design [Photograph]. https://images.unsplash.com/photo-1587620962725-abab7fe55159</li>
-        </ul>
-    </footer>
+   <footer class="article-footer">
+    <h3>References</h3>
+    <ol>
+        <li>Johnson, J. (2020). <em>Designing with the mind in mind</em> (3rd ed.). Morgan Kaufmann.</li>
+        <li>Laws of UX. (n.d.). Aesthetic–Usability Effect; Von Restorff Effect; Postel’s Law. https://lawsofux.com</li>
+        <li>Norman, D. A. (2013). <em>The design of everyday things</em> (Revised and expanded ed.). Basic Books.</li>
+        <li>Nielsen Norman Group. (2020). 10 usability heuristics for user interface design. https://www.nngroup.com/articles/ten-usability-heuristics</li>
+        <li>Unsplash. (2019). Interface design workspace [Photograph]. https://images.unsplash.com/photo-1559028012-481c04fa702d</li>
+        <li>Unsplash. (2020). Highlighted button demonstrating contrast [Photograph]. https://images.unsplash.com/photo-1604176354204-9268737828e4</li>
+        <li>Unsplash. (2020). Minimalist clean interface design [Photograph]. https://images.unsplash.com/photo-1587620962725-abab7fe55159</li>
+    </ol>
+</footer>
+
 
 </section>
+</article>
 
-
-       <section id="module-3-2-blog">
-
-    <!-- Header Section -->
-    <header class="hero-header">
-
-        <div class="overlay"></div>
-
-        <div class="header-content">
-
-            <div class="logo-box">
-                <h1>DEV/BLOG</h1>
-            </div>
-
-            <nav class="side-nav">
-                <a href="#">Technology</a>
-                <a href="#">Culture</a>
-                <a href="#">Lifestyle</a>
-                <a href="#">People</a>
-                <a href="#">About</a>
-            </nav>
-
-            <button class="subscribe-btn">Subscribe</button>
-        </div>
-
-        <!-- Hamburger Menu -->
-        <div class="hamburger-3-2">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
-    </header>
-
+       <section id="module-3-2-blog"
+   
 
     <!-- Blog Content -->
     <article class="blog-post">
 
-        <h1> 3.2 Interaction Patterns, Timing, and Ethical Design in Digital Systems</h1>
+        <h2> 3.2 Interaction Patterns, Timing, and Ethical Design in Digital Systems</h2>
 
         <p>Digital systems modify what we do and how we think. How people feel when they complete a task shapes how they remember the entire experience. Timing, feedback, movement, and error prevention guide the encounter and influence confidence and emotional memory. When systems respond quickly, users stay focused. When responses lag or feel confusing, users lose trust.</p>
 
@@ -1054,28 +1123,23 @@ The final result is a system that users remember with ease instead of tension. T
     </article>
 
 
-    <!-- Source List -->
-    <footer class="sources">
-       <h2>Sources</h2>
+    <!-- References Section -->
+<footer class="article-footer">
 
-<p>Mozilla Developer Network. (n.d.-a). <i>Text styling</i>. https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Text_styling</p>
+  <h3>References</h3>
 
-<p>Mozilla Developer Network. (n.d.-b). <i>Styling basics</i>. https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics</p>
+  <p>Mozilla Developer Network. (n.d.-a). <i>Text styling</i>. https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Text_styling</p>
 
-<p>Mozilla Developer Network. (n.d.-c). <i>Layout and spacing concepts</i>. https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Layout_and_spacing_concepts</p>
+  <p>Mozilla Developer Network. (n.d.-b). <i>Styling basics</i>. https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics</p>
 
-<p>Kahneman, D. (2011). <i>Thinking, fast and slow</i>. Farrar, Straus and Giroux.</p>
+  <p>Mozilla Developer Network. (n.d.-c). <i>Layout and spacing concepts</i>. https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Layout_and_spacing_concepts</p>
 
-<p>Nielsen Norman Group. (2020). <i>The Doherty Threshold</i>. https://www.nngroup.com/articles/doherty-threshold</p>
+  <p>Kahneman, D. (2011). <i>Thinking, fast and slow</i>. Farrar, Straus and Giroux.</p>
 
-<!-- COPYRIGHT BOX -->
-<div style="
-    border: 1px solid #ccc;
-    padding: 16px;
-    border-radius: 8px;
-    margin-top: 24px;
-    background-color: #f9f9f9;
-">
+  <p>Nielsen Norman Group. (2020). <i>The Doherty Threshold</i>. https://www.nngroup.com/articles/doherty-threshold</p>
+
+  <!-- Image Credit Box -->
+  <div class="credit-box">
     <p><strong>Image Credits</strong></p>
 
     <p>Unsplash. (2019). <i>Interface design workspace</i> [Photograph].  
@@ -1086,15 +1150,15 @@ The final result is a system that users remember with ease instead of tension. T
 
     <p>Unsplash. (2020). <i>Minimalist clean interface design</i> [Photograph].  
     https://images.unsplash.com/photo-1587620962725-abab7fe55159</p>
-</div>
+  </div>
 
+</footer>
 
-    </footer>
 
 </section>
 
 
-         <!-- Module 3.2 Blog Post Starts here -->
+       
 
       </main>
 <!-- Page Footer  -->
