@@ -1,130 +1,9 @@
-/* GLOBAL */
-
-body {
-  background: #ffffff;
-  color: #222;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-}
-
-/* TOP NAV */
-
-.top-nav {
-  background: #ffffff;
-  padding: 20px 60px;
-  border-bottom: 1px solid #e0e0e0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.top-nav h3 {
-  margin: 0;
-  font-size: 1.2rem;
-  color: #222;
-}
-
-.top-nav nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #1a73e8;
-  font-size: 1rem;
-}
-
-.top-nav nav a:hover {
-  text-decoration: underline;
-}
-
-/* CONTENT WRAPPER */
-
-section, h1, h2, p, .portfolio-links, footer {
-  padding-left: 60px;
-  padding-right: 60px;
-}
-
-/* HEADERS */
-
-h1 {
-  font-size: 2.4rem;
-  margin-top: 50px;
-  margin-bottom: 20px;
-  color: #111;
-}
-
-h2 {
-  font-size: 1.8rem;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  color: #222;
-}
-
-/* TEXT */
-
-p {
-  max-width: 700px;
-  margin-bottom: 25px;
-  font-size: 1rem;
-}
-
-/* PORTFOLIO GRID */
-
-.portfolio-links {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 14px 40px;
-  max-width: 900px;
-  margin-top: 10px;
-}
-
-.portfolio-links a {
-  color: #1a73e8;
-  text-decoration: none;
-  font-size: 1rem;
-  padding-left: 14px;
-  position: relative;
-}
-
-.portfolio-links a::before {
-  content: "";
-  width: 6px;
-  height: 6px;
-  background: #1a73e8;
-  position: absolute;
-  left: 0;
-  top: 6px;
-}
-
-.portfolio-links a:hover {
-  text-decoration: underline;
-}
-
-/* FOOTER */
-
-footer {
-  margin-top: 70px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-top: 1px solid #e0e0e0;
-  color: #444;
-  font-size: 0.9rem;
-}
-
-.footer-links a {
-  margin-right: 20px;
-  color: #cfd4db;
-  text-decoration: none;
-  font-size: 0.9rem;
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
-}
-/* GLOBAL LAYOUT */
-
+/* --------------------
+   Global Styles
+-------------------- */
 body {
   background: #fff7e6;
+  /* Warm background */
   color: #333;
   font-family: Arial, sans-serif;
   margin: 0;
@@ -132,11 +11,12 @@ body {
   line-height: 1.6;
 }
 
-/* TOP NAV */
-
+/* --------------------
+   Top Navigation
+-------------------- */
 .top-nav {
   background: #ffffff;
-  padding: 18px 60px;
+  padding: 20px 60px;
   border-bottom: 2px solid #f2d58a;
   display: flex;
   justify-content: space-between;
@@ -153,23 +33,26 @@ body {
 .top-nav nav a {
   margin-left: 20px;
   text-decoration: none;
-  color: #e9dfdf;
+  color: #333;
   font-size: 1rem;
-  font-weight: 500;
 }
 
 .top-nav nav a:hover {
   color: #d18b00;
 }
 
-/* PAGE HEADERS */
+/* --------------------
+   Main Content and Headers
+-------------------- */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 60px;
+}
 
 h1 {
   font-size: 2.6rem;
-  margin-top: 40px;
-  margin-bottom: 15px;
-  padding-left: 60px;
-  padding-right: 60px;
+  margin-bottom: 20px;
   color: #d18b00;
   font-weight: bold;
 }
@@ -178,70 +61,66 @@ h2 {
   font-size: 2rem;
   margin-top: 40px;
   margin-bottom: 15px;
-  padding-left: 60px;
-  padding-right: 60px;
   color: #333;
 }
-
-/* ABOUT TEXT */
 
 p {
   max-width: 700px;
   margin-bottom: 25px;
   font-size: 1rem;
-  padding-left: 60px;
-  padding-right: 60px;
 }
 
-/* PORTFOLIO LINKS GRID */
-
+/* --------------------
+   Portfolio Links Grid
+-------------------- */
+/* Portfolio Links Grid */
 .portfolio-links {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-  max-width: 950px;
-  padding: 20px 60px;
+  grid-template-columns: 1fr 1fr;
+  /* Two columns */
+  gap: 30px;
+  /* Adjust the gap for spacing */
+  margin-top: 30px;
 }
 
-.portfolio-links a {
+.project-card {
   background: #ffffff;
-  padding: 18px 16px;
+  /* White background */
+  padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  text-decoration: none;
-  color: #333;
-  font-size: 1rem;
-  font-weight: 500;
-  display: block;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow */
   border-left: 4px solid #d18b00;
+  /* Accent color on the left */
   transition: all 0.2s ease-in-out;
 }
 
-.portfolio-links a:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.18);
-  transform: translateY(-2px);
+.project-card h3 {
+  font-size: 1.4rem;
+  margin-top: 0;
   color: #d18b00;
 }
 
-/* FOOTER */
-
-footer {
-  margin-top: 70px;
-  padding: 30px 60px;
-  text-align: left;
-  color: #555;
-  border-top: 2px solid #f2d58a;
-  background: #fff3d7;
-  font-size: 0.9rem;
+.project-card p {
+  margin-bottom: 15px;
 }
 
-.footer-links a {
-  margin-right: 20px;
+.project-card a {
   text-decoration: none;
   color: #d18b00;
-  font-size: 0.95rem;
+  font-weight: 600;
 }
 
-.footer-links a:hover {
+.project-card a:hover {
   text-decoration: underline;
+}
+
+/* Hover effect: Slight scale and color change */
+.project-card:hover {
+  transform: scale(1.02);
+  /* Slightly larger on hover */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  /* A bit more shadow */
+  background-color: #fdf9f3;
+  /* Light warm background on hover */
 }
