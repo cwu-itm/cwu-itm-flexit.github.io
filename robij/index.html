@@ -47,43 +47,101 @@
             <h3>Conclusion</h3>
                <p>Systems thinking provides a framework for understanding complex systems by emphasizing relationships, interactions, boundaries, and stakeholder perspectives. Unlike traditional linear thinking, which assumes simple cause-and-effect relationships, systems thinking acknowledges that behavior often emerges from the interaction of many components over time. This perspective is essential for understanding modern digital systems, where complexity and interdependence are the norm.</p>
                <p>Model-based systems engineering complements systems thinking by offering a structured way to represent and manage complexity. By making system elements, interfaces, needs, constraints, and boundaries explicit, MBSE supports better communication, more informed decision making, and improved change management. Grounded in the core principles of systems engineering, a model-based approach helps teams design and evolve complex digital systems more effectively while remaining adaptable in a constantly changing environment.</p>
-            <footer class="article-footer">
-                <h3>Sources:</h3>
-                <ol>
-                   <li>
-      Holt, J., &amp; Weilkiens, T. (2023). 
-      <em>Systems engineering demystified: Apply modern, model-based systems engineering techniques to build complex systems</em> (2nd ed.). 
-      Packt Publishing.
-    </li>
-    <li>
-      Interaction Design Foundation. (2016, November 26). 
-      <em>What is linear thinking?</em> 
-      <a href="https://www.interaction-design.org/literature/topics/linear-thinking">
-        https://www.interaction-design.org/literature/topics/linear-thinking
-      </a>
-    </li>
-    <li>
-      Singam, C., &amp; Carter, J. (2025, November 17). 
-      <em>Model based systems engineering (MBSE)</em>. 
-      Systems Engineering Body of Knowledge. 
-      <a href="https://sebokwiki.org/wiki/Model-Based_Systems_Engineering_%28MBSE%29">
-        https://sebokwiki.org/wiki/Model-Based_Systems_Engineering_%28MBSE%29
-      </a>
-    </li>
-    <li>
-      Meißner, M., Jacobs, G., Jagla, P., &amp; Sprehe, J. (2021). 
-      <em>Model based systems engineering as enabler for rapid engineering change management</em>. 
-      <em>Procedia CIRP, 100</em>, 146–151. 
-      <a href="https://doi.org/10.1016/j.procir.2021.05.010">
-        https://doi.org/10.1016/j.procir.2021.05.010
-      </a>
-    </li>
-                </ol>
-            </footer>
+         <footer class="article-footer">
+            <h3>Sources:</h3>
+            <ol>
+               <li>
+                  Holt, J., &amp; Weilkiens, T. (2023).
+                  <em>Systems engineering demystified: Apply modern, model-based systems engineering techniques to build complex systems</em> (2nd ed.).
+                  Packt Publishing.
+               </li>
+               <li>
+                  Interaction Design Foundation. (2016, November 26).
+                  <em>What is linear thinking?</em>
+                  <a href="https://www.interaction-design.org/literature/topics/linear-thinking">
+                     https://www.interaction-design.org/literature/topics/linear-thinking
+                  </a>
+               </li>
+               <li>
+                  Singam, C., &amp; Carter, J. (2025, November 17).
+                  <em>Model based systems engineering (MBSE)</em>.
+                  Systems Engineering Body of Knowledge.
+                  <a href="https://sebokwiki.org/wiki/Model-Based_Systems_Engineering_%28MBSE%29">
+                     https://sebokwiki.org/wiki/Model-Based_Systems_Engineering_%28MBSE%29
+                  </a>
+               </li>
+               <li>
+                  Meißner, M., Jacobs, G., Jagla, P., &amp; Sprehe, J. (2021).
+                  <em>Model based systems engineering as enabler for rapid engineering change management</em>.
+                  <em>Procedia CIRP, 100</em>, 146–151.
+                  <a href="https://doi.org/10.1016/j.procir.2021.05.010">
+                     https://doi.org/10.1016/j.procir.2021.05.010
+                  </a>
+               </li>
+            </ol>
+         </footer>
          </article>
 
          <!-- Module 1.2 Blog Post Starts here -->
-
+         <article>
+            <header class="article-header">
+               <h2>Module 1.2 Blog Post</h2>
+            </header>
+            <h3>Understanding the Systems Development Life Cycle</h3>
+               <p>Digital systems do not get built once and then quietly “exist.” They launch, get used, patched, scaled, extended, and eventually replaced as conditions around them change. Even when a system feels stable from the outside, it is still being shaped by evolving user needs, emerging security threats, growing data volumes, shifting regulations, and rising expectations around performance, availability, and reliability. That constant pressure is why systems engineers emphasize life cycles. Life cycle thinking is not just a project management tool. It is a long-term mindset for designing systems that can endure real-world complexity long after development ends.</p>
+               <p>In systems engineering terms, a life cycle describes how a system evolves through stages, while a life cycle model describes how those stages are executed and ordered (Holt & Weilkiens, 2023). This distinction matters because many projects share similar stages but follow very different execution patterns depending on uncertainty, risk, organizational constraints, and technical complexity. In this post, I define the systems development life cycle, describe the key characteristics, advantages, and drawbacks of linear, iterative, and incremental life cycle models, and reflect on why life cycle thinking is essential for the design, sustainability, and long-term evolution of modern digital systems.</p>
+            <h3>Defining the Systems Development Life Cycle</h3>
+               <p>The systems development life cycle, often called the SDLC, is the full progression a system goes through from its initial idea to its retirement. It is not limited to building and deploying software (Awati & Gillis, 2024). Instead, it captures the complete evolution of a system as it is conceived, developed, introduced, used, supported, and eventually replaced. When people describe a system as “done,” they are usually referring to a temporary milestone, such as a release or deployment. From a systems perspective, that moment is only a transition, not an ending. A system continues to evolve as it interacts with real users and operating environments (Holt & Weilkiens, 2023).</p>
+               <p>Most digital systems move through similar life cycle phases. While terminology differs, the underlying pattern is consistent. Conception is where needs are defined. Stakeholders identify the problem, clarify goals, surface constraints, and determine what success looks like. In digital environments, this includes decisions about users, data, security, compliance, and performance expectations. Development is where potential solutions are explored and refined into a workable design and architecture. This includes decisions about components, interfaces, integrations, workflows, and how the system will be tested and deployed (Awati & Gillis, 2024). Even when “design” and “development” are separated, they still answer the same question: what are we building, and how should it behave?</p>
+               <p>Production is where the system is constructed and validated. For digital systems, this often includes infrastructure setup, environment configuration, and monitoring, not just writing code (Holt & Weilkiens, 2023). The goal is to ensure the system works correctly and satisfies the original needs. Utilization is when the system begins serving real users. This is where assumptions are tested and real usage patterns appear. Data volumes grow, edge cases surface, and dependencies change. The system becomes part of a larger ecosystem. Support includes maintenance, security updates, performance tuning, monitoring, and incident response. For most digital systems, this is the longest phase and the one that determines long-term reliability and trust.</p>
+               <p>Retirement is the planned decommissioning of the system. This often involves data migration, regulatory retention, shutting down integrations, and transitioning users (Holt & Weilkiens, 2023). When retirement is ignored, organizations become stuck with fragile legacy systems. These phases demonstrate why systems are not “finished” after launch. Real environments change continuously, and systems must evolve to remain useful and secure.</p>
+            <h3>Life Cycle Models</h3>
+               <p>A life cycle defines the stages a system passes through. A life cycle model describes how those stages are executed and ordered (Holt & Weilkiens, 2023). Linear, iterative, and incremental models represent different approaches to handling uncertainty and change.</p>
+                  <h4>The Linear Life Cycle Model</h4>
+                     <p>The linear model executes stages in a fixed, sequential order. Each phase is completed before the next begins, and progress moves forward in a straight line from conception to delivery. The classic example of this approach is the waterfall model, which has been widely used in both engineering and software development contexts. Its main advantage is clarity. Linear models are easy to plan, communicate, and govern because each stage has a clearly defined start and end point. They work best when requirements are stable, technologies are well understood, and the overall system scope is limited. In these situations, teams can move confidently from one stage to the next without needing to revisit earlier decisions.</p>
+                     <p>However, the linear model assumes a level of certainty that many digital systems do not have. When requirements change late in the process, linear execution absorbs the cost through extensive rework. Another drawback is late feedback. Usability issues, performance limitations, or design flaws may remain hidden until deployment, when fixes are most expensive and disruptive. Holt and Weilkiens note that linear models are best suited to small, well-defined projects and not to large, complex systems where needs change frequently (Holt & Weilkiens, 2023).</p>
+                  <h4>The Iterative Life Cycle Model</h4>
+                     <p>The iterative model is built around repetition and continuous learning. Instead of a single pass through the stages, the team cycles through them multiple times, using each iteration to improve the system based on feedback and new insights. Each cycle produces a version of the system that can be evaluated, tested, and refined. Its greatest strength is feedback (Efimova, 2024). Iteration reduces the risk of building the wrong system because assumptions are tested early and often. It also supports adaptation, allowing the system to evolve as user needs, technologies, and expectations change. Iterative approaches are especially useful for complex digital systems where requirements are uncertain or still emerging. They align well with prototyping, usability testing, and continuous improvement practices that are common in modern digital environments.</p>
+                     <p>The drawback is the need for discipline. Without clear goals, boundaries, and quality controls, iteration can become chaotic. Teams may rush releases, overlook long-term impacts, and accumulate technical debt. Holt and Weilkiens emphasize that model-based methods can still be applied in iterative environments to help manage complexity and improve communication among stakeholders (Holt & Weilkiens, 2023).</p>
+                  <h4>The Incremental Life Cycle Model</h4>
+                     <p>The incremental model delivers a system in pieces rather than all at once. Instead of a single final release, the system grows through multiple increments that add new functionality and capabilities over time. Each increment represents a step toward the fully realized system. Its primary advantage is early value. Users and organizations can begin benefiting from the system sooner, and overall project risk is reduced by introducing capability gradually rather than through a single large release.</p>
+                     <p>Incremental approaches work well for long projects and for systems that can be decomposed into meaningful components or modules. They allow organizations to avoid disruptive “big bang” deployments and instead introduce change in a controlled and manageable way. However, not all systems can be broken into useful subsets. Integration across increments can also become complex and difficult to manage. Holt and Weilkiens note that incremental models are effective when partial capability is useful early, but unsuitable when the system cannot be meaningfully decomposed (Holt & Weilkiens, 2023).</p>
+            <h3>Comparing the Models</h3> 
+               <p>The key difference among these models is how they treat change. Linear approaches resist change by locking decisions early and assuming that most requirements can be defined in advance. Iterative approaches expect change and use repeated cycles to absorb new information, feedback, and shifting needs as the system evolves. Incremental approaches also expect growth, but they focus on delivering that growth in clearly defined stages through controlled releases that gradually expand system capability (Efimova, 2024).</p>
+               <p>Risk is also managed differently across the three models. Linear models rely heavily on upfront planning and documentation, which can work well when uncertainty is low but can fail when assumptions prove incorrect. Iterative models reduce risk through early learning, frequent validation, and continuous refinement, allowing problems to surface before they become costly (Efimova, 2024). Incremental models reduce rollout risk by limiting the scope of each release, although they introduce their own challenges related to coordination, integration, and long-term consistency.</p>
+               <p>Fit ultimately depends on context. Stable, small projects may suit linear execution because the requirements are unlikely to change and the scope is well understood. User-facing digital systems often benefit from iteration because user expectations, technologies, and competitive pressures evolve rapidly (Efimova, 2024). Large enterprise systems may benefit from incremental delivery to reduce disruption and allow organizations to adopt new capabilities gradually. In practice, many organizations blend these models. The goal is not to follow one model rigidly, but to choose an execution pattern that aligns with system complexity, organizational constraints, and the level of uncertainty involved.</p>  
+            <h3>Life Cycle Thinking</h3>
+               <p>Life cycle thinking matters because digital systems must survive long after launch. Security threats evolve, dependencies change, and compliance requirements continue to grow as regulations and industry standards shift. Systems that cannot be updated safely or consistently over time quickly become liabilities rather than assets. Scaling is another major challenge. As user bases expand, growth affects performance, data volume, reliability, and the complexity of support processes. These pressures usually emerge after deployment, not during initial development, which is why planning only for launch is never sufficient. User feedback also reshapes systems in important ways. Real usage reveals design gaps, unexpected behaviors, and limitations that are impossible to fully predict in advance (Holt & Weilkiens, 2023). Without a life cycle mindset that embraces ongoing change, systems become rigid, difficult to adapt, and increasingly irrelevant to users.</p>
+               <p>Sustainability depends heavily on maintainability. Systems that are difficult to understand, modify, or extend drain organizational resources and slow innovation. Ignoring life cycle planning leads directly to technical debt, where short-term decisions turn into long-term burdens that limit future flexibility. Digital systems also depend on external technologies that have their own life cycles. When those technologies decline, become obsolete, or change unexpectedly, systems must adapt or risk failure. Life cycle thinking helps teams anticipate and manage these transitions rather than simply reacting to them when problems arise (Holt & Weilkiens, 2023).</p>
+            <h3>Conclusion</h3>
+               <p>The systems development life cycle describes how digital systems evolve from conception through development, deployment, utilization, support, and retirement. Life cycle models define how those stages are executed. The linear model offers simplicity but struggles with change. The iterative model supports learning and adaptation but requires discipline. The incremental model enables staged value delivery but depends on strong architecture and integration. For modern digital systems, life cycle thinking is essential. It allows teams to design systems that evolve rather than collapse under change. Systems that succeed over time are not the ones that launch once, but the ones built to grow, adapt, and endure.</p>
+         <footer class="article-footer">
+            <h3>Sources:</h3>
+            <ol>
+               <li>
+                  Holt, J., &amp; Weilkiens, T. (2023).
+                  <em>Systems engineering demystified: Apply modern, model-based systems engineering techniques to build complex systems</em> (2nd ed.).
+                  Packt Publishing.
+               </li>
+               <li>
+                  Awati, R., &amp; Gillis, A. S. (2024, September 23).
+                  <em>What is systems development life cycle?</em>
+                  TechTarget.
+                  <a href="https://www.techtarget.com/searchsoftwarequality/definition/systems-development-life-cycle">
+                     https://www.techtarget.com/searchsoftwarequality/definition/systems-development-life-cycle
+                  </a>
+               </li>
+               <li>
+                  Efimova, D. (2024, July 12).
+                  <em>Comparison of SDLC models: How to choose the best for your project?</em>
+                  EPAM.
+                  <a href="https://startups.epam.com/blog/software-development-models-comparison">
+                     https://startups.epam.com/blog/software-development-models-comparison
+                  </a>
+               </li>
+            </ol>
+         </footer>
+         </article>
          <!-- Module 2.1 Blog Post Starts here -->
 
          <!-- Module 2.2 Blog Post Starts here -->
