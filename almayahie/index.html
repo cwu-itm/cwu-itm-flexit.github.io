@@ -141,13 +141,6 @@ For digital systems, life cycle thinking is not optional. Rapid technological ch
 
 
 
-
-
-
-
-
-
-
 <article>
 <h2>Module 2.1 Blog Post</h2>
 <h3>Designing for People: Applying UX Laws to Human-Centered Design</h3>
@@ -186,21 +179,94 @@ For digital systems, life cycle thinking is not optional. Rapid technological ch
 
 
 <footer class="article-footer">
-                <h3>References:</h3>
-                <ol>
-                  <li>IDEO.org. (2015). The field guide to human-centered design. IDEO.org.<a href=" https://www.designkit.org/resources/1.html"> https://www.designkit.org/resources/1.html/</a></li>
+    <h3>References:</h3>
+     <ol>
+                   <li>IDEO.org. (2015). The field guide to human-centered design. IDEO.org.<a href=" https://www.designkit.org/resources/1.html"> https://www.designkit.org/resources/1.html/</a></li>
                     <li>ISO. (2019). ISO 9241-210:2010 – Ergonomics of human-system interaction – Human-centred design for interactive sys2590tems. International Organization for Standardization.  <a href="https://www.iso.org/standard/77520.html">https://www.iso.org/standard/77520.html</a></li>
-                    
+      
                     <li>Usability and user experience design. (n.d.). Chapter 4: How to "do" usability and UX design (Excerpt).</li>
                     <li>Yablonski, J. (2024). Laws of UX: Using psychology to design better products & services (2nd ed.). O’Reilly Media. <a href="https://jonyablonski.com/articles/2024/laws-of-ux-the-2nd-edition/">https://jonyablonski.com/articles/2024/laws-of-ux-the-2nd-edition/"</a></a></li>
                 
-                  </ol>
+      </ol>
             </footer>
 </article>
 
 
 
-         <!-- Module 2.2 Blog Post Starts here -->
+         
+
+<article>
+      <h2>Module 2.2 Blog Post</h2>
+      <h3>What Makes Digital Systems Usable: Memory, Habits, and Mental Shortcuts</h3>
+      <p>Digital systems feel usable when they work with the brain's natural limitations rather than fighting them. Memory holds just a handful of items at once, habits form around consistent patterns, and mental shortcuts let us predict how things work, great design leverages all three to make even complex interactions feel effortless. Usability isn't about visual polish; it's cognitive engineering that respects how humans think, remember, and act.</p>
+
+      <h3>Memory and Mental Models in Action</h3>
+      <p>Working memory, the mental scratchpad we use for active thinking, can juggle about 7 ± 2 chunks of information before overload sets in (Johnson, 2020). This explains why interfaces that dump 15 navigation options, demand memorizing multi-step processes, or scatter related controls create immediate frustration. Users don't just "get confused", their brains literally run out of short-term processing capacity.</p>
+      <p>Mental models fill the gap. These are internalized maps of how systems behave, built from years of experience across thousands of interfaces. When a design matches users' expectations (hamburger menu = navigation drawer, magnifying glass = search), cognitive effort drops dramatically because users can predict outcomes without conscious analysis. When designs violate those models, like a shopping cart icon that shows product details instead of checkout, every interaction becomes high-stakes guesswork.</p>
+      <p>In a dashboard project I consulted on, users repeatedly struggled with "Reports" functionality hidden behind a generic chart icon. Their mental model expected printable/exportable data under familiar labels like "Reports," "Documents," or "Export." The abstract icon forced constant memory refresh: Where did I find that last time? What does this squiggle mean again? Each visit consumed working memory that should have gone toward analysis.</p>
+
+      <h3>Consistency and Feedback as Cognitive Scaffolding</h3>
+      <p>Consistency across visual design, terminology, interaction patterns, and layout builds habits users can execute on autopilot. Primary buttons always submit forms and glow on hover. Back arrows always return to the previous state. Search icons always trigger search functionality. When consistency breaks, a "Save" button that sometimes saves drafts, sometimes publishes immediately, sometimes requires confirmation, users must abandon learned habits and decode context every single time (Usability and User Experience Design, Chapter 4, pp. 81–88).</p>
+      <img src="images/krisztian-tabori-IyaNci0CyRk-unsplash.jpg" alt="book beside smartphone" height="400" width="400" style="float: right; margin-left: 15px; margin-bottom: 15px;">
+      <p>Feedback closes the gulf between action and outcome, confirming whether the user's mental model remains accurate. A loading spinner during file uploads, green checkmarks after successful saves, inline error messages explaining why a form submission failed (not just "Error occurred"), these micro-confirmations prevent users from testing actions repeatedly just to verify the system behaved as expected. Silent failures, ambiguous success states, or delayed feedback create uncertainty that fills working memory with doubt: Did that work? Should I try again? Where's my data now?</p>
+      <p>Consider form validation: poor design shows a generic red border with "Please fix errors" at the top. Users must hunt across fields, taxing spatial memory and attention. Great design highlights the exact problematic field with inline text like "Phone number must include area code" and a contrasting call-to-action button. The difference? One forces problem-solving, the other guides resolution.</p>
+
+      <h3>Cognitive Load from Poor Design: Real Examples</h3>
+      <p>Poor design creates extraneous cognitive load, mental work that serves no productive purpose. Three examples illustrate the damage:
+      Course example (ISO 9241-210): The reading stresses context-of-use analysis to understand real user tasks and terminology, yet teams often skip it, forcing domain-specific jargon on operators. I audited a factory app where workers memorized machine codes like "X7B-42" instead of plain-language labels like "Conveyor Belt 3." With working memory already filled by production quotas, shift changes, and safety protocols, code lookup became the breaking point (Usability and User Experience Design, Chapter 4, p. 85).</p>
+      <p>Personal experience: A banking app buried transaction history behind Accounts → Details → Statements with no search or recent widget. My mental model, built across a decade of banking apps, expected a prominent "Transactions" tab. Each visit taxed spatial memory retracing the three-layer path, plus decision paralysis at each layer: Does "Details" mean account summary or transactions?</p>
+      <p>Industry failure: Windows 8 replaced the familiar Start menu with live tiles, obliterating 15+ years of muscle memory. Users faced choice paralysis without their spatial anchor, no bottom-left corner to muscle-memory-click for core functions. Even "simple" redesigns introduce massive complexity when they ignore learned habits (Tesler, 2018).</p>
+
+
+      <h3>Tesler's Law: Complexity Must Live Somewhere</h3>
+      <p>Tesler's Law of Conservation of Complexity states every system contains inherent complexity that must be handled, either by users or the system (Tesler, 2018). Usable design absorbs that complexity through intelligent defaults, automation, progressive disclosure, and error prevention. A photo editor that auto-saves every 30 seconds, suggests intelligent crops based on face detection, and hides advanced layer controls until needed obeys Tesler, the user focuses on creativity while the system handles file management. Contrast that with tools demanding manual saves, precise aspect ratio calculations, and constant layer naming; every interaction becomes infrastructure work.</p>
+      <img src="images/balazs.jpg" alt="Color code book" height="400" width="400" style="float: right; margin-left: 15px; margin-bottom: 15px;" >
+      
+      <h3>Principles from Designing with the Mind in Mind</h3>
+      <h4>Minimize Working Memory Load. </h4>
+      <p>Designing with the Mind in Mind translates cognitive psychology into practical guidance for interface design, with several principles directly shaping usability outcomes (Johnson, 2020). Two principles are especially relevant to how digital systems reduce cognitive load and support user behavior.</p>
+      <h4>Recognition Over Recall .</h4>
+      <p>Users perform far better when options are visible rather than hidden and must be recalled from memory. Interfaces that rely on recognition—such as dropdown menus, autocomplete fields, persistent navigation, and visible system states—reduce the mental effort required to complete tasks. In contrast, designs that force users to remember buried paths or previous actions dramatically increase cognitive load. The banking app example illustrates this failure clearly: users were required to recall a multi-step navigation path instead of recognizing a clearly labeled “Transactions” tab.</p>
+
+      <p>Because working memory is severely limited, effective interfaces chunk information into small, meaningful groups and avoid split attention. Dashboards that attempt to display too many metrics at once force users to scan, compare, and prioritize mentally, exhausting cognitive resources before meaningful interpretation can occur. By contrast, interfaces that emphasize one or two primary actions with progressive disclosure allow users to focus on decision-making rather than navigation or recall.</p>
+      <p>Across both principles, consistency plays a critical supporting role. When terminology, iconography, and interaction patterns remain stable across screens and features, users can rely on established habits instead of reevaluating each action. Consistent mappings between actions and outcomes reinforce mental models and reduce uncertainty, allowing recognition and chunking strategies to work effectively rather than being disrupted by unpredictable behavior (Johnson, 2020).</p>
+      <h3>Why This Matters: Usability as Cognitive Respect</h3>
+      <img src="images/ux.jpg" alt="silver macbook air on table near imac" height="400" width="400" style="float: right; margin-left: 15px; margin-bottom: 15px;">
+      <p>Usable systems don't eliminate complexity; they relocate it from users to the system. Tesler's Law forces the choice: should users manually save files, calculate dimensions, and remember navigation paths, or should intelligent defaults, automation, and visible options handle that work? Johnson's principles provide the mechanism: recognition saves recall effort, consistency builds automatic habits, chunking respects memory limits.</p>
+      <p>Course readings ground this in process rigor. ISO 9241-210 demands iterative evaluation against documented user contexts and requirements, ensuring designs don't merely look intuitive but actually work with human cognitive constraints (Usability and User Experience Design, Chapter 4, pp. 81–88).</p>
+      <p>Great design feels invisible because it disappears into learned behavior. Users don't notice consistency, instant feedback, or perfectly chunked information; they simply accomplish goals. Poor design screams for attention at every step, turning every interaction into conscious labor. Usability is cognitive respect: honoring the brain's architecture rather than demanding users compensate for flawed interfaces.</p>
+
+   <footer class="article-footer"> 
+      <h3>References </h3>
+
+      <p>
+      <ol>
+         <li>Johnson, J. (2020). Designing with the mind in mind: Simple guide to understanding user interface design guidelines (3rd ed.). Morgan Kaufmann.</li>
+         <li>Tesler, L. (2018). Computer limitations and freedoms. In L. Tesler (Ed.), The law of conservation of complexity. Retrieved from <a href="https://www.nomodes.com/Conservation_of_Complexity.pdf">https://www.nomodes.com/Conservation_of_Complexity.pdf</a>
+         <li>Usability and user experience design. (n.d.). Chapter 4: How to "do" usability and UX design (Excerpt). [Course Materials].</li>
+         <li>Yablonski, J. (2024). Laws of UX: Using psychology to design better products & services (2nd ed.). O'Reilly Media.</li>
+      </ol>
+      </p>
+
+      <h4>Image Credits</h4>
+         Photo by <a href="https://unsplash.com/@ktabori">Krisztian Tabori</a> on 
+         <a href="https://unsplash.com/photos/change-by-design-by-tim-brown-book-beside-smartphone-IyaNci0CyRk?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Unsplash</a>
+         <br>
+
+         Photo by <a href="https://unsplash.com/@balazsketyi">Balázs Kétyi</a> on 
+         <a href="https://unsplash.com/photos/color-code-book-LPWl2pEVGKc">Unsplash</a>
+
+         <br>
+         Photo by <a href="https://unsplash.com/@uxstore">UX Store</a> on 
+         <a href="https://unsplash.com/photos/silver-macbook-air-on-table-near-imac-jJT2r2n7lYA">Unsplash</a>
+   </footer>
+</article>
+
+
+
+
+
+
 
          <!-- Module 2.3 Blog Post Starts here -->
 
