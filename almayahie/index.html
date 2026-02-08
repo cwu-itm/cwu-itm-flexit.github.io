@@ -152,7 +152,7 @@ For digital systems, life cycle thinking is not optional. Rapid technological ch
 <p>Yablonski (2024) extends this idea by explicitly tying it to psychology and cognitive science. In Laws of UX, he argues that design should work with the “blueprint” of how people perceive, process, and remember information, instead of forcing people to adapt to an interface (Yablonski, 2024). This means acknowledging that users have limited attention, limited working memory, and deeply ingrained expectations shaped by other products. When designers ignore those constraints, they may ship something visually polished that still feels hard to use because it conflicts with how people naturally see and think. “Designing for people” becomes less about decoration and more about harmonizing with human limitations and strengths (Yablonski, 2024).</p>
 <p>IDEO’s Field Guide to Human-Centered Design adds an explicitly empathetic and creative layer. It describes human-centered design as starting from a deep understanding of the people you are designing for, their stories, anxieties, workarounds, and aspirations (IDEO.org, 2015). That understanding is developed through interviews, observation, immersion, and co-creation, where designers listen more than they talk (IDEO.org, 2015). Empathy here is not just a feeling; it is a method for discovering how people perceive and attend to interfaces in their real lives.</p>
 
-<h3>ISO 9241-210 and IDEO’s Field Guide</h2>
+<h3>ISO 9241-210 and IDEO’s Field Guide</h3>
 <p>ISO 9241-210 treats human-centered design as a formal standard that organizations should build into their development process. It outlines a cycle of understanding context, defining user requirements, creating solutions, and iterating based on user evaluation, with a strong emphasis on usability, ergonomics, and measurable outcomes (ISO, 2019).This ISO model represents the original human-centered design process that many later UX approaches, including data-driven methods, build upon, because its core steps capture the minimum requirements for meaningful usability work: continuous user involvement, context analysis, iterative design, and evaluation (Usability and User Experience Design, Chapter 4, pp. 81–88). The tone is procedural: it tells teams how to structure work so that human needs are considered consistently, not just during a final “usability test.”</p>
 <p>IDEO’s Field Guide approaches human-centered design as a flexible, creative process driven by empathy and experimentation. It describes three loose phases, Inspiration, Ideation, and Implementation; and offers practical methods like interviews, journey mapping, and co-creation workshops to understand people and rapidly prototype ideas (IDEO.org, 2015). Instead of standards language, it focuses on mindsets such as curiosity and collaboration, encouraging teams to learn directly from users in context.
 </p>
@@ -208,21 +208,18 @@ For digital systems, life cycle thinking is not optional. Rapid technological ch
       <h3>Consistency and Feedback as Cognitive Scaffolding</h3>
       <p>Consistency across visual design, terminology, interaction patterns, and layout builds habits users can execute on autopilot. Primary buttons always submit forms and glow on hover. Back arrows always return to the previous state. Search icons always trigger search functionality. When consistency breaks, a "Save" button that sometimes saves drafts, sometimes publishes immediately, sometimes requires confirmation, users must abandon learned habits and decode context every single time (Usability and User Experience Design, Chapter 4, pp. 81–88).</p>
       <!--<img src="images/krisztian-tabori-IyaNci0CyRk-unsplash.jpg" alt="book beside smartphone" height="400" width="400" style="float: right; margin-left: 15px; margin-bottom: 15px;">-->
-     <figure style="float: right; width: 400px; margin-left: 15px; margin-bottom: 15px; text-align: center;">
-  <img 
-    src="images/krisztian-tabori-IyaNci0CyRk-unsplash.jpg" 
-    alt="book beside smartphone" 
-    width="400" 
-    height="400">
-  <figcaption style="font-size: 0.9em;">
-    Photo by Krisztian Tabori
-    
-    on 
-    <a href="https://unsplash.com/photos/change-by-design-by-tim-brown-book-beside-smartphone-IyaNci0CyRk" target="_blank" rel="noopener noreferrer">
-      Unsplash
-    </a>
-  </figcaption>
-</figure>
+      <figure >
+         <img 
+         src="images/krisztian-tabori-IyaNci0CyRk-unsplash.jpg" 
+         alt="book beside smartphone" 
+         >
+         <figcaption style="font-size: 0.9em;">
+         Photo by Krisztian Taboriby <a href="https://unsplash.com/@ktabori">Krisztian Tabori</a>  on
+         <a href="https://unsplash.com/photos/change-by-design-by-tim-brown-book-beside-smartphone-IyaNci0CyRk" target="_blank" rel="noopener noreferrer">
+         Unsplash
+         </a>
+         </figcaption>
+      </figure>
      
       <p>Feedback closes the gulf between action and outcome, confirming whether the user's mental model remains accurate. A loading spinner during file uploads, green checkmarks after successful saves, inline error messages explaining why a form submission failed (not just "Error occurred"), these micro-confirmations prevent users from testing actions repeatedly just to verify the system behaved as expected. Silent failures, ambiguous success states, or delayed feedback create uncertainty that fills working memory with doubt: Did that work? Should I try again? Where's my data now?</p>
       <p>Consider form validation: poor design shows a generic red border with "Please fix errors" at the top. Users must hunt across fields, taxing spatial memory and attention. Great design highlights the exact problematic field with inline text like "Phone number must include area code" and a contrasting call-to-action button. The difference? One forces problem-solving, the other guides resolution.</p>
@@ -237,21 +234,21 @@ For digital systems, life cycle thinking is not optional. Rapid technological ch
       <h3>Tesler's Law: Complexity Must Live Somewhere</h3>
       <p>Tesler's Law of Conservation of Complexity states every system contains inherent complexity that must be handled, either by users or the system (Tesler, 2018). Usable design absorbs that complexity through intelligent defaults, automation, progressive disclosure, and error prevention. A photo editor that auto-saves every 30 seconds, suggests intelligent crops based on face detection, and hides advanced layer controls until needed obeys Tesler, the user focuses on creativity while the system handles file management. Contrast that with tools demanding manual saves, precise aspect ratio calculations, and constant layer naming; every interaction becomes infrastructure work.</p>
       <!--<img src="images/balazs.jpg" alt="Color code book" height="400" width="400" style="float: right; margin-left: 15px; margin-bottom: 15px;" >-->
-      <figure style="float: right; width: 400px; margin-left: 15px; margin-bottom: 15px; text-align: center;">
-  <img 
-    src="images/balazs.jpg" 
-    alt="color code book" 
-    width="400" 
-    height="400">
-  <figcaption style="font-size: 0.9em;">
-    Photo by Balázs Kétyi
-    
-    on 
-    <a href="https://unsplash.com/photos/color-code-book-LPWl2pEVGKc" target="_blank" rel="noopener noreferrer">
-      Unsplash
-    </a>
-  </figcaption>
-</figure>
+      <figure >
+      <img 
+         src="images/balazs.jpg" 
+         alt="color code book" 
+         >
+      <figcaption style="font-size: 0.9em;">
+         Photo by <a href="https://unsplash.com/@balazsketyi">Balázs Kétyi</a> 
+         
+         on 
+         <a href="https://unsplash.com/photos/color-code-book-LPWl2pEVGKc" target="_blank" rel="noopener noreferrer">
+            Unsplash
+         </a>
+      </figcaption>
+      </figure>
+      
       <h3>Principles from Designing with the Mind in Mind</h3>
       <h4>Minimize Working Memory Load. </h4>
       <p>Designing with the Mind in Mind translates cognitive psychology into practical guidance for interface design, with several principles directly shaping usability outcomes (Johnson, 2020). Two principles are especially relevant to how digital systems reduce cognitive load and support user behavior.</p>
@@ -263,14 +260,13 @@ For digital systems, life cycle thinking is not optional. Rapid technological ch
       <h3>Why This Matters: Usability as Cognitive Respect</h3>
      
      <!-- <img src="images/ux.jpg" alt="silver macbook air on table near imac" height="400" width="400" style="float: right; margin-left: 15px; margin-bottom: 15px;">-->
-     <figure style="float: right; width: 400px; margin-left: 15px; margin-bottom: 15px; text-align: center;">
+     <figure >
   <img 
     src="images/ux.jpg" 
     alt="silver MacBook Air on table near iMac" 
-    width="400" 
-    height="400">
+    >
   <figcaption style="font-size: 0.9em;">
-    Photo by UX Store
+    Photo by Photo by <a href="https://unsplash.com/@uxstore">UX Store</a>
      
     on 
     <a href="https://unsplash.com/photos/silver-macbook-air-on-table-near-imac-jJT2r2n7lYA" target="_blank" rel="noopener noreferrer">
@@ -297,23 +293,11 @@ For digital systems, life cycle thinking is not optional. Rapid technological ch
       </ol>
       </p>
 
-      <h4>Image Credits</h4>
-         Photo by <a href="https://unsplash.com/@ktabori">Krisztian Tabori</a> on 
-         <a href="https://unsplash.com/photos/change-by-design-by-tim-brown-book-beside-smartphone-IyaNci0CyRk?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink">Unsplash</a>
-         <br>
-
-         Photo by <a href="https://unsplash.com/@balazsketyi">Balázs Kétyi</a> on 
-         <a href="https://unsplash.com/photos/color-code-book-LPWl2pEVGKc">Unsplash</a>
-
-         <br>
-         Photo by <a href="https://unsplash.com/@uxstore">UX Store</a> on 
-         <a href="https://unsplash.com/photos/silver-macbook-air-on-table-near-imac-jJT2r2n7lYA">Unsplash</a>
+      
    </footer>
 </article>
 
 
-
-         <!-- Module 3.1 Blog Post Starts here -->
 
 <article>
  <h2>Module 3.1 Blog Post</h2>
@@ -327,24 +311,24 @@ For digital systems, life cycle thinking is not optional. Rapid technological ch
 <p>The Von Restorff Effect, also known as the isolation effect, states that items that stand out from their surroundings are more likely to be noticed and remembered (Yablonski, 2020). In digital interfaces, this principle is critical for guiding attention to key information and actions.
 Smart thermostat interfaces apply this effect by visually emphasizing the most important elements. The current temperature is typically larger and more prominent than secondary information such as humidity or schedules. Active modes are often highlighted with color or icon changes, making system status immediately clear. Alerts or warnings may appear visually distinct, separating them from routine controls.
 </p>
+<figure >
+<img 
+src="images/andrey-matveev-nZO4Ipgz8zQ-unsplash.jpg" 
+alt="Hand holding a smartphone with colorful application icons"
+>
+<figcaption style="font-size: 0.9em;">
+Photo by <a href="https://unsplash.com/@zelebb?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andrey Matveev</a>  on 
+<a href="https://unsplash.com/photos/nZO4Ipgz8zQ" target="_blank" rel="noopener noreferrer">
+Unsplash
+</a>
+</figcaption>
+</figure>
 <p>This selective emphasis reduces decision time. Users do not need to read every label or interpret every icon, instead, their attention is naturally drawn to what matters most. Johnson (2020) explains that human attention is limited, and interfaces that compete for attention create confusion rather than clarity. By isolating critical elements visually, designers help users prioritize without conscious effort.
 The Von Restorff Effect also supports learning and memory. When important controls are consistently emphasized, users are more likely to remember their location and function over time. This consistency supports habit formation, allowing repeat interactions to become faster and more automatic. Without such emphasis, users may repeatedly search for the same controls, increasing frustration and cognitive load.
 </p>
 
-<figure style="float: right; width: 400px; margin-left: 15px; margin-bottom: 15px; text-align: center;">
-   <img 
-    src="images/andrey-matveev-nZO4Ipgz8zQ-unsplash.jpg" 
-    alt="Hand holding a smartphone with colorful application icons"
-     height="400" 
-     width="400" >
-     
-    <figcaption style="font-size: 0.9em;">
-    Photo by Andrey Matveev on 
-    <a href="https://unsplash.com/photos/nZO4Ipgz8zQ" target="_blank" rel="noopener noreferrer">
-      Unsplash
-    </a>
-  </figcaption>
-</figure>
+
+
 <h3>Postel’s Law, Designing for Imperfect Human Input</h3>
 <p>Postel’s Law, often summarized as being liberal in what you accept and conservative in what you send, emphasizes flexibility in system design. Applied to UX, this principle encourages designers to accommodate a wide range of user behaviors and inputs rather than requiring perfect precision (Yablonski, 2020).</p>
 <p>In smart thermostat apps, Postel’s Law appears in how temperature adjustments are handled. Users may drag a slider quickly, tap increment buttons repeatedly, or overshoot their intended setting. Well-designed systems accept these variations without error, smoothly adjusting values and providing immediate feedback. Rather than punishing imprecision, the interface adapts to it.
@@ -352,17 +336,17 @@ This flexibility is essential because users often interact with smart home apps 
 </p>
 <p>Postel’s Law also applies to error prevention. Instead of displaying cryptic error messages after a mistake, effective interfaces prevent errors before they occur or gently guide users back on track. This approach supports confidence and trust, reinforcing the perception that the system is helpful rather than hostile.</p>
 
-<figure style="float: right; width: 400px; margin-left: 15px; margin-bottom: 15px; text-align: center;">
-  <img 
-    src="images/andrey-matveev-rIC8rWEe7cs-unsplash.jpg"
-    alt="Two smartphones displaying different mobile app interfaces"
-     height="400" 
-     width="400" 
-     >
-  
-    <figcaption style="font-size: 0.9em;">
-    Photo by Andrey Matveev on 
-    <a href="https://unsplash.com/photos/rIC8rWEe7cs" target="_blank" rel="noopener noreferrer">
+<figure >
+  <img src="images/amelie-mourichon-sv8oOQaUb-o-unsplash.jpg" 
+       alt="person holding a pen while writing on paper, representing memory, cognition, and external memory aids" 
+       >
+  <figcaption style="font-size: 0.9em;">
+    Photo by 
+    <a href="https://unsplash.com/@amayli?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">
+      Amélie Mourichon
+    </a> 
+    on 
+    <a href="https://unsplash.com/photos/person-holding-pen-near-paper-sv8oOQaUb-o?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">
       Unsplash
     </a>
   </figcaption>
@@ -374,13 +358,12 @@ This experience violated several UX principles simultaneously. The lack of visua
 <p>Most notably, the interface relied on recall rather than recognition. Instead of seeing clear controls, I had to remember where features were hidden. Nielsen Norman Group research consistently shows that recognition-based interfaces are easier and less error-prone than recall-based ones (Nielsen Norman Group, n.d.-b). The result was frustration disproportionate to the simplicity of the task.
 In contrast, well-designed thermostat interfaces feel almost invisible. Users move through them effortlessly, guided by layout, emphasis, and forgiving interaction logic. This contrast reinforces the idea that usability is not about adding features, but about aligning design with how people actually think and behave.
 </p>
-<figure style="float: right; width: 400px; margin-left: 15px; margin-bottom: 15px; text-align: center;">
+<figure>
 <img src="images/amanz-UL3h7__ACVM-unsplash.jpg" 
      alt="modern smartphone displaying multiple mobile applications" 
-     height="400" 
-     width="400" >
+     >
 <figcaption style="font-size: 0.9em;">
-    Photo by Amanz on 
+    Photo by <a href="https://unsplash.com/@amanz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"> Amanz</a> on 
     <a href="https://unsplash.com/photos/Ul3h7__ACVM" target="_blank" rel="noopener noreferrer">
       Unsplash
     </a>
@@ -392,13 +375,13 @@ In contrast, well-designed thermostat interfaces feel almost invisible. Users mo
   
 
 
-     <h3>Conclusion: Designing for the Mind, Not Just the Screen</h3>
+<h3>Conclusion: Designing for the Mind, Not Just the Screen</h3>
 <p>Visual and interaction design choices shape how users move through digital interfaces in profound ways. Layout directs attention, control design influences behavior, and UX laws explain why some interfaces feel intuitive while others feel burdensome. The Aesthetic–Usability Effect shows how visual appeal builds trust, the Von Restorff Effect explains how emphasis guides attention, and Postel’s Law reminds designers to accommodate human imperfection.
 Together, these principles highlight a central truth of human-centered design, usability emerges when systems respect human cognition rather than challenge it. Interfaces that align with perception, memory, and attention allow users to focus on goals instead of mechanics. In doing so, they transform interaction from effortful navigation into seamless experience.
 </p>
 
 <footer class="article-footer"> 
-      <h3>References </h3>
+<h3>References </h3>
 <ul>
 <li>Johnson, J. (2020). Designing with the mind in mind, simple guide to understanding user interface design guidelines (2nd ed.). Morgan Kaufmann.</li>
 <li>Yablonski, J. (2024). Laws of UX: Using psychology to design better products & services (2nd ed.). O'Reilly Media.</li>
