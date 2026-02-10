@@ -10,10 +10,28 @@
 <!-- Page Header  -->
       <header class="page-header">
          <h1>Portfolio</h1>
+   <nav class="main-nav">
+    <a class="logo" href="#">Eman</a>
+    <ul class="nav-links">
+      <li><a href="#">Module 1</a></li>
+      <li><a href="#">Module 2</a></li>
+      <li><a href="#">Module 3</a></li>
+    </ul>
+  </nav>
       </header>
+
+
+      
 <!-- Main Content Area  -->
       <main>
-         
+        <section class="image-bar">
+          <img src="images/boliviainteligente-kDW__kSxEt0-unsplash.jpg" alt="Colorful iPhone home screens">
+          <img src="images/balazs.jpg" alt="Abstract green and white pattern">
+          <img src="images/vince-picipo--3_zRoXdH-c-unsplash.jpg" alt="Colorful letters illustration">
+        </section>
+
+
+         <div class="content-columns">
          <article>
             <header class="article-header"> 
                <h2>Module 1.1 Blog Post</h2>
@@ -69,16 +87,15 @@
 
             <footer class="article-footer">
                 <h3>References:</h3>
-                <ol>
+                <ul>
                   <li>Holt, J. (2019). Systems engineering demystified (2nd ed.). Packt Publishing.</li>
                     <li>IBM. (n.d.). What is model based systems engineering. IBM Think.  <a href="https://www.ibm.com/think/topics/model-based-systems-engineering">https://www.nngroup.com/articles/direct-manipulation/</a></li>
                     <li>Meadows, D. H. (2008). Thinking in systems: A primer. Chelsea Green Publishing.<a href="https://www.chelseagreen.com/product/thinking-in-systems">https://www.chelseagreen.com/product/thinking-in-systems"</a></a></li>
                 
-                  </ol>
+                  </ul>
             </footer>
          </article>
-
-         
+   
 <article>
 <h2>Module 1.2 Blog Post</h2>
 <h3>Systems Engineering Life Cycles and Life Cycle Models in Digital Systems</h3>
@@ -129,17 +146,14 @@ For digital systems, life cycle thinking is not optional. Rapid technological ch
 
 <footer class="article-footer">
                 <h3>References:</h3>
-                <ol>
+                <ul>
                   <li>Holt, J. (2019). Systems engineering demystified (2nd ed.,Chapters 3–5.)</li>
                     <li>ISO/IEC/IEEE. (2015). ISO/IEC/IEEE 15288: Systems and software engineering — System life cycle processes.  <a href="https://www.iso.org/standard/63711.html">https://www.iso.org/standard/63711.html/</a></li>
                     <li>Knowledge Hut. (2024). Iterative vs incremental development: An overview.<a href="https://www.knowledgehut.com/blog/project-management/iterative-vs-incremental-development">https://www.knowledgehut.com/blog/project-management/iterative-vs-incremental-development"</a></a></li>
                 
-                  </ol>
+                  </ul>
             </footer>
 </article>
-
-
-
 
 <article>
 <h2>Module 2.1 Blog Post</h2>
@@ -180,14 +194,14 @@ For digital systems, life cycle thinking is not optional. Rapid technological ch
 
 <footer class="article-footer">
     <h3>References:</h3>
-     <ol>
+     <ul>
                    <li>IDEO.org. (2015). The field guide to human-centered design. IDEO.org.<a href=" https://www.designkit.org/resources/1.html"> https://www.designkit.org/resources/1.html/</a></li>
                     <li>ISO. (2019). ISO 9241-210:2010 – Ergonomics of human-system interaction – Human-centred design for interactive sys2590tems. International Organization for Standardization.  <a href="https://www.iso.org/standard/77520.html">https://www.iso.org/standard/77520.html</a></li>
       
                     <li>Usability and user experience design. (n.d.). Chapter 4: How to "do" usability and UX design (Excerpt).</li>
                     <li>Yablonski, J. (2024). Laws of UX: Using psychology to design better products & services (2nd ed.). O’Reilly Media. <a href="https://jonyablonski.com/articles/2024/laws-of-ux-the-2nd-edition/">https://jonyablonski.com/articles/2024/laws-of-ux-the-2nd-edition/"</a></a></li>
                 
-      </ol>
+      </ul>
             </footer>
 </article>
 
@@ -207,14 +221,14 @@ For digital systems, life cycle thinking is not optional. Rapid technological ch
 
       <h3>Consistency and Feedback as Cognitive Scaffolding</h3>
       <p>Consistency across visual design, terminology, interaction patterns, and layout builds habits users can execute on autopilot. Primary buttons always submit forms and glow on hover. Back arrows always return to the previous state. Search icons always trigger search functionality. When consistency breaks, a "Save" button that sometimes saves drafts, sometimes publishes immediately, sometimes requires confirmation, users must abandon learned habits and decode context every single time (Usability and User Experience Design, Chapter 4, pp. 81–88).</p>
-      <!--<img src="images/krisztian-tabori-IyaNci0CyRk-unsplash.jpg" alt="book beside smartphone" height="400" width="400" style="float: right; margin-left: 15px; margin-bottom: 15px;">-->
+      
       <figure >
          <img 
          src="images/krisztian-tabori-IyaNci0CyRk-unsplash.jpg" 
          alt="book beside smartphone" 
          >
          <figcaption style="font-size: 0.9em;">
-         Photo by Krisztian Taboriby <a href="https://unsplash.com/@ktabori">Krisztian Tabori</a>  on
+         Photo by <a href="https://unsplash.com/@ktabori">Krisztian Tabori</a>  on
          <a href="https://unsplash.com/photos/change-by-design-by-tim-brown-book-beside-smartphone-IyaNci0CyRk" target="_blank" rel="noopener noreferrer">
          Unsplash
          </a>
@@ -226,23 +240,22 @@ For digital systems, life cycle thinking is not optional. Rapid technological ch
 
       <h3>Cognitive Load from Poor Design: Real Examples</h3>
       <p>Poor design creates extraneous cognitive load, mental work that serves no productive purpose. Three examples illustrate the damage:
-      Course example (ISO 9241-210): The reading stresses context-of-use analysis to understand real user tasks and terminology, yet teams often skip it, forcing domain-specific jargon on operators. I audited a factory app where workers memorized machine codes like "X7B-42" instead of plain-language labels like "Conveyor Belt 3." With working memory already filled by production quotas, shift changes, and safety protocols, code lookup became the breaking point (Usability and User Experience Design, Chapter 4, p. 85).</p>
+        Course example (ISO 9241-210): The reading stresses context-of-use analysis to understand real user tasks and terminology, yet teams often skip it, forcing domain-specific jargon on operators. I audited a factory app where workers memorized machine codes like "X7B-42" instead of plain-language labels like "Conveyor Belt 3." With working memory already filled by production quotas, shift changes, and safety protocols, code lookup became the breaking point (Usability and User Experience Design, Chapter 4, p. 85).</p>
       <p>Personal experience: A banking app buried transaction history behind Accounts → Details → Statements with no search or recent widget. My mental model, built across a decade of banking apps, expected a prominent "Transactions" tab. Each visit taxed spatial memory retracing the three-layer path, plus decision paralysis at each layer: Does "Details" mean account summary or transactions?</p>
       <p>Industry failure: Windows 8 replaced the familiar Start menu with live tiles, obliterating 15+ years of muscle memory. Users faced choice paralysis without their spatial anchor, no bottom-left corner to muscle-memory-click for core functions. Even "simple" redesigns introduce massive complexity when they ignore learned habits (Tesler, 2018).</p>
 
 
       <h3>Tesler's Law: Complexity Must Live Somewhere</h3>
       <p>Tesler's Law of Conservation of Complexity states every system contains inherent complexity that must be handled, either by users or the system (Tesler, 2018). Usable design absorbs that complexity through intelligent defaults, automation, progressive disclosure, and error prevention. A photo editor that auto-saves every 30 seconds, suggests intelligent crops based on face detection, and hides advanced layer controls until needed obeys Tesler, the user focuses on creativity while the system handles file management. Contrast that with tools demanding manual saves, precise aspect ratio calculations, and constant layer naming; every interaction becomes infrastructure work.</p>
-      <!--<img src="images/balazs.jpg" alt="Color code book" height="400" width="400" style="float: right; margin-left: 15px; margin-bottom: 15px;" >-->
+      
       <figure >
       <img 
          src="images/balazs.jpg" 
          alt="color code book" 
          >
       <figcaption style="font-size: 0.9em;">
-         Photo by <a href="https://unsplash.com/@balazsketyi">Balázs Kétyi</a> 
-         
-         on 
+       Photo by <a href="https://unsplash.com/@balazsketyi">Balázs Kétyi</a> 
+       on 
          <a href="https://unsplash.com/photos/color-code-book-LPWl2pEVGKc" target="_blank" rel="noopener noreferrer">
             Unsplash
          </a>
@@ -259,7 +272,7 @@ For digital systems, life cycle thinking is not optional. Rapid technological ch
       <p>Across both principles, consistency plays a critical supporting role. When terminology, iconography, and interaction patterns remain stable across screens and features, users can rely on established habits instead of reevaluating each action. Consistent mappings between actions and outcomes reinforce mental models and reduce uncertainty, allowing recognition and chunking strategies to work effectively rather than being disrupted by unpredictable behavior (Johnson, 2020).</p>
       <h3>Why This Matters: Usability as Cognitive Respect</h3>
      
-     <!-- <img src="images/ux.jpg" alt="silver macbook air on table near imac" height="400" width="400" style="float: right; margin-left: 15px; margin-bottom: 15px;">-->
+     
      <figure >
   <img 
     src="images/ux.jpg" 
@@ -276,8 +289,7 @@ For digital systems, life cycle thinking is not optional. Rapid technological ch
 </figure>
      
      
-     
-     <p>Usable systems don't eliminate complexity; they relocate it from users to the system. Tesler's Law forces the choice: should users manually save files, calculate dimensions, and remember navigation paths, or should intelligent defaults, automation, and visible options handle that work? Johnson's principles provide the mechanism: recognition saves recall effort, consistency builds automatic habits, chunking respects memory limits.</p>
+      <p>Usable systems don't eliminate complexity; they relocate it from users to the system. Tesler's Law forces the choice: should users manually save files, calculate dimensions, and remember navigation paths, or should intelligent defaults, automation, and visible options handle that work? Johnson's principles provide the mechanism: recognition saves recall effort, consistency builds automatic habits, chunking respects memory limits.</p>
       <p>Course readings ground this in process rigor. ISO 9241-210 demands iterative evaluation against documented user contexts and requirements, ensuring designs don't merely look intuitive but actually work with human cognitive constraints (Usability and User Experience Design, Chapter 4, pp. 81–88).</p>
       <p>Great design feels invisible because it disappears into learned behavior. Users don't notice consistency, instant feedback, or perfectly chunked information; they simply accomplish goals. Poor design screams for attention at every step, turning every interaction into conscious labor. Usability is cognitive respect: honoring the brain's architecture rather than demanding users compensate for flawed interfaces.</p>
 
@@ -285,12 +297,12 @@ For digital systems, life cycle thinking is not optional. Rapid technological ch
       <h3>References </h3>
 
       <p>
-      <ol>
+      <ul>
          <li>Johnson, J. (2020). Designing with the mind in mind: Simple guide to understanding user interface design guidelines (3rd ed.). Morgan Kaufmann.</li>
          <li>Tesler, L. (2018). Computer limitations and freedoms. In L. Tesler (Ed.), The law of conservation of complexity. Retrieved from <a href="https://www.nomodes.com/Conservation_of_Complexity.pdf">https://www.nomodes.com/Conservation_of_Complexity.pdf</a>
          <li>Usability and user experience design. (n.d.). Chapter 4: How to "do" usability and UX design (Excerpt). [Course Materials].</li>
          <li>Yablonski, J. (2024). Laws of UX: Using psychology to design better products & services (2nd ed.). O'Reilly Media.</li>
-      </ol>
+      </ul>
       </p>
 
       
@@ -326,8 +338,6 @@ Unsplash
 <p>This selective emphasis reduces decision time. Users do not need to read every label or interpret every icon, instead, their attention is naturally drawn to what matters most. Johnson (2020) explains that human attention is limited, and interfaces that compete for attention create confusion rather than clarity. By isolating critical elements visually, designers help users prioritize without conscious effort.
 The Von Restorff Effect also supports learning and memory. When important controls are consistently emphasized, users are more likely to remember their location and function over time. This consistency supports habit formation, allowing repeat interactions to become faster and more automatic. Without such emphasis, users may repeatedly search for the same controls, increasing frustration and cognitive load.
 </p>
-
-
 
 <h3>Postel’s Law, Designing for Imperfect Human Input</h3>
 <p>Postel’s Law, often summarized as being liberal in what you accept and conservative in what you send, emphasizes flexibility in system design. Applied to UX, this principle encourages designers to accommodate a wide range of user behaviors and inputs rather than requiring perfect precision (Yablonski, 2020).</p>
@@ -371,17 +381,13 @@ In contrast, well-designed thermostat interfaces feel almost invisible. Users mo
 
    </figure>
 
-
-  
-
-
-<h3>Conclusion: Designing for the Mind, Not Just the Screen</h3>
+ <h3>Conclusion: Designing for the Mind, Not Just the Screen</h3>
 <p>Visual and interaction design choices shape how users move through digital interfaces in profound ways. Layout directs attention, control design influences behavior, and UX laws explain why some interfaces feel intuitive while others feel burdensome. The Aesthetic–Usability Effect shows how visual appeal builds trust, the Von Restorff Effect explains how emphasis guides attention, and Postel’s Law reminds designers to accommodate human imperfection.
 Together, these principles highlight a central truth of human-centered design, usability emerges when systems respect human cognition rather than challenge it. Interfaces that align with perception, memory, and attention allow users to focus on goals instead of mechanics. In doing so, they transform interaction from effortful navigation into seamless experience.
 </p>
 
 <footer class="article-footer"> 
-<h3>References </h3>
+<h3>References  </h3>
 <ul>
 <li>Johnson, J. (2020). Designing with the mind in mind, simple guide to understanding user interface design guidelines (2nd ed.). Morgan Kaufmann.</li>
 <li>Yablonski, J. (2024). Laws of UX: Using psychology to design better products & services (2nd ed.). O'Reilly Media.</li>
@@ -402,6 +408,7 @@ Together, these principles highlight a central truth of human-centered design, u
 <p>Feedback is one of the most powerful emotional signals in a digital interface. Users rely on system responses to understand whether their actions were successful, ignored, or failed. Immediate and clear feedback reassures users that the system is attentive and functioning as expected, while delayed or ambiguous feedback forces users to interpret silence, often leading to uncertainty and stress. Johnson (2020) explains that humans instinctively anthropomorphize systems, attributing intention to system behavior. As a result, slow or inconsistent feedback is often interpreted as negligence or unreliability rather than a technical limitation. Research on response times shows that delays longer than one second interrupt user flow, while immediate feedback helps maintain trust and reduces frustration (Nielsen Norman Group).
 </p>
 <p>The Doherty Threshold, which suggests that systems should respond within approximately 400 milliseconds to maintain engagement, provides a psychological benchmark for responsiveness (Yablonski, 2024). When systems operate within this threshold, users remain focused on their goals rather than the mechanics of the interface. When delays exceed it, users become aware of the system as an obstacle, increasing cognitive load and emotional friction. Ethical interaction design recognizes that responsiveness is not simply about performance optimization but about respecting users’ time and mental effort.</p>
+
 <p>Timing also influences emotional regulation throughout an interaction. Immediate confirmation messages, progress indicators, and transitional states help users maintain confidence during longer processes. Without these signals, users must mentally track system state, increasing anxiety and uncertainty. Johnson (2020) notes that uncertainty rapidly consumes working memory, diverting attention away from the task itself. Nielsen Norman Group research emphasizes that keeping users informed about system status through timely and visible feedback is essential for maintaining trust and preventing unnecessary anxiety during interactions (Nielsen Norman Group, n.d.).
 </p>
 
@@ -411,6 +418,25 @@ Together, these principles highlight a central truth of human-centered design, u
 
 <h3>Motion as Communication, Not Decoration</h3>
 <p>Motion is often treated as a visual enhancement, but its true value lies in communication. Animations signal transitions, establish relationships between interface elements, and help users predict outcomes. Johnson (2020) explains that motion supports perceptual continuity, allowing users to follow changes without reorienting themselves. For example, a panel that slides into view communicates spatial logic, helping users understand where content comes from and where it goes.</p>
+<figure>
+  <img 
+    src="images/alexander-shatov-mr4JG4SYOF8-unsplash (1).jpg"
+    alt="Colorful abstract letters in blue, red, and green representing vibrant digital design"
+    >
+  <figcaption style="font-size: 0.9em;">
+    Photo by 
+    <a href="https://unsplash.com/@alexbemore?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+       target="_blank" rel="noopener noreferrer">
+      Alexander Shatov
+    </a> 
+    on 
+    <a href="https://unsplash.com/photos/blue-red-and-green-letters-illustration-mr4JG4SYOF8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+       target="_blank" rel="noopener noreferrer">
+      Unsplash
+    </a>
+  </figcaption>
+</figure>
+
 <p>When used ethically, motion reduces cognitive effort by making system behavior legible. However, motion can also be misused to manufacture anticipation or emotional suspense. Spinners, exaggerated progress bars, or staged animations may delay outcomes without providing meaningful information. In persuasive systems, this anticipation can increase emotional investment, subtly encouraging users to wait, click, or commit rather than reconsider. While such techniques may improve short-term engagement metrics, they risk exploiting attentional limits rather than supporting informed decision-making.</p>
 <p>Ethical interaction design uses motion to clarify, not distract. Motion should serve the user’s understanding of system state, not the system’s desire to retain attention. This distinction becomes especially important in contexts involving consent, financial decisions, or sensitive personal data.</p>
 
@@ -425,13 +451,48 @@ Together, these principles highlight a central truth of human-centered design, u
 
 <h3>Persuasion, Autonomy, and Ethical Boundaries</h3>
 <p>Persuasive techniques are common in digital systems, but their ethical impact depends on how they balance influence and autonomy. Ethical persuasion aligns system goals with user goals, making desired actions easier without obscuring alternatives. For example, reminders that help users complete tasks they already intend to do support autonomy rather than override it.</p>
+<figure >
+  <img 
+    src="images/vince-picipo--3_zRoXdH-c-unsplash.jpg"
+    alt="Two stylized iPhones with colorful custom home screens"
+>
+  <figcaption style="font-size: 0.9em;">
+    Photo by 
+    <a href="https://unsplash.com/@buffulutu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" 
+       target="_blank" rel="noopener noreferrer">
+      Vince Picipo
+    </a> 
+    on 
+    <a href="https://unsplash.com/photos/two-stylized-iphones-with-custom-home-screens--3_zRoXdH-c?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" 
+       target="_blank" rel="noopener noreferrer">
+      Unsplash
+    </a>
+  </figcaption>
+</figure>
 <p>Unethical persuasion exploits cognitive biases such as scarcity, urgency, or social pressure to push users toward outcomes they may not fully endorse. Dark patterns like confusing opt-out flows, hidden defaults, or emotionally charged timing violate informed consent. Yablonski (2024) warns that while these techniques may increase short-term conversion, they damage long-term trust and brand credibility.
    Designing ethically requires recognizing that user experience extends beyond a single interaction. Trust accumulates over time through repeated experiences where users feel respected rather than manipulated. Ethical interaction patterns foster long-term relationships by empowering users, not trapping them.</p>
 
 <h3>Designing for Long-Term Trust</h3>
 <p>Digital systems increasingly mediate critical aspects of daily life, from education and healthcare to finance and communication. As a result, interaction design decisions carry real psychological and ethical weight. Timing, feedback, motion, and error prevention are not merely technical choices; they shape how users feel, remember, and trust systems over time.</p>
 <p>Ethical interaction design respects human cognition by reducing unnecessary cognitive load, supporting recovery from mistakes, and providing transparent feedback. UX laws such as the Doherty Threshold and the Peak–End Rule help explain why certain patterns feel intuitive or stressful, but ethical responsibility lies in how those patterns are applied. When designers prioritize clarity, autonomy, and inclusivity, interactions feel supportive rather than coercive.</p>
-
+<figure >
+  <img 
+    src="images/vince-picipo-9M9UGLUGj98-unsplash.jpg"
+    alt="Colorful smartphone interface displayed against a vibrant background"
+   >
+  <figcaption style="font-size: 0.9em;">
+    Photo by 
+    <a href="https://unsplash.com/@buffulutu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+       target="_blank" rel="noopener noreferrer">
+      Vince Picipo
+    </a> 
+    on 
+    <a href="https://unsplash.com/photos/a-cell-phone-on-a-wall-nv46796DgNM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+       target="_blank" rel="noopener noreferrer">
+      Unsplash
+    </a>
+  </figcaption>
+</figure>
 <h3>Conclusion</h3>
 <p>Well-designed interaction patterns shape meaningful and ethical user experiences by aligning system behavior with human perception, memory, and emotion. Timing and responsiveness influence trust and engagement; motion clarifies relationships when used responsibly; and error prevention supports confidence and psychological safety. UX laws such as the Doherty Threshold and Peak–End Rule explain how these elements affect users, but ethical design depends on applying them with restraint and empathy.</p>
 <p>Ultimately, ethical interaction design is about respect. Systems should adapt to human limitations rather than forcing users to adapt to systems. When designers treat usability as a moral responsibility rather than a technical checklist, digital experiences become not only easier to use but worthy of long-term trust.</p>
@@ -439,21 +500,22 @@ Together, these principles highlight a central truth of human-centered design, u
 <footer class="article-footer"> 
 <h3>References </h3>
 <ul>
-<ol>Johnson, J. (2020). Designing with the mind in mind: Simple guide to understanding user interface design guidelines (3rd ed.). Morgan Kaufmann.</ol>
+<li>Johnson, J. (2020). Designing with the mind in mind: Simple guide to understanding user interface design guidelines (3rd ed.). Morgan Kaufmann.</li>
 
-<ol>Yablonski, J. (2024). Laws of UX: Using psychology to design better products & services (2nd ed.). O’Reilly Media.<a href="https://lawsofux.com/"> https://lawsofux.com/</a></ol>
+<li>Yablonski, J. (2024). Laws of UX: Using psychology to design better products & services (2nd ed.). O’Reilly Media.<a href="https://lawsofux.com/"> https://lawsofux.com/</a></li>
 
-<ol > Nielsen Norman Group. (n.d.). Response times: The 3 important limits. 
- <a href="https://www.nngroup.com/articles/response-times-3-important-limits/">https://www.nngroup.com/articles/response-times-3-important-limits/</a></ol>
-<ol>Nielsen Norman Group. (n.d.). Visibility of system status. <a href="https://www.nngroup.com/articles/visibility-system-status/">
+<li> Nielsen Norman Group. (n.d.). Response times: The 3 important limits. 
+ <a href="https://www.nngroup.com/articles/response-times-3-important-limits/">https://www.nngroup.com/articles/response-times-3-important-limits/</a></li>
+<li>Nielsen Norman Group. (n.d.). Visibility of system status. <a href="https://www.nngroup.com/articles/visibility-system-status/">
 https://www.nngroup.com/articles/visibility-system-status/</a></ol>
 
 </ul>
 </footer>
 </article>
-
+</div>
 </main>
-<!-- Page Footer  -->
+
+<!-- Page Footer    -->
       <footer class="page-footer">
        <p>Copyright &copy; 2025</p>
       </footer>
