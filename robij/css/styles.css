@@ -201,6 +201,36 @@ blockquote {
   color: #555;
 }
 
+/* ---------------------------------------------------
+   My Styles
+--------------------------------------------------- */
+
+.article-content {
+  padding: 0 1rem;
+}
+
+
+.article-content h3 {
+  background-color: #111;
+  color: #fff;
+  padding: 1rem;
+}
+
+img {
+  width: 100%;
+  max-width: 30rem;
+  height: auto;
+  display: block;
+}
+
+p, ul, ol, li, figcaption {
+  font-weight: 300;
+  font-size: 0.875rem;
+}
+
+figure {
+  margin: 0;
+}
 
 /* ---------------------------------------------------
    RESPONSIVE DESIGN
