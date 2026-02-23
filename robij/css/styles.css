@@ -205,16 +205,6 @@ blockquote {
    My Styles
 --------------------------------------------------- */
 
-.article-content {
-  padding: 0 1rem;
-}
-
-
-.article-content h3 {
-  background-color: #111;
-  color: #fff;
-  padding: 1rem;
-}
 
 img {
   width: 100%;
@@ -230,6 +220,101 @@ p, ul, ol, li, figcaption {
 
 figure {
   margin: 0;
+}
+
+.page-header{
+  background: #111 url("../images/background.jpg") center/cover no-repeat;
+  padding: 1rem; /* required */
+}
+
+.header-inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.logo{
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border: 2px solid #fff;
+  border-radius: 16px;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.main-nav{
+  display: flex;              /* required */
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.main-nav a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.main-nav a:hover{
+  text-decoration: underline;
+}
+
+.main-nav .nav-cta{
+  padding: 0.5rem 0.9rem;
+  border: 2px solid #f1d23f;
+  border-radius: 6px;
+}
+
+.main-nav .nav-cta:hover{
+  background: #f1d23f;
+  color: #111;
+  text-decoration: none;
+}
+
+.two-col{
+  display:flex;
+  gap:2rem;            /* space between columns */
+  align-items:flex-start;
+}
+
+.col-left{
+  flex:2;
+}
+
+.col-right{
+  flex:1;
+}
+
+.image-bar{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:1.5rem;
+  padding:1.5rem;
+  background:#f3f3f3;   /* contrasting background */
+  margin:2rem 0;
+  border-radius:8px;
+}
+
+.image-bar figure{
+  margin:0;             /* overrides your global figure margin */
+}
+
+.image-bar img{
+  width:100%;
+  max-width:none;       /* IMPORTANT: overrides your global max-width:30rem */
+  height:auto;
+  display:block;
+  border-radius:8px;
+}
+
+.image-bar figcaption{
+  margin-top:0.5rem;
+  font-size:0.75rem;
+  font-weight:300;
 }
 
 /* ---------------------------------------------------
@@ -267,4 +352,12 @@ figure {
   .comparison-table caption {
     font-size: 1.1rem;
   }
+}
+
+@media (max-width:768px){
+  .image-bar{ grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px){
+  .two-col{ flex-direction:column; }
 }
