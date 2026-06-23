@@ -1,8 +1,8 @@
 /* ---------------------------------------------------
    FONT IMPORTS
 --------------------------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght=200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght=0,100..900;1,100..900&display=swap');
 
 
 /* ---------------------------------------------------
@@ -31,7 +31,10 @@ body {
 h1, h2, h3 {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
-  color: #111;
+  /* Added requested background color, contrasting font color, and 16px padding expressed in rem */
+  background-color: #1f2937; 
+  color: #f9fafb;
+  padding: 1rem; 
 }
 
 h1 {
@@ -53,11 +56,25 @@ h3 {
 
 
 /* ---------------------------------------------------
-   PARAGRAPHS AND LISTS
+   CONTENT EXTRACTION / PADDING ADJUSTMENTS
+   Targets all main blog body structures EXCEPT the layout headings
+--------------------------------------------------- */
+p, ul, ol, blockquote, .comparison-table, footer.blog-footer, figure, img {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  padding-left: 1rem;  /* 16px split into rem units */
+  padding-right: 1rem; /* 16px split into rem units */
+}
+
+
+/* ---------------------------------------------------
+   PARAGRAPHS, LISTS, AND FIGCAPTIONS
 --------------------------------------------------- */
 p {
   margin-bottom: 1.2rem;
-  font-size: 1rem;
+  /* Added requested font properties (14px expressed in rem & weight 300) */
+  font-size: 0.875rem; 
+  font-weight: 300;
 }
 
 ul, ol {
@@ -67,7 +84,30 @@ ul, ol {
 
 li {
   margin-bottom: 0.5rem;
-  font-size: 1rem;
+  /* Added requested font properties (14px expressed in rem & weight 300) */
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+
+figcaption {
+  /* Added requested font properties (14px expressed in rem & weight 300) */
+  font-size: 0.875rem;
+  font-weight: 300;
+  margin-top: 0.5rem;
+  color: #666;
+}
+
+
+/* ---------------------------------------------------
+   RESPONSIVE IMAGES
+--------------------------------------------------- */
+img {
+  /* Added rules to make images perfectly responsive with a max width of 480px expressed in rem */
+  width: 100%;
+  max-width: 30rem;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
 }
 
 
@@ -97,6 +137,9 @@ li {
   margin: 0;
   font-size: 1.8rem;
   color: #1f1f1f;
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
 }
 
 
@@ -142,6 +185,8 @@ li {
   font-weight: 600;
   color: #222;
   font-family: 'Oswald', sans-serif;
+  background-color: transparent;
+  padding: 1rem;
 }
 
 .comparison-table tbody tr:last-child td {
