@@ -18,8 +18,7 @@ html {
 body {
   margin: 0 auto;
   padding: 2rem 1rem;
-  max-width: 960px;
-  background-color: #fff;
+  background-color: #f2f2f2;
   font-weight: 400;
   line-height: 1.6;
 }
@@ -29,11 +28,10 @@ body {
    HEADINGS
 --------------------------------------------------- */
 h1, h2, h3 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  /* Added requested background color, contrasting font color, and 16px padding expressed in rem */
-  background-color: #1f2937; 
-  color: #f9fafb;
+  background-color: #41603C; 
+  color: #f2f2f2;
   padding: 1rem; 
 }
 
@@ -72,7 +70,6 @@ p, ul, ol, blockquote, .comparison-table, footer.blog-footer, figure, img {
 --------------------------------------------------- */
 p {
   margin-bottom: 1.2rem;
-  /* Added requested font properties (14px expressed in rem & weight 300) */
   font-size: 0.875rem; 
   font-weight: 300;
 }
@@ -84,17 +81,18 @@ ul, ol {
 
 li {
   margin-bottom: 0.5rem;
-  /* Added requested font properties (14px expressed in rem & weight 300) */
   font-size: 0.875rem;
   font-weight: 300;
 }
 
 figcaption {
-  /* Added requested font properties (14px expressed in rem & weight 300) */
   font-size: 0.875rem;
   font-weight: 300;
   margin-top: 0.5rem;
-  color: #666;
+  color: 333333;
+  text-align: center;
+  margin-top: 0.2rem;
+  margin-bottom: 1rem;
 }
 
 
@@ -102,7 +100,6 @@ figcaption {
    RESPONSIVE IMAGES
 --------------------------------------------------- */
 img {
-  /* Added rules to make images perfectly responsive with a max width of 480px expressed in rem */
   width: 100%;
   max-width: 30rem;
   height: auto;
@@ -116,7 +113,7 @@ img {
 --------------------------------------------------- */
 .blog-post,
 .module-box {
-  background: #fff;
+  background: #f2f2f2;
   border: 1px solid #eee;
   padding: 2rem;
   margin-bottom: 2rem;
@@ -126,11 +123,11 @@ img {
 
 /* Optional heading box for modules */
 .module-heading {
-  border: 2px solid #f5c9e0;
+  border: 2px solid #f2f2f2;
   padding: 1rem 1.5rem;
   border-radius: 10px;
   margin-bottom: 2rem;
-  background-color: #fff7fb;
+  background-color: #f2f2f2;
 }
 
 .module-heading h1 {
@@ -282,4 +279,428 @@ blockquote {
   .comparison-table caption {
     font-size: 1.1rem;
   }
+}
+
+/* ---------------------------------------------------
+   !! MASS COPIED CODE - FUCK IT WE BALL !!
+--------------------------------------------------- */
+.page-header {
+  
+    background:#81837b url(../images/vineyards\ banner.jpg) center/cover no-repeat;
+    background-blend-mode: overlay;
+    color:#FFF;
+    padding:1rem;
+   
+  }
+  
+  .page-header > h1 {
+    
+    font-family: Roboto, sans-serif;
+    font-size:2rem;
+    text-align: center;
+    margin:0;
+    padding:1rem;
+    border:solid 2px #FFF;
+    border-top-left-radius:25px;
+    border-top-right-radius:15px;
+    border-bottom-right-radius:15px;
+    width:35%;
+  }
+  
+main {
+
+    margin:1rem;
+    display:grid;
+  
+  }
+
+  main p {
+  
+    font-size:.875rem;
+    font-weight:300;
+    margin-top:0;
+    
+  }
+
+  .article-header {
+
+    background-color:#C5D5D9;
+    padding:1rem;
+
+  }
+
+  .article-content {
+
+    padding:0 1rem;
+
+  }
+  
+  .page-footer {
+
+    padding:2rem 1rem;
+    font-size:.875rem;
+    background-color:#81A698;
+    color:#FFF;
+    text-align:center;
+  
+  }
+  
+  .page-footer a {
+  
+    color:#F1D23F;
+  
+  }
+  
+  h2 {
+  
+    font-family: Oswald, sans-serif;
+    font-size:2rem;
+    font-weight:500;
+    margin-top:0;
+    margin-bottom:0;
+  }
+  
+h3 {
+    font-size:1.5rem;
+    margin-bottom:.5rem;
+    font-weight:400;
+}
+
+ul, p {
+
+    font-size:.875rem;
+    font-weight:300;
+
+}
+
+main ol {
+
+    padding-left:1rem;
+    font-size:.875rem;
+    font-weight:300;
+
+}
+
+main ol > li {
+
+    padding-bottom:1rem;
+
+}
+
+.flex-list {
+
+    margin:1rem auto;
+    padding:1rem;
+    background-color:#81A698;
+    color:#F2f2f2;
+    border-radius:5px;
+
+}
+
+dt {
+
+    font-family:Oswald;
+    font-weight: 400;  
+    text-transform: uppercase;
+    margin-bottom:.25rem;
+    margin-left:0;
+
+}
+
+dd {
+
+    font-size:.875rem;
+    font-weight:300;
+    margin-bottom:.75rem;
+    margin-left:0;
+
+
+}
+
+img {
+
+    width:100%;
+    max-width:30rem;
+    border-radius:5px;
+
+}
+
+
+
+.image-bar {
+
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:2rem;
+    padding:2rem;
+    background-color:#F2f2f2;
+    border-radius:5px;
+
+}
+
+figure {
+
+    margin:0;
+    padding:0;
+    width:100%;
+
+}
+figcaption {
+
+    padding:.25rem auto;
+    font-size:.75rem;
+    font-weight:300;
+
+}
+  
+  /* Mobile Menu */
+  
+  .mobile-menu {
+  
+    overflow: hidden;
+    position: relative;
+  
+  }
+  
+  #main-nav {
+  
+    display: none;
+  
+  }
+  
+  #main-nav > a {
+  
+    text-decoration: none;
+    color:#FFF;
+    font-size:2.5vw;
+    font-weight:400;
+    padding:.75rem;
+    display:block; 
+    width:fit-content;
+  
+  }
+  
+  .mobile-menu a.icon {
+    
+    color:white;
+    display: block;
+    font-size:2rem;
+    position: absolute;
+    right: 1rem;
+    top: 1rem; 
+  
+  }
+  
+  #main-nav :nth-child(6) {
+  
+    padding:.75rem;
+    color:#FFF;
+    text-decoration: none;
+    font-weight:600;
+    border:2px solid #41603C;
+    border-radius:5px;
+  
+  }
+  
+  #main-nav a:hover {
+  
+    color:#c4c4c4;
+     
+   }
+   
+   #main-nav :nth-child(6):hover {
+     color:#333;
+     background-color:#81A698;
+   }
+
+   .archives {
+
+    margin:1rem;
+  
+  }
+  
+  .archives > header {
+  
+    border-bottom: 2px solid #333; 
+  
+  }
+  
+  .archives > nav {
+  
+    display:grid;
+    gap:1rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(1rem, 100%), 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(min(1rem, 100%), 1fr));
+    margin:1rem;
+  
+  }
+  
+  .archives > nav :nth-child(1) {
+  
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  
+  }
+  
+  .archives > nav :nth-child(2) {
+  
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    
+  }
+  
+  .archives > nav :nth-child(3) {
+  
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    
+  }
+  
+  .archives > nav :nth-child(4) {
+  
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    
+  }
+  
+  .archives > nav > h3 {
+  
+    margin-bottom:0;
+    margin-top:0;
+   
+  
+  }
+  
+  .archives > nav > ol {
+  
+    list-style-type: none;
+    font-size:.625em;
+    margin-left:0;
+    padding-left:0;
+    margin-top:0;
+  
+  }
+
+  @media screen and (min-width:1024px) {
+    .page-container {
+
+        display:grid;
+        gap:1rem;
+        grid-template-columns: repeat(auto-fit, minmax(min(1rem, 100%), 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(min(1rem, 100%), 1fr));
+      
+      }
+    
+    .page-header {
+    
+      display:grid;
+      grid:subgrid/subgrid;
+      grid-column:1/13;
+      grid-row: 1;
+     
+    }
+    
+    .page-header > h1 {
+    
+      grid-column: 2 / 4;
+      grid-row: 2 / 3;
+      font-size:2rem;
+      width:100%;
+    
+    }
+    
+    .mobile-menu a.icon {
+    
+      display:none;
+    
+    }
+    
+    #main-nav {
+    
+      grid-column: 4 / 12;
+      grid-row: 2 / 3;
+      display:flex;
+      justify-content: space-evenly;
+      align-items:center;
+    
+    }
+    
+    #main-nav a {
+    
+      font-size:1.25rem;
+      font-weight:600;
+      font-size:1.25rem;
+    
+    }
+
+    .flex-list {
+
+    display:flex;
+    gap:1rem;
+    margin:1rem auto;
+    width:fit-content;
+
+}
+
+  dl {
+
+
+    width:90%;
+    padding:1rem;
+  
+
+  }
+
+  .image-bar {
+
+    grid-template-columns: repeat(3, 1fr);
+
+  }
+
+  .archives {
+ 
+    margin:0;
+    display:grid;
+    grid:subgrid/subgrid;
+    grid-column: 11 / 13;
+    grid-row: 6 / 12;
+  
+  }
+  
+  .archives > header {
+  
+    grid-column: 1 / 2;
+    border:none;
+  
+  }
+  
+  .archives > h2 {
+  
+    font-weight:400;
+  
+  }
+  
+  .archives > nav {
+  
+    display:block;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    margin:0;
+  
+  }
+  
+  .archives > nav > h3 {
+  
+  
+    margin-bottom:.5rem;
+  
+  }
+  
+  main {
+
+    margin:2rem 0;
+    grid-column: 2 / 12;
+    grid-row: 4 / 5;
+  }
+
 }

@@ -6,13 +6,23 @@
       <link href="css/styles.css" rel="stylesheet">
       <title>Noah Slade | Portfolio</title>
    </head>
-   <body>
+   <body class="page-container">
 <!-- Page Header  -->
-      <header class="page-header">
-         <h1>Portfolio</h1>
+      <header class="page-header mobile-menu">
+         <h1>Design Blog</h1>
+            <nav id="main-nav">
+               <a href="#">Home</a>
+               <a href="#">Articles</a>
+               <a href="#">Case Studies</a>
+               <a href="#">UX Laws</a>
+               <a href="#">Ethics</a>
+               <a href="#">About</a>
+            </nav>  
       </header>
+
 <!-- Main Content Area  -->
       <main>
+
          <!-- Module 1.1 Blog Post Starts Here-->
          <article>
             <header class="article-header">
@@ -134,8 +144,15 @@
             <h3>How Memory, Habits, and Complexity Shape User Experience</h3>
             <p>We’ve all dealt with apps that feel like a chore to navigate. This frustration rarely happens because of just bad code or bad graphics. It can happen because the system forces us to fight our biological wiring, draining our mental energy. True usability means designing digital environments with how our brains naturally process data, form habits, and apply mental shortcuts. Because human working memory is limited and our attention is incredibly selective, filtering out our visual surroundings based on our immediate goals. Designers must do the heavy lifting early on so software treats the human mind as a delicate asset rather than an infinite storage bin.</p>
             <h3>Intro to Memory, Habits, and Mental Models</h3>
-            <img src="images/working memory model.png" alt="Working Memory Diagram" width="960" height="960">
-            <p>"The Working Memory Model" by UX Stalin is licensed under CC BY-SA 4.0</p>
+            
+            <figure>
+               <img src="images/working memory model.png" alt="Working Memory Diagram" width="960" height="960">
+               <figcaption>
+                  "The Working Memory Model" by UX Stalin is licensed under
+                  <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license">CC BY-SA 4.0</a>
+               </figcaption>
+            </figure>
+            
             <p>Our active working memory isn't a static storage container either; it is the combined focus of our attention at any given moment. Pretty cool actually. Historically, early interface guidelines suggested that humans could keep roughly seven pieces of information in our immediate awareness. Modern empirical studies show that working memory capacity is dependent on additional variables, but closer to only three to five distinct elements at a time (Cowan, 2012). This limited capacity means our attention is highly focused and selective, filtering out most of our visual surroundings based entirely on our immediate goals.</p>
             <p>Because immediate awareness hits a ceiling so quickly, our brains rely on mental shortcuts called mental models. These are internal collections of expectations built from repetitive past experiences. When a person opens a new website, they bring an internal roadmap forged by sometimes thousands of hours spent navigating other software platforms. They expect search fields to sit near the top, settings to reside within a gear symbol, and confirmation buttons to follow uniform arrangements.</p>
             <p>When software respects these expectations, interaction occurs with minimal mental drag. Users fall into comfortable, automatic habits, freeing up working memory to focus on their primary task instead of solving puzzles just to figure out how the layout operates. However, when an interface unexpectedly breaks these patterns, like flipping the usual left-right order of confirmation/cancellation or Yes/No buttons, it disrupts this natural experience. The user’s brain drops out of its faster, automatic processing mode and is forced into slow, conscious problem-solving mode. This sudden shift also causes a spike in mental fatigue and increases mistakes.</p>
@@ -146,13 +163,27 @@
             <p>When an interface ignores these cognitive constraints, trouble shows up as an increase in cognitive load. One major design flaw occurs when teams misunderstand the core difference between recognition and recall. Recognition happens when a person sees a visual element or menu choice that matches an experience, instantly reviving a neural path with minimal effort. Recall, on the other hand, requires the brain to fish for information or commands out of long-term memory without immediate visual help, a process that is slower and error-prone.</p>
             <p>Modern graphical interfaces solved this issue by shifting to a “see-and-choose” model, displaying clearer options and icons that allow human recognition to do the work. Unfortunately, many modern applications still slip into recall-heavy traps, such as during security registration sequences. When an application forces users to select from a set list of preset security questions, like asking for the city they were born in or the name of their first pet, it creates a memory burden. Sometimes the way these questions are phrased individuals do not have a single, perfect answer to them, forcing users to write down their responses or risk account lockouts when they fail to recall the exact text string years later.</p>
             <p>Another source of unnecessary mental load stems from a failure to recognize that reading is a unique, complex human skill. While human brains are biologically hardwired to acquire spoken language naturally, our visual processing systems are systematically trained during childhood to decode written text. When a person reads, their eyes execute rapid jumps called saccades, pausing briefly on central words via eye fixations to parse shapes and letters. Our eyes also process this text accurately only within the small foveal spotlight at the center of our gaze.</p>
-            <img src="images/reading is hard.jpg" alt="Stock Photo of Woman with her Head in a Book" width="960" height="640">
-            <p>"A Hard Read" by Moise Nicu is licensed under CC BY 2.0</p>
+            
+            <figure>
+               <img src="images/reading is hard.jpg" alt="Stock Photo of Woman with her Head in a Book" width="960" height="640">
+               <figcaption>
+                  "A Hard Read" by Moise Nicu is licensed under
+                  <a href="https://creativecommons.org/licenses/by/2.0/" rel="license">CC BY 2.0</a>
+               </figcaption>
+            </figure>
+            
             <p>Designers drop users out of fast, automatic reading modes when they implement poor layout properties, such as printing body text in all capital letters, which does slow reading speed due to a lack of visual practice. Centering long, multi-line paragraphs of body text acts as a massive speed bump. Because every centered line starts at a different horizontal coordinate, the brain cannot accurately predict where the next line begins, forcing the user to consciously adjust their gaze at the start of every single row.</p>
             <h3>More on Interface Complexity and Tesler’s Law</h3>
             <p>To build digital environments that prevent these issues, engineering teams lean on foundational behavioral laws like Tesler’s Law. This law states that every system has a baseline of inherent complexity that cannot be designed away. In usable systems, engineers do the heavy lifting behind the scenes, writing background development architecture to absorb this difficulty and spare the user from unnecessary steps. However, designers must be careful not to over-simplify the interface to the point of complete abstraction, where the meaning of icons is entirely lost.</p>
-            <img src="images/teslers law.jpg" alt="Picture of Larry Tesler" width="960" height="640">
-            <p>"London (35 of 87)" by Betsy Weber is licensed under CC BY 2.0</p>
+            
+            <figure>
+               <img src="images/teslers law.jpg" alt="Picture of Larry Tesler" width="960" height="640">
+               <figcaption>
+                  "London (35 of 87)" by Betsy Weber is licensed under
+                  <a href="https://creativecommons.org/licenses/by/2.0/" rel="license">CC BY 2.0</a>
+               </figcaption>
+            </figure>
+            
             <p>This balancing act ties directly to a major idea from cognitive text research: human perception is deeply filtered by our active, immediate goals. When navigating an interface, people do not read screens carefully like when they are reading an open novel. They aggressively scan layout components looking for labels that match their active objective (Vdovenko, 2023). This strategy means individuals follow a strict information pattern, interpreting interface labels at face value and hunting for what they are looking for.</p>
             <p>The second principle that shapes layout usability is our reliance on external memory aids to keep track of our actions. Because human working memory is highly volatile, our attention is pulled away from past details soon after we move to a new task. Once a user accomplishes their primary goal, the details of that workflow quickly drop out of their immediate awareness. This vulnerability often leads to closure slips, where users finish a main action but completely forget secondary cleanup steps, such as leaving an open banking portal logged in on a public device. More and more systems counter this vulnerability by turning the interface into an external memory board, using visual changes to indicate completed phases, and using automated background triggers to sign out open accounts or auto-save unsaved files.</p>
             <h3>Structuring the Collaborative Engineering Workflow</h3>
@@ -178,8 +209,15 @@
                <h2>Module 3.1 Blog Post</h2>
             </header>
             <h3>Brain Thing One and Brain Thing Two</h3>
-            <img src="images/parts of the brain.jpg" alt="Goofy Diagram of Parts of the Brain" width="960" height="1420">
-            <p>"Parts of the Brain Cartoon" by Cachecope Bell is licensed under CC BY 2.0</p>
+
+            <figure>
+               <img src="images/parts of the brain.jpg" alt="Goofy Diagram of Parts of the Brain" width="960" height="1420">
+               <figcaption>
+                  "Parts of the Brain Cartoon" by Cachecope Bell is licensed under
+                  <a href="https://creativecommons.org/licenses/by/2.0/" rel="license">CC BY 2.0</a>
+               </figcaption>
+            </figure>
+            
             <p>Based off of anatomic brain structures cognitive scientists often divide human thinking into two modes: System One and System Two (Johnson, 2021).</p>
             <o>
                <li><bold>System One (On Autopilot):</bold> This mode runs automatically, quickly, and with almost zero conscious effort. It is what you use when you brush your teeth, drive down an empty, familiar road, or read a word written in your native language. It relies entirely on habits and past patterns.</li>
@@ -189,14 +227,28 @@
             <p>This is another way of looking at the same fundamentals of UX that we have already been repeating, but this time with a clearer anatomical connection. Biologically, System One is heavily rooted in what scientists refer to as the evolutionary "old brain," often colloquially termed the lizard brain, as well as deeply embedded networks across the newer brain regions. The structures that comprise this old brain include the primary brain stem (which contains the medulla and pons responsible for survival reflexes like breathing), the cerebellum (which automates motor movements), and subcortical regions like the basal ganglia, thalamus, and hypothalamus. Because these structures evolved millions of years ago to keep us alive, they react to patterns, habits, and visual changes.</p>
             <p>System Two is housed within the evolutionary "new brain," specifically utilizing the cerebral cortex (the folded outer layer of the cerebrum) and focusing its heaviest processing in the frontal cortex. The command center for this conscious thought is the prefrontal cortex, the very front part of the brain that came into existence quite recently in evolutionary terms. This area is where our consciousness, self-awareness, and identity reside.</p>
             <h3>Learnin’ and Habit Formin’</h3>
-            <img src="images/habit loop model.png" alt="Circular Loop Diagram of Habit Formation: 1. Cue, 2. Routine, 3. Reward" width="960" height="679">
-            <p>"The Habit Loop" by MoniqqueK is licensed under CC BY-SA 4.0</p>
+
+            <figure>
+               <img src="images/habit loop model.png" alt="Circular Loop Diagram of Habit Formation: 1. Cue, 2. Routine, 3. Reward" width="960" height="679">
+               <figcaption>
+                  "The Habit Loop" by MoniqqueK is licensed under
+                  <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license">CC BY-SA 4.0</a>
+               </figcaption>
+            </figure>
+
             <p>When we use an application frequently, the messy, unorganized networks of neurons in our brain begin to sync up. They essentially train themselves to fire in a predictable, synchronized loop. This internal rewiring is what turns an initially clunky process into an automatic habit. However, learning and habit formation is a slow process. Cognitive research shows that turning a conscious action into an automatic habit can take anywhere from 18 to 254 days (Johnson, 2021, pp. 178-179).</p>
             <p>Because of this time consideration, software structures have to adapt directly to how often people will actually use them. If an application is only opened once every few months, such as an automated teller machine (ATM) or a flight-booking website, the layout should assume the user has forgotten the procedural details of using it. It needs to be simple, guided, and focused on the user's main goals. On the other hand, tools used daily, like word processors or mobile texting apps, can favor deep efficiency over constant handholding because regular use builds quick familiarity. Furthermore, a layout must encourage precision. If a system allows for sloppy, absentminded actions without guiding structural guardrails, users simply train their neural circuits to repeat those mistakes, lengthening their struggle with the technology.</p>
             <h3>Three Laws of UX</h3>
             <p>To design interfaces that cooperate beautifully with our minds, digital architects rely on verified psychological frameworks. Three more of the most prominent guidelines are found in the principles of user experience design (Yablonski, 2020).</p>
-            <img src="images/UX circle.jpg" alt="Diagram of UX Experience with 'Look,' 'Feel,' and 'Usability' Sections." width="960" height="993">
-            <p>"User Experience Consists of Usability, Look and Feel" by Daniel Würstl is licensed under CC BY-SA 3.0</p>
+            
+            <figure>
+               <img src="images/UX circle.jpg" alt="Diagram of UX Experience with 'Look,' 'Feel,' and 'Usability' Sections." width="960" height="993">
+               <figcaption>
+                  "User Experience Consists of Usability, Look and Feel" by Daniel Würstl is licensed under
+                  <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en" rel="license">CC BY-SA 3.0</a>
+               </figcaption>
+            </figure>
+
             <h3>The Aesthetic–Usability Effect</h3>
             <p>This law reveals a fascinating quirk in human nature: people automatically assume that highly attractive designs are much easier to use than unattractive ones (Yablonski, 2020). When an interface looks clean, professional, and visually balanced, users experience a positive emotional reaction. This emotional outlook makes them far more patient and forgiving of minor system glitches or confusing steps. If a website is beautiful, we blame ourselves when we make a mistake; if a website is ugly, we blame the system. Visual beauty is not just luxury; it serves an important functional role by lowering user anxiety and increasing overall satisfaction.</p>
             <p>However, an empirical laboratory study by Alexandre Tuch and his research team demonstrated that under certain conditions, a severe lack of usability will actually destroy a user's perception of a design's beauty. When users face high friction or a poorly structured layout while trying to accomplish a task, their resulting frustration serves as an emotional mediator that actively tanks their post-use ratings of the system's aesthetics. Ultimately, a beautiful surface layout cannot indefinitely shield a broken interaction model. When an application is highly frustrating to navigate, our brains eventually stop seeing it as beautiful. So it goes both ways, beauty shields poor design, and poor design eventually erodes our perception of that beauty.</p>
@@ -224,6 +276,110 @@
           </article>
 
          <!-- Module 3.2 Blog Post Starts here -->
+          <article>
+            <header class="article-header">
+               <h2>Module 3.2 Blog Post</h2>
+            </header>
+
+            <div class="image-bar">
+               <figure>
+                  <img src="images/boats on a river.jpg" alt="Boats on a River" width="870" height="1160">
+                  <figcaption>Photo by <a href="https://unsplash.com/@yoavaziz?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Yoav Aziz</a> on <a href="https://unsplash.com/photos/boats-on-a-river-with-lush-green-mountains-in-background-OScaBPLTciI">Unsplash</a></figcaption>
+               </figure>
+               <figure>
+                  <img src="images/woman by river.jpg" alt="Woman in Dress and Hat by River" width="870" height="1160">
+                  <figcaption>Photo by <a href="https://unsplash.com/@yoavaziz?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Yoav Aziz</a> on <a href="https://unsplash.com/photos/woman-in-white-dress-and-conical-hat-by-river-HLm0C_AoAAE">Unsplash</a></figcaption>
+               </figure>
+               <figure>
+                  <img src="images/person in boat.jpg" alt="Person in Boat on River" width="870" height="1160">
+                  <figcaption>Photo by <a href="https://unsplash.com/@yoavaziz?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Yoav Aziz</a> on <a href="https://unsplash.com/photos/person-rows-boat-on-calm-lake-with-mountains-K6_8ymk5gQc">Unsplash</a></figcaption>
+               </figure>
+            </div>
+
+            <h3>The Rhythm of Digital Design</h3>
+            <p>The relationship between a human being and a digital interface is kind of conversational. Like any human dialogue, the quality of this interaction relies heavily on pacing, attentiveness, and mutual comprehension. When a system responds slowly, drops a conversational thread, or misinterprets an action, the convo breaks down. In digital environments, these failures translate to bad workflows, cognitive overload, and maybe even deep-seated irritation. To prevent these breakdowns, digital environments should be structured around the biological and psychological capabilities of the human mind. This means understanding how the brain handles hand-eye coordination, processes deadlines, and encodes emotional memories. By looking at software design through the combined lenses of cognitive science and user experience frameworks, design can still be creative and also center on human biology.</p>
+            
+            <div class="flex-list">
+               <dl>
+                  <dt>4 Key Steps to Make Pho Broth</dt>
+                  <dd>
+                     <ol>
+                        <li>Pre-boiling the beef bones and meat</li>
+                        <li>Charring the ginger and onions</li>
+                        <li>Toasting the spices</li>
+                        <li>Adding fish sauce</li>
+                     </ol>
+                  </dd>
+               </dl>
+            <dl>
+               <dt>Simmered Slow</dt>
+               <dd>
+                  <p>A whisper of anise, a ginger-spiced glow,</p>
+                  <p>A rich amber broth simmered patient and slow.</p>
+                  <p>With a squeeze of fresh lime and a handful of green,</p>
+                  <p>It’s the warmest embrace that a bowl's ever seen.</p>
+               </dd>
+            </dl>
+            </div>
+            
+            <h3>Hand-Eye Coordination and Screen Physicality</h3>
+            <p>When we move a finger across a smartphone screen or drag a mouse across a desktop, we are executing complex motor programs. Cognitive science demonstrates that these movements are not random; they follow predictable mathematical relationships based on target geometry. This predictability is important as well to human-computer interaction, as it allows digital environments to align with physical realities.</p>
+            <p>Every time a user aims for a button, a checkbox, or a navigation link, the speed and accuracy of that movement is governed by a foundational concept known as Fitts' Law. This law establishes that the time required to move a pointer to a target depends on two variables: the distance to that target and the width of the target itself (Johnson, 2021). When targets are itty bitty or buried far away from the user’s current pointer position, the mental and physical effort required to hit them escalates. The motor system should execute micro-corrections to avoid missing. To accommodate this biological constraint, software architects should build generous tap targets. This means ensuring that the actual, programmable hit box is at least as large as its visible icon (Johnson, 2021). If an application forces an individual to pause, squint, and meticulously reposition their thumb just to save a draft or close a window, it introduces physical friction that derails the psychological flow of the task.</p>
+            
+            <figure>
+               <img src="images/fitts law.png" alt="Fitts' Law Mouse Pointer and Object" width="960" height="248">
+               <figcaption>
+                  "Fitts Law" by Zl Pebbler is licensed under
+                  <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="license">CC BY-SA 3.0</a>
+               </figcaption>
+            </figure>
+            
+            <p>While Fitts’ Law handles linear pointing movements, the Steering Law addresses movements within narrow paths, like cascading drop-down navigation menus (Johnson, 2021). This law states that the time needed to navigate a path depends on both its total length and its width. If a drop-down menu requires a desktop user to move their mouse horizontally through a thin line to highlight a sub-category, the layout becomes very error-prone. A fractional tremor can cause the cursor to clip the boundary, causing the entire menu structure to collapse. This forces the individual to begin the sequence all over again. To minimize these motor slips, interactive layouts should expand path corridors or build in temporary timing buffers. These buffers allow the cursor to drift outside the lines for a fraction of a second without resetting the display, matching the natural variance of human motor skills.</p>
+            <h3>System Responsiveness and the Sensation of Speed</h3>
+            <p>Human beings have an internal clock forged by millions of years of evolutionary survival (metal as hell I know). Our perceptual networks expect cause-and-effect relationships within narrow windows of time. If a system delays its acknowledgment of an action, our cognitive processing treats the event as basically a disruption. This breaks our train of thought and creates a sense of system instability.</p>
+            <p>In user experience architecture, the relationship between operational pacing and user satisfaction is captured by the Doherty Threshold. This principle states that a digital interface provides an ideal experience when the interaction between the human and the computer occurs at a pace faster than 400 milliseconds (Yablonski, 2020). When an application reacts within this window, it coordinates with the human brain’s short-term working memory capacity. The individual doesn't have to spend mental energy wondering if the machine registered their interaction. If system performance lags beyond this threshold, the natural rhythm of thought breaks. The conscious mind drifts, and attention fragments. This forces the individual to spend extra energy re-centering themselves on their goals once the system finally catches up.</p>
+            <p>To bridge the gap between computer processing speeds and human perception, cognitive systems should follow real-time deadlines. Although our brains process many overlapping sensory streams, cognitive research shows our interaction requirements in a few main milestones. Tactile perception requires an acknowledgment, such as a subtle color shift, a click sound, or a haptic vibration, within 1 to 10 milliseconds for a control to feel responsive (Johnson, 2021). For visual continuity, animations or panel transitions should occur within 100 milliseconds to be perceived as fluid motion rather than a sequence of laggy frames. Finally, one second marks the limit of uninterrupted focus (something something kids’ attention spans these days). Within this boundary, a user feels like they are steering the software application. If a process takes longer than a second to load a busy indicator or loading state should appear to keep the user locked in (Johnson, 2021).</p>
+            
+            <figure>
+               <img src="images/n64 rumble pak.jpg" alt="N64 Console Controller with Haptic Vibration Rumble Pak" width="960" height="738">
+               <figcaption>
+                  "N64 Rumble Pak" by Evan Amos, 26 January 2011.
+                  <a href="https://commons.wikimedia.org/wiki/File:N64-Rumble-Pak.jpg" rel="license">Public Domain.</a>
+               </figcaption>
+            </figure>
+            
+            <p>It is important for software engineers to recognize that responsiveness is a psychological metric, not just a hardware benchmark (although I do love hardware benchmarks). A system can be technically slow under the hood while maintaining an excellent user perception of speed. Conversely, a high-performance system can feel clunky if it manages feedback poorly. Designers create the illusion of speed by utilizing progressive loading patterns and prioritizing essential data blocks (Johnson, 2021). For example, when a user opens a content-heavy media platform, the layout shouldn't present a blank wall while waiting for every image asset to load. Instead, it should display a skeleton layout composed of neutral, textless boxes that map to the incoming data structure first, then data-heavy images. By displaying this visual blueprint, the system satisfies the user's desire for immediate feedback. The mind focuses on reading the initial text strings while the heavier media files populate quietly in the background (sometimes off-screen).</p>
+            <h3>Retrospective Evaluating, Cognitive Footprints, More Brain Stuff</h3>
+            <p>How a person feels during an interaction does not always match how they remember it afterward. The human brain does not audit past events by calculating an average of every single second spent inside an application. Instead, memory is selective, compressing lengthy sequences into compact emotional snapshots.</p>
+            <p>Our long-term memory records stories based on a cognitive shorthand known as the Peak-End Rule. This psychological principle states that when people evaluate a past experience, they base their final judgment almost entirely on two specific landmarks: the most emotionally intense point of the event and the final moments of the sequence (Yablonski, 2020). The rest of the chronological details fade into the mist. For interface designers, this means that even a 20-minute checkout process can be remembered as satisfying if the final confirmation screen features an elegant, celebratory animation and a clear confirmation code (is Canvas LMS manipulating me with that party confetti when I submit work?). Conversely, a beautiful and lightning-fast banking app can be remembered as a total disaster if the user encounters a cryptic, unhelpful error message right they try to transfer funds. The frustration of that single roadblock becomes the primary emotional moment for the whole application and coloring future interactions.</p>
+            
+            <figure>
+               <img src="images/peak end rule.png" alt="Graph of the Peak End Rule" width="960" height="569">
+               <figcaption>
+                  "The Peak-End Law" by Y.shi is licensed under
+                  <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license">CC BY-SA 4.0</a>
+               </figcaption>
+            </figure>
+
+            <p>Designers often pour massive resources into the onboarding experience while letting onboarding success degrade into a neglected cancellation or exit funnel (Do et al., 2008). Meaning if a platform makes it intentionally confusing to close an account, log out, or export data, it creates a negative final point. I have ran into this end feeling of frustration when trying to find different companies’ pages for requesting my data and account be deleted (curse you Apple). Even if the service was highly functional for months, that final bitter taste will rewrite the user's retrospective evaluation. This also increases the likelihood that they will share negative reviews and reject the brand in the future.</p>
+            <h3>Designing Safeguards to Mitigate Errors</h3>
+            <p>To err is human. Rather than scolding users for making mistakes, systems should try to accept human fallibility as a given. Interfaces should be built with protective guardrails that anticipate, minimize, and gracefully resolve human errors.</p>
+            <p>To build decent technical guardrails, designers should again understand the cognitive origins of user errors, which are split into “mistakes” and “slips.” Mistakes occur when a user consciously selects an incorrect path because they have an incomplete or flawed understanding of how the system works (Johnson, 2021). For instance, a user might select an improper tax form because the technical jargon on a page is confusing. Slips, on the other hand, happen when the user’s goal is correct, but their automatic execution fails (Johnson, 2021). A slip occurs when an individual absentmindedly hits the wrong key or accidentally taps a button because it was placed too close to another.</p>
+            <p>Because slips occur most when our focus… slips, interfaces should deploy structural boundaries to handle these moments. Destructive actions, like permanently deleting a file or folder, should never be accessible via a single, unchecked click. A well-designed interface builds friction for risky paths by setting dangerous options away from normal navigation (Johnson, 2021). Furthermore, the single most effective safety net for human slips is a universally accessible, multi-step undo command.</p>
+            <h3>Intentional Friction and the Responsibility of Power</h3>
+            <p>As digital tools grow more sophisticated, all of these timing patterns, layout hierarchies, and psychological models we use to guide users can also be turned into tools of manipulation (gasp). Interface design is never completely neutral. Every color choice, notification delay, and button placement actively nudges human behavior down a specific path.</p>
+            <p>When UX strategies are weaponized to trick individuals into making choices that serve a business's bottom line rather than the user's goals, they cross into the territory of “dark patterns” (Gray et al., 2018). An amusing, but terrible term. These manipulative strategies often exploit that same biological reliance on automatic processing. For example, a platform might use misdirection by highlighting an expensive auto-renew subscription button in a bright color, while hiding the free, basic tier inside somewhere else that blends into the background. This intentionally hurts our pattern recognition. It tricks our fast autopilot system into making an expensive mistake before our slow, conscious mind can step in and analyze the screen.</p>
+            <p>However, friction itself is not inherently unethical. The morality of a pattern depends on its structural intent. Manipulative friction hides choices to exploit user habits, whereas ethical friction deliberately slows the user down to protect them from making an accidental, high-risk decision. For example, when an individual attempts to delete a piece of sweet loot in a video game, forcing them to physically type out the name of the item into a verification field is a form of intentional (and helpful) friction. This step deliberately breaks their automatic muscle memory. It yanks them out of an unthinking loop and gives their conscious mind the time it needs to confirm the action (hopefully).</p>
+            <p>Interface logic exercises genuine power over how people and communities access resources, process news, and build social lives. Designers are the hidden gatekeepers of digital experiences. Because of this structural influence, design practices should treat the user’s time, attention, and cognitive bandwidth as a scarce resource that they are blessed to share (Yablonski, 2020). Building ethically means rejecting patterns that keep users in loops of endless scrolling (yikes) or weaponize notifications to exploit cognitive vulnerabilities. Instead, design should focus on clarity, digital wellness, and transparency. Interfaces should help individuals to accomplish their goals quickly, protect their security, and exit the digital space with their peace of mind intact.</p>
+            <footer class="article-footer">
+               <h3>Sources:</h3>
+               <ol>
+                  <li>Do, A. M., Rupert, A. V., & Wolford, G. (2008). Evaluations of pleasurable experiences: The peak-end rule. <em>Psychonomic bulletin & review, 15</em>(1), 96-98.</li>
+                  <li>Gray, C. M., Kou, Y., Battles, B., Hoggatt, J., & Toombs, A. L. (2018). The dark (patterns) side of UX design. In <em>Proceedings of the 2018 CHI conference on human factors in computing systems</em> (pp. 1-14).</li>
+                  <li>Johnson, J. (2021). <em>Designing with the mind in mind: Simple guide to understanding user interface design guidelines</em> (3rd ed.). Morgan Kaufmann / Elsevier.</li>
+                  <li>Yablonski, J. (2020). <em>Laws of UX: Using psychology to design better products and services.</em> O'Reilly Media.</li>
+               </ol>
+          </article>
 
       </main>
 <!-- Page Footer  -->
