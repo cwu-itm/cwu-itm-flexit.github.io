@@ -26,6 +26,65 @@ body {
 
 
 /* ---------------------------------------------------
+   SITE HEADER (background image)
+--------------------------------------------------- */
+.site-header {
+  background-image: url(''); /* add your header image URL here */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 1rem; /* 16px */
+}
+
+
+/* ---------------------------------------------------
+   NAVIGATION (flexbox)
+--------------------------------------------------- */
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #111;
+  padding: 1rem 1.5rem;
+}
+
+.site-nav .logo {
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-right: 1.5rem;
+}
+
+.site-nav .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav .nav-links a {
+  color: #f5c9e0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.site-nav .nav-links a:hover,
+.site-nav .nav-links a:focus {
+  background-color: #fff;
+  color: #111;
+}
+
+
+/* ---------------------------------------------------
    HEADINGS
 --------------------------------------------------- */
 h1, h2, h3 {
@@ -102,6 +161,43 @@ img {
   height: auto;
   display: block;
   margin: 0 auto 1rem;
+}
+
+
+/* ---------------------------------------------------
+   TWO-COLUMN CONTENT LAYOUT (flexbox)
+--------------------------------------------------- */
+.content-columns {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.content-columns .column {
+  flex: 1;
+  min-width: 0; /* prevents flex items from overflowing on long words/images */
+}
+
+
+/* ---------------------------------------------------
+   IMAGE BAR (grid)
+--------------------------------------------------- */
+.image-bar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  background-color: #fff7fb;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+}
+
+.image-bar img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
 }
 
 
@@ -263,6 +359,15 @@ blockquote {
   .comparison-table td {
     padding: 0.75rem;
   }
+
+  .content-columns {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .image-bar {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -272,5 +377,19 @@ blockquote {
 
   .comparison-table caption {
     font-size: 1.1rem;
+  }
+
+  .site-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .site-nav .nav-links {
+    flex-wrap: wrap;
+  }
+
+  .image-bar {
+    grid-template-columns: 1fr;
   }
 }
