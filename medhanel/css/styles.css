@@ -31,7 +31,9 @@ body {
 h1, h2, h3 {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
-  color: #111;
+  color: #fff;
+  background-color: #111;
+  padding: 1rem;
 }
 
 h1 {
@@ -53,11 +55,24 @@ h3 {
 
 
 /* ---------------------------------------------------
+   BLOG CONTENT SPACING (excludes headings)
+--------------------------------------------------- */
+.blog-post > *:not(h1):not(h2):not(h3),
+.module-box > *:not(h1):not(h2):not(h3) {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+/* ---------------------------------------------------
    PARAGRAPHS AND LISTS
 --------------------------------------------------- */
 p {
   margin-bottom: 1.2rem;
-  font-size: 1rem;
+  font-size: 0.875rem;
+  font-weight: 300;
 }
 
 ul, ol {
@@ -67,7 +82,26 @@ ul, ol {
 
 li {
   margin-bottom: 0.5rem;
-  font-size: 1rem;
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+
+figcaption {
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #555;
+}
+
+
+/* ---------------------------------------------------
+   RESPONSIVE IMAGES
+--------------------------------------------------- */
+img {
+  width: 100%;
+  max-width: 30rem; /* 480px */
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem;
 }
 
 
@@ -95,8 +129,10 @@ li {
 
 .module-heading h1 {
   margin: 0;
+  padding: 0;
   font-size: 1.8rem;
   color: #1f1f1f;
+  background-color: transparent;
 }
 
 
