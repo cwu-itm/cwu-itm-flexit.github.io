@@ -1,395 +1,330 @@
 /* ---------------------------------------------------
    FONT IMPORTS
 --------------------------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap");
 
+/* ---------------------------------------------------
+   COLOR SCHEME
+--------------------------------------------------- */
+:root {
+	--color-dark: #212529;
+	--color-dark-soft: #495057;
+	--color-white: #ffffff;
+	--color-gray-light: #f1f3f5;
+	--color-gray-border: #dee2e6;
+	--color-red: #c1121f;
+	--color-red-dark: #8f0d17;
+}
 
 /* ---------------------------------------------------
    GLOBAL BASE STYLES
 --------------------------------------------------- */
 html {
-  font-size: 16px;
-  font-family: 'Roboto', sans-serif;
-  scroll-behavior: smooth;
-  color: #333;
+	font-size: 16px;
+	font-family: "Inter", sans-serif;
+	scroll-behavior: smooth;
+	color: var(--color-dark);
 }
 
 body {
-  margin: 0 auto;
-  padding: 2rem 1rem;
-  max-width: 960px;
-  background-color: #fff;
-  font-weight: 400;
-  line-height: 1.6;
+	margin: 0;
+	padding: 0;
+	background-color: var(--color-white);
+	font-weight: 400;
+	line-height: 1.6;
 }
 
+a {
+	color: var(--color-red);
+}
+
+a:hover,
+a:focus {
+	color: var(--color-red-dark);
+}
 
 /* ---------------------------------------------------
-   SITE HEADER (background image)
+   PAGE HEADER (STICKY)
 --------------------------------------------------- */
-.site-header {
-  background-image: url(''); /* add your header image URL here */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 1rem; /* 16px */
+.page-header {
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 0.75rem 1.5rem;
+	background-color: var(--color-dark);
+	border-bottom: 3px solid var(--color-red);
+	padding: 1rem 1.5rem;
 }
 
+.page-header h1 {
+	margin: 0;
+	font-size: 1.8rem;
+	text-align: left;
+	color: var(--color-white);
+}
+
+.page-header h1 a {
+	color: inherit;
+	text-decoration: none;
+}
 
 /* ---------------------------------------------------
-   NAVIGATION (flexbox)
+   SITE NAVIGATION (MODULES)
 --------------------------------------------------- */
-.site-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  background-color: #111;
-  padding: 1rem 1.5rem;
+.site-nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem 1.25rem;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
-.site-nav .logo {
-  color: #fff;
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.6rem;
-  font-weight: 700;
-  margin-right: 1.5rem;
+.site-nav a {
+	color: var(--color-white);
+	text-decoration: none;
+	font-size: 0.95rem;
+	font-weight: 500;
+	padding-bottom: 2px;
+	border-bottom: 2px solid transparent;
 }
 
-.site-nav .nav-links {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.site-nav a:hover,
+.site-nav a:focus,
+.site-nav a[aria-current="page"] {
+	border-bottom-color: var(--color-red);
 }
 
-.site-nav .nav-links a {
-  color: #f5c9e0;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  text-decoration: none;
-  padding: 0.5rem 0.75rem;
-  border-radius: 4px;
-  transition: background-color 0.2s ease, color 0.2s ease;
+/* ---------------------------------------------------
+   PAGE LAYOUT
+--------------------------------------------------- */
+.page-wrap {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2rem 1rem;
 }
-
-.site-nav .nav-links a:hover,
-.site-nav .nav-links a:focus {
-  background-color: #fff;
-  color: #111;
-}
-
 
 /* ---------------------------------------------------
    HEADINGS
 --------------------------------------------------- */
-h1, h2, h3 {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 700;
-  color: #fff;
-  background-color: #111;
-  padding: 1rem;
+h1,
+h2,
+h3 {
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	color: var(--color-dark);
 }
 
 h1 {
-  font-size: 2.6rem;
-  margin-bottom: 1.2rem;
+	font-size: 2.6rem;
+	margin-bottom: 1.2rem;
 }
 
 h2 {
-  font-size: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+	font-size: 2rem;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
 }
 
 h3 {
-  font-size: 1.4rem;
-  margin-top: 1.5rem;
-  margin-bottom: 0.6rem;
+	font-size: 1.4rem;
+	margin-top: 1.5rem;
+	margin-bottom: 0.6rem;
 }
-
-
-/* ---------------------------------------------------
-   BLOG CONTENT SPACING (excludes headings)
---------------------------------------------------- */
-.blog-post > *:not(h1):not(h2):not(h3),
-.module-box > *:not(h1):not(h2):not(h3) {
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 
 /* ---------------------------------------------------
    PARAGRAPHS AND LISTS
 --------------------------------------------------- */
 p {
-  margin-bottom: 1.2rem;
-  font-size: 0.875rem;
-  font-weight: 300;
+	margin-bottom: 1.2rem;
+	font-size: 1rem;
 }
 
-ul, ol {
-  padding-left: 1.5rem;
-  margin-bottom: 1.5rem;
+ul,
+ol {
+	padding-left: 1.5rem;
+	margin-bottom: 1.5rem;
 }
 
 li {
-  margin-bottom: 0.5rem;
-  font-size: 0.875rem;
-  font-weight: 300;
+	margin-bottom: 0.5rem;
+	font-size: 1rem;
 }
-
-figcaption {
-  font-size: 0.875rem;
-  font-weight: 300;
-  color: #555;
-}
-
-
-/* ---------------------------------------------------
-   RESPONSIVE IMAGES
---------------------------------------------------- */
-img {
-  width: 100%;
-  max-width: 30rem; /* 480px */
-  height: auto;
-  display: block;
-  margin: 0 auto 1rem;
-}
-
-
-/* ---------------------------------------------------
-   TWO-COLUMN CONTENT LAYOUT (flexbox)
---------------------------------------------------- */
-.content-columns {
-  display: flex;
-  gap: 2rem;
-  margin-bottom: 2rem;
-}
-
-.content-columns .column {
-  flex: 1;
-  min-width: 0; /* prevents flex items from overflowing on long words/images */
-}
-
-
-/* ---------------------------------------------------
-   IMAGE BAR (grid)
---------------------------------------------------- */
-.image-bar {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  background-color: #fff7fb;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  border-radius: 8px;
-}
-
-.image-bar img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  margin: 0;
-  display: block;
-}
-
 
 /* ---------------------------------------------------
    MODULE / BLOG POST BOX
 --------------------------------------------------- */
 .blog-post,
 .module-box {
-  background: #fff;
-  border: 1px solid #eee;
-  padding: 2rem;
-  margin-bottom: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+	background: var(--color-white);
+	border: 1px solid var(--color-gray-border);
+	padding: 2rem;
+	margin-bottom: 2rem;
+	border-radius: 8px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
 }
 
 /* Optional heading box for modules */
 .module-heading {
-  border: 2px solid #f5c9e0;
-  padding: 1rem 1.5rem;
-  border-radius: 10px;
-  margin-bottom: 2rem;
-  background-color: #fff7fb;
+	border: 2px solid var(--color-dark);
+	border-top: 4px solid var(--color-red);
+	padding: 1rem 1.5rem;
+	border-radius: 10px;
+	margin-bottom: 2rem;
+	background-color: var(--color-gray-light);
 }
 
 .module-heading h1 {
-  margin: 0;
-  padding: 0;
-  font-size: 1.8rem;
-  color: #1f1f1f;
-  background-color: transparent;
+	margin: 0;
+	font-size: 1.8rem;
+	color: var(--color-dark);
 }
-
 
 /* ---------------------------------------------------
    COMPARISON TABLE (Styled)
 --------------------------------------------------- */
 .comparison-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 2rem 0;
-  font-size: 0.95rem;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  border-radius: 8px;
-  overflow: hidden;
+	width: 100%;
+	border-collapse: collapse;
+	margin: 2rem 0;
+	font-size: 0.95rem;
+	background-color: var(--color-white);
+	border: 1px solid var(--color-gray-border);
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+	border-radius: 8px;
+	overflow: hidden;
 }
 
 .comparison-table caption {
-  caption-side: top;
-  font-size: 1.4rem;
-  font-weight: 600;
-  padding: 1rem;
-  background-color: #f8f8f8;
-  color: #222;
-  border-bottom: 1px solid #ddd;
-  font-family: 'Oswald', sans-serif;
+	caption-side: top;
+	font-size: 1.4rem;
+	font-weight: 600;
+	padding: 1rem;
+	background-color: var(--color-dark);
+	color: var(--color-white);
+	border-bottom: 3px solid var(--color-red);
+	font-family: "Poppins", sans-serif;
 }
 
 .comparison-table thead {
-  background-color: #f1f1f1;
+	background-color: var(--color-gray-light);
 }
 
 .comparison-table th,
 .comparison-table td {
-  padding: 1rem;
-  text-align: left;
-  vertical-align: top;
-  border-bottom: 1px solid #eee;
+	padding: 1rem;
+	text-align: left;
+	vertical-align: top;
+	border-bottom: 1px solid var(--color-gray-border);
 }
 
 .comparison-table th {
-  font-weight: 600;
-  color: #222;
-  font-family: 'Oswald', sans-serif;
+	font-weight: 600;
+	color: var(--color-dark);
+	font-family: "Poppins", sans-serif;
 }
 
 .comparison-table tbody tr:last-child td {
-  border-bottom: none;
+	border-bottom: none;
 }
 
 .comparison-table tbody tr:nth-child(even) {
-  background-color: #fafafa;
+	background-color: var(--color-gray-light);
 }
-
 
 /* ---------------------------------------------------
    FOOTER / REFERENCES
 --------------------------------------------------- */
 footer.blog-footer {
-  margin-top: 3rem;
-  border-top: 1px solid #ddd;
-  padding-top: 1.5rem;
-  font-size: 0.95rem;
-  color: #444;
+	margin-top: 3rem;
+	border-top: 2px solid var(--color-red);
+	padding-top: 1.5rem;
+	font-size: 0.95rem;
+	color: var(--color-dark-soft);
 }
 
 footer.blog-footer h2,
 footer.blog-footer h3 {
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+	font-family: "Poppins", sans-serif;
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
 }
 
 footer.blog-footer ul {
-  list-style: none;
-  padding-left: 0;
+	list-style: none;
+	padding-left: 0;
 }
 
 footer.blog-footer li {
-  margin-bottom: 0.6rem;
+	margin-bottom: 0.6rem;
 }
 
 .image-credits {
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  padding: 1rem 1.2rem;
-  margin-top: 1.5rem;
-  border-radius: 8px;
+	background-color: var(--color-gray-light);
+	border: 1px solid var(--color-gray-border);
+	padding: 1rem 1.2rem;
+	margin-top: 1.5rem;
+	border-radius: 8px;
 }
-
 
 /* ---------------------------------------------------
    BLOCKQUOTE & EMPHASIS
 --------------------------------------------------- */
 blockquote {
-  margin: 1.5rem 0;
-  padding: 1rem 1.5rem;
-  background-color: #f3f4f6;
-  border-left: 4px solid #ccc;
-  font-style: italic;
-  color: #555;
+	margin: 1.5rem 0;
+	padding: 1rem 1.5rem;
+	background-color: var(--color-gray-light);
+	border-left: 4px solid var(--color-red);
+	font-style: italic;
+	color: var(--color-dark-soft);
 }
-
 
 /* ---------------------------------------------------
    RESPONSIVE DESIGN
 --------------------------------------------------- */
 @media screen and (max-width: 768px) {
-  html {
-    font-size: 15px;
-  }
+	html {
+		font-size: 15px;
+	}
 
-  h1 {
-    font-size: 2rem;
-  }
+	h1 {
+		font-size: 2rem;
+	}
 
-  h2 {
-    font-size: 1.6rem;
-  }
+	h2 {
+		font-size: 1.6rem;
+	}
 
-  .blog-post,
-  .module-box {
-    padding: 1.5rem;
-  }
+	.blog-post,
+	.module-box {
+		padding: 1.5rem;
+	}
 
-  .comparison-table th,
-  .comparison-table td {
-    padding: 0.75rem;
-  }
+	.comparison-table th,
+	.comparison-table td {
+		padding: 0.75rem;
+	}
 
-  .content-columns {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
+	.page-header {
+		justify-content: flex-start;
+	}
 
-  .image-bar {
-    grid-template-columns: repeat(2, 1fr);
-  }
+	.site-nav ul {
+		gap: 0.4rem 1rem;
+	}
 }
 
 @media screen and (max-width: 480px) {
-  html {
-    font-size: 14px;
-  }
+	html {
+		font-size: 14px;
+	}
 
-  .comparison-table caption {
-    font-size: 1.1rem;
-  }
-
-  .site-nav {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.75rem;
-  }
-
-  .site-nav .nav-links {
-    flex-wrap: wrap;
-  }
-
-  .image-bar {
-    grid-template-columns: 1fr;
-  }
+	.comparison-table caption {
+		font-size: 1.1rem;
+	}
 }
