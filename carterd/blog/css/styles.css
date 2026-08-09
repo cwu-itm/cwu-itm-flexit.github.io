@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap");
+
+:root {
+  --crimson: #ab0032;
+  --crimson-deep: #740021;
+  --crimson-medium: #c43d60;
+  --crimson-light: #f3d3dc;
+  --crimson-pale: #fff5f8;
+  --ink: #262326;
+  --muted: #625b60;
+  --paper: #ffffff;
+  --line: #e5c9d1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: var(--ink);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  background-color: var(--crimson-pale);
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+a {
+  color: var(--crimson-deep);
+}
+
+a:hover {
+  color: var(--crimson);
+}
+
+a:focus-visible {
+  outline: 3px solid #ffcc4d;
+  outline-offset: 3px;
+}
+
+/* ---------------------------------------------------
+   PAGE HEADER, TEXT LOGO, AND NAVIGATION
+--------------------------------------------------- */
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  min-height: 10rem;
+  padding: 1rem;
+  background-color: var(--crimson);
+  background-image:
+    linear-gradient(rgba(171, 0, 50, 0.66), rgba(116, 0, 33, 0.78)),
+    url("../../images/ux_design.avif");
+  background-position: center;
+  background-size: cover;
+}
+
+.site-logo {
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  text-decoration: none;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
+  text-transform: uppercase;
+}
+
+.site-logo:hover {
+  color: #ffe4ec;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+}
+
+nav a {
+  padding: 0.45rem 0.65rem;
+  border-radius: 0.25rem;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.16);
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+
+/* ---------------------------------------------------
+   MAIN CONTENT AND TYPOGRAPHY
+--------------------------------------------------- */
+main {
+  background-color: var(--paper);
+}
+
+article {
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.article-header {
+  margin: 0 0 2rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+h2 {
+  margin: 0 -1rem 1.25rem;
+  padding: 1rem;
+  background-color: var(--crimson-light);
+  color: var(--crimson-deep);
+  font-size: clamp(2rem, 4vw, 2.75rem);
+}
+
+h3 {
+  margin: 2rem 0 0.75rem;
+  color: #91002a;
+  font-size: 1.5rem;
+}
+
+p,
+ul,
+ol,
+li,
+figcaption {
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+
+p {
+  margin: 0 0 1.15rem;
+}
+
+ul,
+ol {
+  margin: 0 0 1.5rem;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* ---------------------------------------------------
+   REQUIRED THREE-IMAGE GRID
+--------------------------------------------------- */
+.image-bar {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: var(--crimson-light);
+  border-top: 0.25rem solid var(--crimson);
+  border-bottom: 0.25rem solid var(--crimson);
+}
+
+.image-bar figure {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color: #ffffff;
+  border: 1px solid #dfb4c0;
+}
+
+.image-bar img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.image-bar figcaption {
+  flex: 1;
+  padding: 0.75rem;
+}
+
+/* ---------------------------------------------------
+   REQUIRED TWO-COLUMN FLEXBOX LAYOUT
+--------------------------------------------------- */
+.content-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+
+.content-column {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+/* ---------------------------------------------------
+   IMAGES AND CAPTIONS
+--------------------------------------------------- */
+figure {
+  margin: 1.5rem 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 30rem;
+  height: auto;
+}
+
+.featured-figure {
+  max-width: 30rem;
+  padding: 0.75rem;
+  background-color: var(--crimson-pale);
+  border: 1px solid var(--line);
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  color: var(--muted);
+}
+
+/* ---------------------------------------------------
+   TABLES AND BLOCKQUOTES
+--------------------------------------------------- */
+blockquote {
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  background-color: var(--crimson-pale);
+  border-left: 0.25rem solid var(--crimson-medium);
+  color: #4b4448;
+  font-style: italic;
+}
+
+table {
+  width: 100%;
+  margin: 2rem 0;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.75rem;
+  border: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--crimson-light);
+  font-family: "Oswald", sans-serif;
+}
+
+/* ---------------------------------------------------
+   ARTICLE AND PAGE FOOTERS
+--------------------------------------------------- */
+.article-footer {
+  clear: both;
+  margin-top: 2.5rem;
+  padding: 1.5rem;
+  background-color: var(--crimson-pale);
+  border-top: 0.2rem solid var(--crimson-medium);
+}
+
+.article-footer h3 {
+  margin-top: 0;
+}
+
+.article-footer p,
+.reference-list p {
+  margin-left: 2rem;
+  text-indent: -2rem;
+}
+
+.page-footer {
+  padding: 1.5rem;
+  background-color: var(--crimson-deep);
+  color: #ffffff;
+  text-align: center;
+}
+
+.page-footer p {
+  margin: 0;
+}
+
+/* ---------------------------------------------------
+   RESPONSIVE LAYOUT
+--------------------------------------------------- */
+@media screen and (max-width: 56rem) {
+  .page-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  nav {
+    justify-content: flex-start;
+  }
+
+  .content-container {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+@media screen and (max-width: 48rem) {
+  body {
+    padding: 0;
+  }
+
+  .image-bar {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
