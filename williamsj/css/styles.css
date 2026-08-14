@@ -238,3 +238,46 @@ blockquote {
     font-size: 1.1rem;
   }
 }
+
+
+/* Module 3.1 Blog Styling */
+
+.module-three-blog h1,
+.module-three-blog h2 {
+  background-color: #1f4e79;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+.module-three-blog > p,
+.module-three-blog > figure,
+.module-three-blog > footer {
+  padding: 0 1rem;
+}
+
+.module-three-blog img {
+  width: 100%;
+  max-width: 30rem;
+  height: auto;
+}
+
+.module-three-blog p,
+.module-three-blog li,
+.module-three-blog figcaption {
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.module-three-blog figure {
+  margin: 1.5rem 0;
+}
+
+.module-three-blog figcaption {
+  margin-top: 0.5rem;
+  color: #444444;
+}
+
+.module-three-blog a {
+  color: #0b4f8a;
+}
