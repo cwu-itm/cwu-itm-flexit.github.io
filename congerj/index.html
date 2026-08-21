@@ -604,7 +604,69 @@
 </footer>
 </article>
 
-         <!-- Module 3.2 Blog Post Starts here -->
+         <!-- Modu<article class="module-blog">
+  <header class="blog-header">
+    <a class="logo" href="#">Interaction That Matters</a>
+    <nav aria-label="Main navigation">
+      <a href="#">Home</a><a href="#">Feedback</a><a href="#">Motion</a><a href="#">UX Laws</a><a href="#">Ethics</a><a href="#">Sources</a>
+    </nav>
+  </header>
+  <h1>The Moments Users Remember: Timing, Motion, and Ethical Interaction Design</h1>
+  <div class="content">
+    <section class="column">
+      <h2>When Fast Feedback Protects the User’s Flow</h2>
+      <p>Paste the introduction and the sections through “Feedback Builds Trust” from the polished blog above into this first column.</p>
+    </section>
+    <section class="column">
+      <h2>Persuasion Has an Ethical Boundary</h2>
+      <p>Paste the sections from “Persuasion Has an Ethical Boundary” through the conclusion into this second column.</p>
+    </section>
+  </div>
+  <div class="image-bar">
+    <figure><img src="images/feedback.jpg" alt="Person using a digital interface that shows immediate status feedback"><figcaption>Immediate feedback helps users understand system status. Photo by [Creator Name] on [Website], [License].</figcaption></figure>
+    <figure><img src="images/motion.jpg" alt="Mobile interface showing a clear visual transition between screens"><figcaption>Purposeful motion can explain a change in state. Photo by [Creator Name] on [Website], [License].</figcaption></figure>
+    <figure><img src="images/choice.jpg" alt="Interface presenting a small set of clear and understandable choices"><figcaption>Clear choices reduce cognitive effort and prevent mistakes. Photo by [Creator Name] on [Website], [License].</figcaption></figure>
+  </div>
+</article>
+Replace the three image file names with your actual files. Keep the descriptive alt text, and add a visible credit below each image if the license requires attribution.
+Place the full APA source list in the page footer. Keep the in-text citations in the blog paragraphs.
+Image Plan and Attribution
+Choose three images that support the argument: one showing visible system feedback, one showing a mobile interaction or transition, and one showing clear choices or error prevention.
+Suggested attribution format: Creator. (Year). Title or brief description [Photograph]. Website. License. URL
+Use images you have permission to publish. Unsplash and Creative Commons Search can help locate appropriate media, but confirm the license and attribution terms for each individual image.
+Copy-Ready CSS
+.blog-header {
+  background-image: linear-gradient(rgba(10, 25, 47, .78), rgba(10, 25, 47, .78)), url("../images/header.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.logo { color: #ffffff; font-size: 1.6rem; font-weight: 700; text-decoration: none; }
+nav { display: flex; flex-wrap: wrap; gap: 1rem; }
+nav a { color: #ffffff; padding: .5rem .75rem; text-decoration: none; }
+nav a:hover, nav a:focus { background-color: #f4b942; color: #10243e; }
+.content { display: flex; gap: 2rem; align-items: flex-start; }
+.column { flex: 1; min-width: 0; }
+.image-bar { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; background-color: #10243e; padding: 1rem; }
+.image-bar figure { margin: 0; background-color: #ffffff; padding: .75rem; }
+.image-bar img { display: block; width: 100%; height: auto; }
+@media (max-width: 800px) {
+  .blog-header, .content { flex-direction: column; }
+  .image-bar { grid-template-columns: 1fr; }
+<footer class="page-footer" id="sources">
+  <h2>Sources</h2>
+  <p>Johnson, J. (2020). <em>Designing with the mind in mind: Simple guide to understanding user interface design guidelines</em> (3rd ed.). Morgan Kaufmann.</p>
+  <p>Yablonski, J. (2024). <em>Laws of UX: Using psychology to design better products &amp; services</em> (2nd ed.). O’Reilly Media.</p>
+  <p>Nielsen, J. (2024, January 30). <em>10 usability heuristics for user interface design</em>. Nielsen Norman Group. https://www.nngroup.com/articles/ten-usability-heuristics/</p>
+  <p>Interaction Design Foundation. (n.d.). <em>What is persuasive design?</em> https://www.interaction-design.org/literature/topics/persuasive-design</p>
+  <p>Add the three complete image credits here after choosing the actual images.</p>
+</footer>
+
+
 
       </main>
 <!-- Page Footer  -->
