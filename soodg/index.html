@@ -17,26 +17,78 @@
          <article>
             <header class="article-header">
                <h2>Module 1.1 Blog Post</h2>
+               <p><strong>Seeing the Whole Train: What Model-Based Systems Thinking Taught Me About Complexity</strong></p>
             </header>
-            <h3>Health Cronut la Croix</h3>
-            <p>I'm baby photo booth fingerstache af enamel pin quinoa. Portland unicorn keytar paleo letterpress banjo kinfolk. Pitchfork four loko meditation, locavore marfa af listicle sriracha helvetica cred vexillologist PBR&B. Pop-up hexagon thundercats master cleanse before they sold out, fashion axe copper mug yes plz literally cred mukbang chia gluten-free. Bodega boys skateboard ugh green juice. Hella marxism succulents mumblecore forage kale chips bespoke fixie shoreditch chartreuse tofu before they sold out.</p>
-            <h3>Offal Tofu Cred Green Juice</h3>
-            <p>Microdosing portland banh mi bitters, pitchfork ethical selvage plaid keytar jianbing kickstarter cronut. Truffaut schlitz ennui, migas aesthetic letterpress la croix. Health goth 8-bit microdosing, cronut offal gluten-free tbh cornhole swag YOLO vape man bun godard. Pitchfork semiotics hella salvia kickstarter jean shorts. Air plant thundercats kombucha gentrify portland.</p>
-            <h3>Blue Roof Pour-Over Man Bun</h3>
-            <p>Yuccie mukbang pickled activated charcoal. PBR&B selfies DSA mustache authentic. Gochujang kombucha big mood retro, you probably haven't heard of them +1 lomo. Tbh pour-over yr viral gorpcore poutine four dollar toast. Bicycle rights man bun try-hard, mlkshk roof party occupy succulents taxidermy kogi enamel pin brunch paleo poutine yr. Blue bottle street art waistcoat typewriter yr hot chicken polaroid helvetica pitchfork.</p>
-            <ul>
-               <li>Neutra umami slow-carb vegan dreamcatcher.</li>
-               <li>Tacos cornhole humblebrag ethical.</li>
-               <li>DSA santo big mood organic charcoal bitters.</li>
-               <li>Hot chicken pitchfork poutine.</li>
-            </ul>
-            <h3>Mlkshk Stumptown Hot Chicken</h3>
-            <p>Next level gluten-free whatever, tacos activated charcoal bitters woke. Mlkshk photo booth bicycle rights paleo, butcher DIY ugh mukbang bespoke occupy affogato jawn adaptogen artisan tofu. Tbh gentrify you probably haven't heard of them neutra umami slow-carb vegan dreamcatcher waistcoat. Tacos cornhole humblebrag ethical austin neutra plaid. Sustainable gatekeep ugh locavore deep v, palo santo stumptown skateboard big mood organic lumbersexual mustache cornhole hot chicken. Gluten-free artisan cliche mumblecore af, edison bulb meditation messenger bag.</p>
+
+            <section>
+               <h3>Introduction: The Delay That Wasn't Anyone's Fault</h3>
+               <p>Picture a commuter waiting on a light rail platform in the Seattle area. The train is twelve minutes late. Who is to blame? The driver? The signal crew? The person who held the doors at the last stop? The honest answer is usually "all of them and none of them." A delay on a modern transit line is rarely caused by one broken part. It comes from the way many parts, such as trains, tracks, schedules, software, weather, and people, push and pull on each other.</p>
+               <p>That simple idea sits at the heart of this module. Systems thinking asks us to stop staring at individual pieces and start paying attention to the connections between them. Model-based systems engineering (MBSE) takes that mindset one step further by giving teams a shared, structured model of the whole system instead of a pile of disconnected documents. In this post, I want to explain both ideas in plain language, connect them to my own work and to this course, and also push back a little on where they fall short.</p>
+            </section>
+
+            <section>
+               <h3>What Is a System, Really?</h3>
+               <p>It is easy to call almost anything a "system," so a clear definition helps. Donella Meadows, one of the best-known writers on the subject, describes a system as a set of elements that are interconnected and organized to achieve some purpose or function (Meadows, 2008). That definition has three parts, and each one matters:</p>
+               <ul>
+                  <li><strong>Elements</strong> are the visible pieces: the trains, the stations, the riders, the operators.</li>
+                  <li><strong>Interconnections</strong> are the relationships and flows between them: schedules, signals, passenger demand, and information passed from one person to another.</li>
+                  <li><strong>Purpose</strong> is what the system actually does over time. In this case, that is moving people reliably from place to place.</li>
+               </ul>
+               <p>Meadows (2008) makes a point that surprised me: the elements are usually the <em>least</em> important part of a system. You can replace every train in a fleet and the transit line still behaves like the same transit line. But change the interconnections, such as how often trains are scheduled or how dispatchers communicate, and the behavior of the whole system can change dramatically. In other words, if we want to understand or improve something complex, we should look closely at the arrows on the diagram, not just the boxes.</p>
+               <p>Meadows also emphasizes <strong>feedback loops</strong>. A balancing loop pushes a system back toward a goal, like a thermostat turning the heat off once a room is warm. A reinforcing loop amplifies change, like a crowded platform causing longer boarding times, which causes more delays, which causes even more crowded platforms. Once you learn to spot these loops, you start seeing them everywhere.</p>
+            </section>
+
+            <section>
+               <h3>From Documents to Models</h3>
+               <p>Systems thinking is a way of <em>seeing</em>. MBSE is a way of <em>working</em>. The International Council on Systems Engineering defines MBSE as the formal use of modeling to support a system's requirements, design, analysis, verification, and validation, starting at the earliest concept stage and continuing through the rest of the system's life cycle (International Council on Systems Engineering [INCOSE], 2007). The key word is <em>formal</em>. A sketch on a whiteboard is a model, but it is not what MBSE means. MBSE uses structured, connected models, often built with a language called SysML, that a whole team can query, update, and trust.</p>
+               <p>To understand why this matters, consider the alternative. Traditional systems engineering has been <strong>document-centric</strong>. Requirements live in one Word file, the architecture lives in a slide deck, test plans live in a spreadsheet, and design decisions live in someone's inbox. When one thing changes, every document that depends on it has to be found and updated by hand. Inevitably, something gets missed. INCOSE's long-term vision was for model-based approaches to gradually replace this document-heavy style of practice (INCOSE, 2007).</p>
+               <p>NASA offers a practical example of how this works. Its systems modeling handbook shows how SysML models can be woven into the agency's standard engineering processes, and how diagrams and tables for key work products, such as stakeholder expectations, requirements, and verification, can be generated directly from the underlying system model rather than written separately (National Aeronautics and Space Administration [NASA], 2025). That is the real promise of MBSE: the model becomes the <strong>single source of truth</strong>, and documents become <em>views</em> of that truth instead of competing versions of it.</p>
+            </section>
+
+            <section>
+               <h3>The Three Evils: Connecting to the Course Reading</h3>
+               <p>Our course reading, <em>Systems Engineering Demystified</em>, gave me a simple way to think about why complex systems fail. Holt (2023) identifies three root causes, which he calls the "three evils" of systems engineering: complexity, ambiguous communication, and a lack of understanding. What I found most useful is his point that these problems feed into one another. Unmanaged complexity makes communication harder, poor communication leaves people without a shared understanding, and a lack of understanding adds even more complexity. That is a reinforcing loop, exactly the kind of pattern Meadows (2008) teaches us to look for.</p>
+               <p>Holt (2023) presents MBSE as the most effective way to fight all three evils at once. A model tames complexity by breaking a system into clearly named parts and relationships. It reduces ambiguous communication because everyone works from the same structured model instead of their own reading of a document. And it builds understanding because the same model can be viewed from the perspective of different stakeholders, so an engineer, a manager, and a client can each see the part of the system that matters to them. What stood out to me is that modeling is as much a communication practice as a technical one. When everyone looks at the same model, they argue about the system itself rather than about whose document is out of date.</p>
+            </section>
+
+            <section>
+               <h3>Systems Thinking in My Everyday Work</h3>
+               <p>These ideas became much more real to me when I applied them to my own job. I work as an account manager at a staffing and consulting firm, where I help place consultants with client organizations and support them once they start. On paper, that sounds like a simple chain: a client has an opening, we find a candidate, the candidate starts work. In practice, it behaves much more like the transit line from my introduction.</p>
+               <p>The <strong>elements</strong> are easy to list: clients, hiring managers, recruiters, candidates, contracts, and timesheets. The <strong>interconnections</strong> are where things get interesting. A hiring manager's feedback on one candidate changes how recruiters screen the next ten. A delay in a background check pushes back a start date, which affects a project schedule on the client's side, which changes how urgently they need the next role filled.</p>
+               <p>There is a clear <strong>balancing loop</strong> here: when clients reject candidates, we adjust our screening to move closer to what they actually want. But Meadows (2008) warns that <em>delays</em> in feedback cause systems to overshoot or oscillate. If a client takes three weeks to give interview feedback, recruiters keep sending candidates based on outdated assumptions, and the whole process wobbles. Before this module, I would have described that as "a slow client." Now I see it as a system with a long feedback delay, and the fix is not to work harder, but to shorten the loop.</p>
+               <p>I also recognize all three of Holt's (2023) evils in my work. Job requirements often live in an email, an updated version lives in a portal, and the hiring manager's real expectations live in a phone call. When those three drift apart, ambiguous communication creates complexity, and nobody has a full understanding of what the role actually needs. We end up solving the wrong problem very efficiently. A shared, structured "model" of each role, even a simple one, would prevent a lot of that drift.</p>
+            </section>
+
+            <section>
+               <h3>Why This Matters for Designing Digital Environments</h3>
+               <p>It might seem odd to talk about spacecraft and transit lines in a course about designing digital environments, but the connection is direct. A website is a system too. Its HTML provides structure, its CSS controls presentation, and its content gives it purpose. Change one class name in the CSS and pages you never touched can suddenly look different. That is an interconnection at work.</p>
+               <p>The tools we are using in this course also reflect model-based thinking. Git and GitHub replace the old habit of emailing files named <em>final_v2_REALLY_final.html</em> with a single, versioned source of truth. Every commit records what changed and why. A pull request lets someone review the change in context before it becomes part of the main project. That is very close in spirit to what NASA (2025) describes: one authoritative source, with every view and output traceable back to it.</p>
+               <p>Semantic HTML follows the same logic. When I use <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> elements instead of a stack of generic <code>&lt;div&gt;</code> elements, I am building a small model of my page's meaning. Browsers, screen readers, and search engines can all "query" that structure, much like engineers query a system model.</p>
+            </section>
+
+            <section>
+               <h3>A Critical Look: Where Models Fall Short</h3>
+               <p>As useful as these ideas are, it would be a mistake to treat them as magic. I see at least three real limits.</p>
+               <p>First, <strong>a model is never the system itself</strong>. Every model is a simplification, and Meadows (2008) makes this point directly: our mental and formal models leave things out, and the parts we leave out can surprise us. A beautifully detailed SysML model can still miss how tired operators behave on a Friday night or how a client's internal politics affect a hiring decision.</p>
+               <p>Second, <strong>MBSE has a real cost</strong>. Learning SysML, buying modeling tools, and keeping a model current takes time and money. For a small project, a well-organized set of documents may honestly be the better choice. The value of MBSE grows with complexity; it is not a one-size-fits-all answer.</p>
+               <p>Third, there is a risk of <strong>modeling for its own sake</strong>. A team can spend months perfecting diagrams that no decision-maker ever reads. INCOSE (2007) frames MBSE as support for engineering activities like design and verification, so the model should serve those activities, not replace them. The question to keep asking is: "What decision will this model help someone make?"</p>
+               <p>Recognizing these limits does not weaken the case for systems thinking. If anything, it is an example of it: seeing MBSE itself as one part of a larger system that includes people, budgets, and organizational habits.</p>
+            </section>
+
+            <section>
+               <h3>Conclusion: Learning to Look at the Arrows</h3>
+               <p>The biggest shift this module gave me is a change in where I look. I used to focus on parts: the late train, the slow client, the broken web page. Systems thinking taught me to look at the connections and feedback loops between those parts (Meadows, 2008). Holt (2023) showed me that complexity, ambiguous communication, and a lack of understanding are the real enemies, and that MBSE is a practical way to fight them by keeping everyone working from the same source of truth (INCOSE, 2007; NASA, 2025). Building this blog with HTML, CSS, and GitHub is a small, hands-on version of the same idea.</p>
+               <p>The next time a train runs late, a project stalls, or a web page breaks in a way that makes no sense, I hope to ask a better question. Not "Which part failed?" but "How is this system set up to produce this result?" That question is harder, but it is usually the one that leads to a real fix.</p>
+            </section>
+
             <footer class="article-footer">
                 <h3>Sources:</h3>
                 <ol>
-                    <li>Sherugar, S., & Budiu, R. (2016, August 21). <em>Direct manipulation: Definition</em>. Nielsen Norman Group. Retrieved March 19, 2025 from <a href="https://www.nngroup.com/articles/direct-manipulation/">https://www.nngroup.com/articles/direct-manipulation/</a></li>
-                    </ol>
+                    <li>Holt, J. (2023). <em>Systems engineering demystified: Apply modern, model-based systems engineering techniques to build complex systems</em> (2nd ed.). Packt Publishing.</li>
+                    <li>International Council on Systems Engineering. (2007). <em>Systems engineering vision 2020</em> (INCOSE-TP-2004-004-02). INCOSE.</li>
+                    <li>Meadows, D. H. (2008). <em>Thinking in systems: A primer</em> (D. Wright, Ed.). Chelsea Green Publishing.</li>
+                    <li>National Aeronautics and Space Administration. (2025). <em>NASA systems modeling handbook for systems engineering</em> (NASA-HDBK-1009A). <a href="https://standards.nasa.gov/standard/NASA/NASA-HDBK-1009">https://standards.nasa.gov/standard/NASA/NASA-HDBK-1009</a></li>
+                </ol>
             </footer>
          </article>
 
