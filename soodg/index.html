@@ -309,6 +309,111 @@
          </article>
 
          <!-- Module 2.2 Blog Post Starts here -->
+         <article>
+            <header class="article-header">
+               <h2>Module 2.2 Blog Post</h2>
+               <p><strong>Don't Make Me Remember: How Usable Systems Carry the Mental Load</strong></p>
+            </header>
+
+            <section>
+               <h3>Introduction: The Password I Forgot Five Seconds Ago</h3>
+               <p>We have all been there. A website asks you to create a new password. You type one in, and only <em>after</em> you click Submit does a red message appear: "Password must contain one uppercase letter, one number, and one special character." You fix it. Another message: "Password cannot contain your name." By the third try, you have forgotten which version you finally used, and the next time you log in, you click "Forgot password."</p>
+               <p>Nothing in that system is technically broken. But it quietly hands a heavy job to the user: remember hidden rules, guess what the system wants, and keep track of your own attempts. That is the opposite of usable.</p>
+               <p>In this post, I explore what makes a digital system truly usable by looking at the human mind behind every click. I explain how memory and mental models shape interaction, how consistency and feedback make systems easier to use, and how poor design creates unnecessary cognitive load. Along the way, I use Tesler's Law and two principles from Jeff Johnson's <a href="https://shop.elsevier.com/books/designing-with-the-mind-in-mind/johnson/9780128182024"><em>Designing with the Mind in Mind</em></a> to show that good design is really about deciding who does the thinking: the system or the person.</p>
+            </section>
+
+            <section>
+               <h3>Memory: The Most Overworked Part of Any Interface</h3>
+               <p>Our memory is far more limited than we like to admit. Johnson (2020) captures this in one of his core principles: <strong>our attention is limited; our memory is imperfect</strong>. Short-term, or working, memory can hold only a few items at a time, and those items fade quickly when we are distracted. Long-term memory is larger, but it is unreliable. We forget details, mix things up, and remember what we expected rather than what actually happened.</p>
+               <p>This matters because every interface asks people to use their memory in some way. When a checkout page asks for a promo code that appeared on a previous screen, or a form asks for an account number that is printed on a different page, the system is making the user's working memory do the job of a sticky note.</p>
+               <p>Cognitive load theory helps explain why this is so draining. Sweller (1988) showed that working memory has a limited capacity, and when a task demands too much of it, performance and learning both suffer. Designers often call the unnecessary part of this burden <em>extraneous</em> load: mental effort that comes from the way information is presented, not from the task itself.</p>
+            </section>
+
+            <section>
+               <h3>Recognition Beats Recall</h3>
+               <p>A second principle from Johnson (2020) gives designers a practical way to reduce that load: <strong>recognition is easy; recall is hard</strong>. Recognizing something we have seen before is fast and effortless. Recalling it from scratch, with no cues, is slow and error-prone. This is why most people can pick a friend's face out of a crowd but would struggle to describe that face precisely enough for a sketch artist.</p>
+               <p>Good interfaces lean on recognition:</p>
+               <ul>
+                  <li>Menus show options instead of making people type commands from memory.</li>
+                  <li>Search boxes suggest recent searches.</li>
+                  <li>Icons sit next to text labels so people do not have to remember what a symbol means.</li>
+               </ul>
+               <p>Nielsen (2024) lists this as one of his <a href="https://www.nngroup.com/articles/ten-usability-heuristics/">ten usability heuristics</a>, "recognition rather than recall," and recommends making elements, actions, and options visible so users do not have to remember information from one part of the interface to another.</p>
+               <p>The password example from my introduction fails this test completely. The rules exist, but they are hidden until the user makes a mistake. Showing the requirements next to the field from the start, and checking them off as the user types, turns a recall task into a recognition task.</p>
+               <figure>
+                  <img src="images/recall-vs-recognition.png" alt="Two password forms side by side. The left form hides the password rules until the user clicks Submit and then shows red error messages. The right form lists every rule under the field with green check marks that update as the user types." width="800" height="427">
+                  <figcaption>Figure 1. The same password rules, presented two ways. The version on the right supports recognition instead of recall. Original illustration created for this post.</figcaption>
+               </figure>
+            </section>
+
+            <section>
+               <h3>Mental Models: The Map Users Bring With Them</h3>
+               <p>Memory does not only store facts. It also stores <em>expectations</em>. Every time we use a system, we build a mental model: our own internal picture of how it works. Norman (2013) explains that designers have their own conceptual model of a system, but users only see what the system shows them. If the visible design does not communicate the designer's model clearly, users invent their own explanations, and those explanations are often wrong.</p>
+               <p>A simple example is a transit card. Many riders imagine that the card itself "holds" their money, like cash in a wallet. In many modern account-based systems, the value actually lives in an online account, and the card is just a key. When a rider reloads money in an app and then taps the card immediately, they may be surprised if the reader does not yet recognize the new balance. Nothing is broken. The system simply works differently from the rider's mental model, and that gap creates confusion, frustration, and calls to customer service.</p>
+               <p>Norman (2013) describes this kind of mismatch in terms of two "gulfs":</p>
+               <dl>
+                  <dt><strong>Gulf of execution</strong></dt>
+                  <dd>The distance between what a person wants to do and figuring out how to do it.</dd>
+                  <dt><strong>Gulf of evaluation</strong></dt>
+                  <dd>The distance between what the system did and the person understanding what happened.</dd>
+               </dl>
+               <p>Usable design narrows both gulfs, and two of the most powerful tools for doing that are consistency and feedback.</p>
+            </section>
+
+            <section>
+               <h3>Consistency: Letting Habits Do the Work</h3>
+               <p>Habits are one of the brain's best mental shortcuts. Once we learn that a gear icon means "settings" or that a blue underlined word is a link, we stop thinking about it. Consistency allows people to transfer what they have learned in one place to another without starting over. Nielsen (2024) includes "consistency and standards" as a core heuristic: users should not have to wonder whether different words, situations, or actions mean the same thing.</p>
+               <p>Inconsistency forces people out of habit and back into problem-solving mode. In my work at a staffing and consulting firm, I have used timesheet and vendor portals where the "Save" button sits on the bottom right on one screen and the top left on the next. On one page, "Submit" saves a draft; on another, it sends the timesheet for final approval. Every time I switch screens, I have to slow down, read carefully, and double-check. That extra effort does not help me do my job. It is pure extraneous load, created by the design.</p>
+               <figure>
+                  <img src="images/consistency-buttons.png" alt="Two versions of a timesheet portal. In the inconsistent version, the Save and Submit buttons move to different places on each page. In the consistent version, Save draft and Submit appear in the same bottom-right position on every page." width="800" height="427">
+                  <figcaption>Figure 2. When buttons stay in the same place with the same meaning, habits can take over. Original illustration created for this post.</figcaption>
+               </figure>
+               <p>Consistency also has a social side. When many systems follow the same conventions, people can walk into a new app and already know how to use most of it. This connects to <a href="https://lawsofux.com/jakobs-law/">Jakob's Law</a> from the previous module: people expect your system to work like the ones they already know.</p>
+            </section>
+
+            <section>
+               <h3>Feedback: Answering "Did That Work?"</h3>
+               <p>If consistency helps people know <em>how</em> to act, feedback helps them know <em>what happened</em> after they acted. Nielsen (2024) calls this "visibility of system status": the system should always keep users informed about what is going on through appropriate feedback within a reasonable time.</p>
+               <p>Without feedback, people fill the silence with guesses. Think about clicking a "Pay Now" button that does nothing visible for five seconds. Did the payment go through? Should you click again? Many people do click again, and some end up paying twice. A simple loading indicator, followed by a clear confirmation message, removes all of that uncertainty.</p>
+               <figure>
+                  <img src="images/system-feedback.png" alt="Three phone screens after tapping Pay Now. The first shows no change. The second shows a Processing payment message with a loading spinner. The third shows a green check mark with the message Payment complete, $25.00 added to your card." width="800" height="427">
+                  <figcaption>Figure 3. Status feedback and a clear result answer the user's most common question: "Did that work?" Original illustration created for this post.</figcaption>
+               </figure>
+               <p>Good feedback is specific and timely. "Error" is feedback, but it is not helpful feedback. "Your card was declined. Please check the expiration date or try another card" tells the user exactly what happened and what to do next. That message narrows Norman's (2013) gulf of evaluation because the person does not have to work out the problem on their own.</p>
+            </section>
+
+            <section>
+               <h3>Tesler's Law: Complexity Has to Live Somewhere</h3>
+               <p>All of these ideas come together in <a href="https://lawsofux.com/teslers-law/">Tesler's Law</a>, also called the Law of Conservation of Complexity. It states that every system has a certain amount of complexity that cannot be removed, only moved (Yablonski, 2024). Larry Tesler, who proposed it while working at Xerox PARC, argued that it is better for an engineer to spend an extra week reducing complexity than for millions of users to spend an extra minute dealing with it (Yablonski, 2024).</p>
+               <p>This idea completely changed how I think about usability. Paying for something online will always involve a card number, an address, and a security check. That complexity is real. The only question is <em>who handles it</em>. A poorly designed checkout makes the user type their address twice, remember their card's billing ZIP code, and guess why the payment failed. A well-designed checkout auto-fills the address, detects the card type from the first few digits, and explains errors clearly. The complexity is the same, but the system has absorbed most of it.</p>
+               <p>The same is true for the password example. The rules still exist in both designs shown in Figure 1, but in the better version, the system carries the job of showing and checking them instead of making users memorize and guess.</p>
+            </section>
+
+            <section>
+               <h3>A Critical Reflection: Simple Is Not the Same as Easy</h3>
+               <p>It is tempting to read all of this and conclude that the goal is always to make interfaces simpler. But Tesler's Law warns against that conclusion. If designers remove too much, the complexity does not disappear. It shifts back to the user in another form. A form with only one field might look simple, but if that one field expects a specially formatted code with no instructions, the user is doing more work, not less.</p>
+               <p>There is also a tension between consistency and improvement. Sometimes an old convention is genuinely confusing, and sticking with it simply because people are used to it keeps a bad habit alive. Yablonski (2024) also notes that people do not behave like perfectly rational users, so designers cannot rely on users always taking the "correct" path. I think the real skill is knowing when to follow a convention, when to break it carefully, and how to use feedback to guide people through the change.</p>
+               <p>Finally, cognitive load is personal. A screen that feels easy to a designer who built it may feel overwhelming to a first-time user, an older adult, or someone using a second language. This is why the human-centered approach from the previous module matters so much: we only find out where the mental load really sits by testing with real people.</p>
+            </section>
+
+            <section>
+               <h3>Conclusion: Let the System Do the Remembering</h3>
+               <p>Usable systems respect the limits of the human mind. They rely on recognition instead of recall, match the mental models people bring with them, stay consistent so habits can take over, and give clear feedback so users never have to wonder what happened. Johnson's (2020) principles explain <em>why</em> these choices work, Nielsen's (2024) heuristics show <em>how</em> to apply them, and Tesler's Law reminds us that the complexity has to go somewhere (Yablonski, 2024).</p>
+               <p>The question I now ask about any design is simple: <strong>Who is doing the thinking here?</strong> If the answer is "the user, for no good reason," the design can be better. The best interfaces quietly carry the mental load so that people can focus on what they actually came to do.</p>
+            </section>
+
+            <footer class="article-footer">
+                <h3>Sources:</h3>
+                <ol>
+                    <li>Johnson, J. (2020). <em>Designing with the mind in mind: Simple guide to understanding user interface design guidelines</em> (3rd ed.). Morgan Kaufmann. <a href="https://shop.elsevier.com/books/designing-with-the-mind-in-mind/johnson/9780128182024">https://shop.elsevier.com/books/designing-with-the-mind-in-mind/johnson/9780128182024</a></li>
+                    <li>Nielsen, J. (2024, January 30). <em>10 usability heuristics for user interface design</em>. Nielsen Norman Group. <a href="https://www.nngroup.com/articles/ten-usability-heuristics/">https://www.nngroup.com/articles/ten-usability-heuristics/</a></li>
+                    <li>Norman, D. A. (2013). <em>The design of everyday things</em> (Rev. and expanded ed.). Basic Books.</li>
+                    <li>Sweller, J. (1988). Cognitive load during problem solving: Effects on learning. <em>Cognitive Science, 12</em>(2), 257&ndash;285. <a href="https://doi.org/10.1207/s15516709cog1202_4">https://doi.org/10.1207/s15516709cog1202_4</a></li>
+                    <li>Yablonski, J. (2024). <em>Laws of UX: Using psychology to design better products &amp; services</em> (2nd ed.). O'Reilly Media. <a href="https://lawsofux.com/">https://lawsofux.com/</a></li>
+                </ol>
+                <p><strong>Image credits:</strong> Figures 1&ndash;3 are original illustrations created for this post.</p>
+            </footer>
+         </article>
 
          <!-- Module 2.3 Blog Post Starts here -->
 
