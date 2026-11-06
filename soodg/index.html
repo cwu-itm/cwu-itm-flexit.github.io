@@ -190,6 +190,123 @@
          </article>
 
          <!-- Module 2.1 Blog Post Starts here -->
+         <article>
+            <header class="article-header">
+               <h2>Module 2.1 Blog Post</h2>
+               <p><strong>Designing for the Person on the Platform: What It Really Means to Put Humans First</strong></p>
+            </header>
+
+            <section>
+               <h3>Introduction: The Two-Second Test</h3>
+               <p>Picture someone running for a light rail train with a coffee in one hand and a phone in the other. The train doors are about to close. They open their transit app to check whether their pass is still active. They have maybe two seconds to find the answer. If the screen is cluttered, the button is tiny, or the important information is buried under a promotional banner, they miss the train. Nothing is technically "broken" in that app. Every feature works. And yet, for that person, in that moment, the design has failed.</p>
+               <p>That small scene captures what this module is really about. Designing for people is not about adding features or making screens look attractive. It is about understanding how real humans see, think, and behave, often while they are distracted, rushed, or stressed, and then shaping a system around them. In this post, I introduce human-centered design, compare how ISO 9241-210 and IDEO's <em>Field Guide to Human-Centered Design</em> approach it, look at how perception and visual hierarchy affect usability, and use four well-known UX laws to explain why some designs feel effortless while others feel like work.</p>
+            </section>
+
+            <section>
+               <h3>What Is Human-Centered Design?</h3>
+               <p>At its simplest, human-centered design means starting with people instead of starting with technology. Rather than asking, "What can we build?", a human-centered team asks, "Who are we building for, what are they trying to do, and what gets in their way?" The answers to those questions drive every later decision, from what features exist to where a button sits on the screen.</p>
+               <p>This idea connects directly to the systems thinking we explored in Module 1. A person is not separate from a digital system. They are part of it. Their eyes, memory, attention, emotions, and habits are just as real as the database or the server. If we design the technical parts perfectly but ignore the human part, the system as a whole still fails.</p>
+            </section>
+
+            <section>
+               <h3>Two Lenses on the Same Idea: ISO 9241-210 and IDEO</h3>
+               <p>Our course readings offer two very different perspectives on human-centered design. Reading them side by side helped me see that they are not competing ideas. They are two lenses on the same goal.</p>
+
+               <h4>ISO 9241-210: Human-Centered Design as a Disciplined Process</h4>
+               <p><a href="https://www.iso.org/standard/77520.html">ISO 9241-210</a> is an international standard. It provides requirements and recommendations for human-centred design principles and activities throughout the life cycle of interactive systems, from websites and software to devices like vending machines and mobile phones (International Organization for Standardization [ISO], 2019). It sets out a small number of core principles:</p>
+               <ul>
+                  <li>The design is based on an explicit understanding of users, tasks, and environments.</li>
+                  <li>Users are involved throughout design and development.</li>
+                  <li>The design is driven and refined by user-centred evaluation.</li>
+                  <li>The process is iterative.</li>
+                  <li>The design addresses the whole user experience.</li>
+                  <li>The design team includes multidisciplinary skills and perspectives.</li>
+               </ul>
+               <p>What stood out to me is how <em>structured</em> this is. The standard frames human-centered design as a repeatable cycle: understand the context of use, specify user requirements, produce design solutions, and evaluate them against those requirements (ISO, 2019). It is written for project managers and usability professionals who need to plan, measure, and prove that a system works for people. In other words, ISO treats empathy as something you can manage, document, and verify.</p>
+
+               <h4>IDEO's Field Guide: Human-Centered Design as a Creative Mindset</h4>
+               <p>IDEO.org's <a href="https://www.designkit.org/resources/1.html"><em>Field Guide to Human-Centered Design</em></a> feels completely different in tone. It describes human-centered design as a problem-solving approach built on the belief that the people who face a problem every day are the ones who hold the key to solving it (IDEO.org, 2015). Instead of formal requirements, the guide organizes the work into three phases: <strong>Inspiration</strong>, <strong>Ideation</strong>, and <strong>Implementation</strong>. It also emphasizes seven mindsets: creative confidence, making, learning from failure, empathy, embracing ambiguity, optimism, and iteration (IDEO.org, 2015).</p>
+               <p>Where ISO speaks the language of process and evidence, IDEO speaks the language of curiosity and courage. Its methods are hands-on: interviewing people in their own environments, building rough prototypes quickly, and treating failure as information rather than embarrassment.</p>
+
+               <h4>Where They Meet and Where They Differ</h4>
+               <p>Despite their different styles, both sources agree on three things. Both put real users at the center of the work. Both insist on iteration, which echoes the iterative Life Cycle Models from Module 1.2. And both treat understanding people as something you <em>do</em>, not something you assume.</p>
+               <p>The biggest difference is in what each one protects against. ISO protects against teams that skip steps, ignore evidence, or claim a product is usable without testing it. IDEO protects against teams that follow every step but lose curiosity, playing it safe and never discovering what people actually need. I think a strong design team needs both: IDEO's mindset to find the right problem, and ISO's discipline to make sure the solution really works. Empathy without structure can become guesswork, but structure without empathy becomes a checklist.</p>
+            </section>
+
+            <section>
+               <h3>Perception and Visual Hierarchy: How People Actually See a Screen</h3>
+               <p>One of the most important lessons in this module is that people do not read screens. They <em>scan</em> them. Our eyes jump to whatever stands out first: large text, bold color, strong contrast, or an image of a face. Our brains also group things automatically. Items placed close together feel related, and items that share a color or shape feel like they belong to the same category. Yablonski (2024) describes these tendencies as Gestalt principles, such as the <a href="https://lawsofux.com/law-of-proximity/">Law of Proximity</a> and the <a href="https://lawsofux.com/law-of-similarity/">Law of Similarity</a>, and shows how designers can use them to make relationships on a screen obvious without extra explanation.</p>
+               <p><strong>Visual hierarchy</strong> is how designers use these perceptual habits on purpose. By controlling size, color, contrast, spacing, and position, a designer decides what a person notices first, second, and third. Done well, hierarchy acts like a quiet guide. Done badly, it sends people in the wrong direction.</p>
+               <p>Here are two examples I see often:</p>
+               <ul>
+                  <li><strong>A transit app home screen.</strong> The most important information for a rider is usually "Is my pass active, and how much is my balance?" If that information appears in large, high-contrast text at the top, a rider can confirm it in a glance. If it appears in small gray text below a large promotional banner, the banner wins the battle for attention, and the rider has to hunt.</li>
+                  <li><strong>A job application form.</strong> In my work at a staffing and consulting firm, I see many candidate portals. The best ones group related fields together (contact details, work history, documents) with clear headings and white space between groups. The worst ones present thirty fields in one long, evenly spaced column. Every field looks equally important, so nothing looks important, and candidates abandon the form halfway through.</li>
+               </ul>
+               <p>In both cases, the content is the same. What changes is how well the design matches human perception.</p>
+            </section>
+
+            <section>
+               <h3>Four UX Laws That Explain Human Behavior</h3>
+               <p>Perception explains what people <em>see</em>. The four UX laws in this module help explain how people <em>decide</em> and <em>act</em>. Yablonski (2024) collects these principles from psychology and research and translates them into practical guidance for designers on his <a href="https://lawsofux.com/">Laws of UX</a> website and book.</p>
+
+               <h4>Jakob's Law: People Expect the Familiar</h4>
+               <p><a href="https://lawsofux.com/jakobs-law/">Jakob's Law</a> states that users spend most of their time on <em>other</em> sites, so they expect your site to work the same way as the ones they already know (Yablonski, 2024). This is why the shopping cart icon sits in the top-right corner of almost every online store and why a logo in the top-left usually takes you home.</p>
+               <p>For me, Jakob's Law is a reminder that originality has a cost. A designer may want to invent a clever new navigation style, but every unfamiliar pattern forces people to learn something new. In a transit app, a rider who is used to a bottom navigation bar on their other apps will look for one there too. Breaking that expectation means slowing them down at the exact moment they are in a hurry.</p>
+
+               <h4>Fitts's Law: Big, Close Targets Are Easier</h4>
+               <p><a href="https://lawsofux.com/fittss-law/">Fitts's Law</a> comes from research showing that the time it takes to move to a target depends on how far away it is and how large it is (Fitts, 1954). In design terms, important buttons should be big enough and close enough to reach easily.</p>
+               <p>This matters enormously on phones. Think again about the rider holding a coffee. They are probably using one thumb. A tiny "Show my pass" button tucked in the top corner is hard to reach. A large button near the bottom of the screen, where the thumb naturally rests, follows Fitts's Law and makes the action nearly effortless. It also helps people with limited dexterity, which shows how good human-centered design often improves accessibility at the same time.</p>
+
+               <h4>Hick's Law: More Choices, Slower Decisions</h4>
+               <p>Hick's research found that the time needed to make a decision increases with the number of choices available (Hick, 1952). The more options we see, the longer it takes to pick one. Yablonski summarizes this as <a href="https://lawsofux.com/hicks-law/">Hick's Law</a>.</p>
+               <p>This is why a fare-purchase screen with fifteen different pass types can feel overwhelming, even if every option is useful to <em>someone</em>. A better design might first ask a simple question, such as "Adult, youth, or senior?", and then show only the passes that apply. The total number of options stays the same, but each decision becomes smaller and faster. Hick's Law does not mean we should remove features. It means we should reveal them at the right time.</p>
+
+               <h4>Miller's Law: Working Memory Has Limits</h4>
+               <p><a href="https://lawsofux.com/millers-law/">Miller's Law</a> comes from George Miller's famous paper suggesting that people can hold only about seven, plus or minus two, items in their short-term memory at once (Miller, 1956). Designers use this idea to justify "chunking": breaking information into smaller, meaningful groups, like formatting a phone number as 253-555-0147 instead of 2535550147.</p>
+               <p>What I found most interesting is that this law is often misused. Some designers treat "seven" as a strict rule, such as "never put more than seven items in a menu." But Yablonski (2024) points out that the real lesson is about organizing information into chunks to reduce mental effort, not about a magic number. A menu people can <em>see</em> does not need to be memorized at all. The real goal is to avoid forcing people to remember information from one screen while they use another, such as making them memorize a confirmation code instead of showing it where they need it.</p>
+            </section>
+
+            <section>
+               <h3>Bringing It Together: Perception, Attention, and Empathy</h3>
+               <p>When I connect all of these ideas, I see a pattern. Perception determines what people notice. Attention is limited, especially when people are busy or stressed. And empathy is what allows designers to imagine those real conditions instead of designing for a calm, focused user who does not exist.</p>
+               <p>The four UX laws are not separate tricks. They describe the same human system from different angles:</p>
+               <dl>
+                  <dt><strong>Jakob's Law</strong></dt>
+                  <dd>Memory of past experiences.</dd>
+                  <dt><strong>Fitts's Law</strong></dt>
+                  <dd>The body and movement.</dd>
+                  <dt><strong>Hick's Law</strong></dt>
+                  <dd>Decision-making.</dd>
+                  <dt><strong>Miller's Law</strong></dt>
+                  <dd>Mental capacity.</dd>
+               </dl>
+               <p>Visual hierarchy ties them together by deciding what reaches a person's attention in the first place.</p>
+            </section>
+
+            <section>
+               <h3>A Critical Reflection: The Limits of "Laws"</h3>
+               <p>I want to end with a note of caution. Calling these principles "laws" makes them sound absolute, like gravity. In reality, they are patterns based on research, and context matters. Jakob's Law can trap designers into copying bad conventions just because they are common. Hick's Law applies best to simple choices and does not fully explain how people search through complex or unfamiliar lists. And Miller's original research was about memory, not about how many links belong in a navigation bar.</p>
+               <p>This is exactly where both of our course readings become valuable again. ISO 9241-210 insists that designs be evaluated with real users, and IDEO's Field Guide encourages prototyping and learning from failure (ISO, 2019; IDEO.org, 2015). The laws give us a starting hypothesis, but only testing with real people tells us whether we got it right. The laws are a map. People are the territory.</p>
+            </section>
+
+            <section>
+               <h3>Conclusion: Designing for the Person Running for the Train</h3>
+               <p>Designing for people means designing for their reality, not our assumptions. ISO 9241-210 gives us a disciplined process for doing that, and IDEO's Field Guide gives us the curiosity and empathy to do it well. Perception and visual hierarchy decide what people notice, and the laws of Jakob, Fitts, Hick, and Miller help explain how they decide and act once they do.</p>
+               <p>The next time I design a web page, including this blog, I want to picture that rider running for the train, coffee in hand, phone in the other. If they can find what they need in two seconds, the design is human-centered. If they cannot, it does not matter how good it looks. Putting humans first is not a design style. It is a design responsibility.</p>
+            </section>
+
+            <footer class="article-footer">
+                <h3>Sources:</h3>
+                <ol>
+                    <li>Fitts, P. M. (1954). The information capacity of the human motor system in controlling the amplitude of movement. <em>Journal of Experimental Psychology, 47</em>(6), 381&ndash;391. <a href="https://doi.org/10.1037/h0055392">https://doi.org/10.1037/h0055392</a></li>
+                    <li>Hick, W. E. (1952). On the rate of gain of information. <em>Quarterly Journal of Experimental Psychology, 4</em>(1), 11&ndash;26. <a href="https://doi.org/10.1080/17470215208416600">https://doi.org/10.1080/17470215208416600</a></li>
+                    <li>IDEO.org. (2015). <em>The field guide to human-centered design</em> (1st ed.). <a href="https://www.designkit.org/resources/1.html">https://www.designkit.org/resources/1.html</a></li>
+                    <li>International Organization for Standardization. (2019). <em>Ergonomics of human-system interaction &mdash; Part 210: Human-centred design for interactive systems</em> (ISO Standard No. 9241-210:2019). <a href="https://www.iso.org/standard/77520.html">https://www.iso.org/standard/77520.html</a></li>
+                    <li>Miller, G. A. (1956). The magical number seven, plus or minus two: Some limits on our capacity for processing information. <em>Psychological Review, 63</em>(2), 81&ndash;97. <a href="https://doi.org/10.1037/h0043158">https://doi.org/10.1037/h0043158</a></li>
+                    <li>Yablonski, J. (2024). <em>Laws of UX: Using psychology to design better products &amp; services</em> (2nd ed.). O'Reilly Media.</li>
+                </ol>
+            </footer>
+         </article>
 
          <!-- Module 2.2 Blog Post Starts here -->
 
