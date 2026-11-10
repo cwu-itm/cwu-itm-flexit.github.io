@@ -418,6 +418,120 @@
          <!-- Module 2.3 Blog Post Starts here -->
 
          <!-- Module 3.1 Blog Post Starts here -->
+         <article>
+            <header class="article-header">
+               <h2>Module 3.1 Blog Post</h2>
+               <p><strong>Keep Them Moving: How Layout, Controls, and a Few UX Laws Shape the Way We Flow Through an Interface</strong></p>
+            </header>
+
+            <section>
+               <h3>Introduction: The Button That Almost Deleted a Candidate</h3>
+               <p>It was the end of a long Friday, and I was submitting a candidate's profile through a client's vendor portal. I filled in every field, scrolled to the bottom, and saw two buttons sitting side by side: <strong>Submit</strong> and <strong>Withdraw</strong>. They were the same size, the same gray color, and the same shape. My cursor hovered over the left one, and something made me stop and read it again. It said <em>Withdraw</em>. One more careless click and I would have pulled a strong candidate out of consideration for a role they were perfect for.</p>
+               <p>Nothing about that portal was broken. Every button did exactly what its label said. But the design gave me no help at all in telling the safe action from the dangerous one, and it placed them so close together that my hand was doing the work my eyes should have been doing.</p>
+               <p>That moment is a good example of what this module calls <strong>flow</strong>: the way people move through an interface, step by step, often without consciously thinking about it. When flow works, users barely notice the design. When it breaks, they slow down, make mistakes, or give up. In this post, I look at how layout and control design shape user behavior, reflect on three UX laws (the Aesthetic&ndash;Usability Effect, the Von Restorff Effect, and Postel's Law), and use one frustrating and one positive experience of my own to show why interface logic either carries users forward or trips them up.</p>
+            </section>
+
+            <section>
+               <h3>Layout: The Path the Eye Takes</h3>
+               <p>Before a user clicks anything, their eyes have already made dozens of decisions. Johnson (2020) explains that we seek and use visual structure: people do not read a screen from top to bottom like a book. They scan for headings, groups, and patterns, and they use that structure to decide where to look next. A well-organized layout acts like a set of signposts. A cluttered one is like a train station with no signs at all.</p>
+               <p>Layout influences behavior in a few predictable ways:</p>
+               <ul>
+                  <li><strong>Order suggests sequence.</strong> If a form places "Payment" above "Shipping," many people will fill in payment first, even if that is not what the business intended.</li>
+                  <li><strong>Grouping suggests meaning.</strong> Fields placed close together are read as related, and space between groups signals a new step.</li>
+                  <li><strong>Position suggests importance.</strong> Content at the top and in the center gets the most attention, while content in the corners is easy to miss.</li>
+               </ul>
+               <p>Johnson (2020) also reminds designers that our peripheral vision is poor. We see sharp detail only in a small area where we are looking directly. This is why error messages placed at the very top of a long form often go unnoticed: the user's attention is on the field they just filled in, near the bottom of the screen. If the message is not where their eyes already are, it may as well not exist.</p>
+               <figure>
+                  <img src="images/error-placement.png" alt="Two versions of the same job application form. On the left, the error message Invalid phone number format appears at the top of the page while the user is looking at the bottom field. On the right, the phone field is outlined in red and the message Use 10 digits appears directly below it." width="800" height="427">
+                  <figcaption>Figure 1. The same error, shown in two places. Feedback works only when it appears where the user is already looking. Original illustration created for this post.</figcaption>
+               </figure>
+            </section>
+
+            <section>
+               <h3>Controls: What Users Think They Can Do</h3>
+               <p>If layout tells users where to look, controls tell them what they can do. Norman (2013) uses the term <strong>signifiers</strong> for the cues that show people where and how to act, such as a raised button, an underlined link, or a handle on a door. When signifiers are clear, people act with confidence. When they are missing or misleading, people hesitate or guess.</p>
+               <p>Norman (2013) also describes <strong>mapping</strong>: the relationship between a control and its effect. A volume slider that moves right to get louder has good mapping, because it matches what people naturally expect. A "Next" button on the left side of a screen and a "Back" button on the right has poor mapping, because it reverses the direction most users associate with moving forward.</p>
+               <p>Control design also affects how fast people can move. Johnson (2020) notes that we have time requirements: people expect a response to a click almost instantly, and if nothing appears to happen, they assume the action failed and try again. Yablonski (2024) describes a related idea, the <a href="https://lawsofux.com/doherty-threshold/">Doherty Threshold</a>, which suggests that productivity rises when a system responds in under about 400 milliseconds. A control that responds instantly keeps users in flow. A control that pauses silently breaks it.</p>
+            </section>
+
+            <section>
+               <h3>Three UX Laws That Shape Flow</h3>
+
+               <h4>The Aesthetic&ndash;Usability Effect: Beautiful Feels Easier</h4>
+               <p>The <a href="https://lawsofux.com/aesthetic-usability-effect/">Aesthetic&ndash;Usability Effect</a> states that users often perceive attractive designs as easier to use (Yablonski, 2024). This idea comes from a <a href="https://chi1995.chistatic.hosting.acm.org/proceedings/shortppr/mk_bdy.htm">study by Kurosu and Kashimura (1995)</a>, who asked participants to rate different layouts of an ATM interface. They found a strong connection between how attractive people thought a layout was and how usable they expected it to be, even before using it.</p>
+               <p>This has a real effect on flow. When an interface looks clean and well organized, people approach it with confidence and are more forgiving of small problems. When it looks messy or outdated, they expect trouble, and that expectation slows them down.</p>
+               <p>However, this law also comes with a warning that I think is easy to overlook. Yablonski (2024) points out that a beautiful design can mask real usability problems, especially during testing. If users say "I love how this looks," designers may miss the fact that those same users struggled to finish a task. Aesthetics should support usability, not hide its absence.</p>
+
+               <h4>The Von Restorff Effect: Make the Important Thing Different</h4>
+               <p>The <a href="https://lawsofux.com/von-restorff-effect/">Von Restorff Effect</a>, also called the isolation effect, predicts that when several similar items are present, the one that differs from the rest is most likely to be remembered (Yablonski, 2024). In interface design, this is the principle behind making the primary action look different from everything else on the screen.</p>
+               <p>This is exactly what my vendor portal got wrong. Submit and Withdraw were visually identical, so neither stood out, and the dangerous action had the same weight as the safe one. A better design would make Submit a solid, high-contrast primary button, show Withdraw as a quieter text link, and move it further away. That small change uses difference to guide the eye and spacing to protect the hand.</p>
+               <figure>
+                  <img src="images/von-restorff-buttons.png" alt="Two versions of the last step of a candidate submission form. On the left, Withdraw and Submit are identical gray buttons placed side by side. On the right, Submit candidate is a large bold blue button and Withdraw candidate is a smaller red text link placed well below it." width="800" height="427">
+                  <figcaption>Figure 2. Using difference on purpose: the primary action stands out, and the risky action is quieter and placed apart. Original illustration created for this post.</figcaption>
+               </figure>
+               <p>The Von Restorff Effect also has a limit. Yablonski (2024) warns designers to use contrast with restraint. If everything on a page is bold, colorful, and flashing, nothing stands out at all. Emphasis works only when it is rare.</p>
+
+               <h4>Postel's Law: Be Flexible With What Users Give You</h4>
+               <p><a href="https://lawsofux.com/postels-law/">Postel's Law</a> began as a guideline for computer networks. Jon Postel wrote that a system should "be conservative in what you do, be liberal in what you accept from others" (<a href="https://www.rfc-editor.org/rfc/rfc761">Postel, 1980</a>). Yablonski (2024) applies this to interface design: be flexible with the input you accept from users, and be strict and consistent with the output you give back.</p>
+               <p>In practice, this means a phone number field should accept "(253) 555-0147," "253-555-0147," and "2535550147" and quietly format them the same way. A date field should understand "Nov 10" as well as "11/10." A search box should still find results when someone makes a small spelling mistake. Every time a system rejects input that a human would clearly understand, it pushes complexity back onto the user and interrupts their flow.</p>
+               <figure>
+                  <img src="images/postels-law-input.png" alt="Four different ways of typing the same phone number, with and without parentheses, dashes, and spaces, all pointing with an arrow to one clean result, (253) 555-0147, marked Accepted, no error." width="800" height="427">
+                  <figcaption>Figure 3. Postel's Law in a form field: flexible input, consistent output. Original illustration created for this post.</figcaption>
+               </figure>
+            </section>
+
+            <section>
+               <h3>A Frustrating Experience: When the Logic Fights Back</h3>
+               <p>That same vendor portal had one more problem, and it shows all of these ideas working against the user at once. After I finally clicked the right button, the page reloaded and every field was cleared. A small red message at the very top of the page said: "Invalid phone number format."</p>
+               <p>Here is why that moment failed:</p>
+               <ul>
+                  <li><strong>Postel's Law was ignored.</strong> I had typed the phone number with dashes, which is how most people write it. The system only accepted ten digits with no spaces or symbols, but it never said so.</li>
+                  <li><strong>The feedback was out of view.</strong> The error appeared at the top of the page while I was looking at the bottom, exactly the problem Johnson (2020) describes with poor peripheral vision (see Figure 1).</li>
+                  <li><strong>The system forgot my work.</strong> Clearing every field turned a tiny formatting issue into ten minutes of retyping. Norman (2013) would describe this as a failure of feedback and error recovery: the system told me something was wrong but made it as hard as possible to fix.</li>
+               </ul>
+               <p>None of those problems were technical limitations. Each one was a design choice, and together they broke the flow completely.</p>
+            </section>
+
+            <section>
+               <h3>A Positive Experience: When Everything Just Works</h3>
+               <p>I have also had the opposite experience. Recently, I used a city parking app to pay for a spot. I typed my license plate in lowercase with a space in the middle. The app simply accepted it and displayed it back in clean uppercase, a small but perfect example of Postel's Law. The screen had one obvious action, a large <strong>Start Parking</strong> button in bright color at the bottom where my thumb was already resting, while everything else was in quieter gray. That is the Von Restorff Effect working as intended.</p>
+               <p>The moment I tapped the button, the screen changed to a large countdown timer and a green confirmation message. The response was immediate, which met the time expectations Johnson (2020) describes and stayed well under the Doherty Threshold (Yablonski, 2024). The whole interface was also clean and calm to look at, so I trusted it before I even started, which reflects the Aesthetic&ndash;Usability Effect (Kurosu &amp; Kashimura, 1995).</p>
+               <p>The entire process took less than a minute, and I never had to stop and think. That is what good flow feels like: not impressive, just effortless.</p>
+            </section>
+
+            <section>
+               <h3>A Critical Reflection: Flow Is Not the Same as Speed</h3>
+               <p>It is tempting to think that good flow simply means making everything faster. But my vendor portal story shows why that is not quite right. Sometimes the most important job of a design is to <em>slow users down</em> at exactly the right moment. A Withdraw or Delete action should require a little more effort, such as a confirmation step, precisely because it is hard to undo. Good flow is not about removing every pause. It is about putting friction only where it protects people.</p>
+               <p>The UX laws themselves also need judgment:</p>
+               <dl>
+                  <dt><strong>Postel's Law</strong></dt>
+                  <dd>Can be taken too far. A system that accepts anything without checking may let bad data through, which creates problems later.</dd>
+                  <dt><strong>Aesthetic&ndash;Usability Effect</strong></dt>
+                  <dd>Can tempt teams to polish visuals instead of fixing real issues.</dd>
+                  <dt><strong>Von Restorff Effect</strong></dt>
+                  <dd>Loses its power when designers emphasize too many things at once.</dd>
+               </dl>
+               <p>These laws are tools for thinking, not rules to apply automatically, and the only way to know if a design truly flows is to watch real people use it.</p>
+            </section>
+
+            <section>
+               <h3>Conclusion: Designing the Path, Not Just the Pieces</h3>
+               <p>Users do not experience an interface as a collection of separate buttons and fields. They experience it as a path. Layout decides where their eyes travel, controls decide what they believe they can do, and feedback tells them whether they are still on track. Johnson's (2020) work on visual structure, peripheral vision, and time requirements explains <em>why</em> some paths feel natural, while the Aesthetic&ndash;Usability Effect, the Von Restorff Effect, and Postel's Law offer practical ways to make those paths smoother (Yablonski, 2024).</p>
+               <p>The difference between my two experiences was not technology. Both systems could have been built with the same tools. The difference was that one was designed around how people actually think and move, and the other was designed around what the system needed. The best interfaces keep people moving forward, and they slow them down only when it truly matters.</p>
+            </section>
+
+            <footer class="article-footer">
+                <h3>Sources:</h3>
+                <ol>
+                    <li>Johnson, J. (2020). <em>Designing with the mind in mind: Simple guide to understanding user interface design guidelines</em> (3rd ed.). Morgan Kaufmann. <a href="https://shop.elsevier.com/books/designing-with-the-mind-in-mind/johnson/9780128182024">https://shop.elsevier.com/books/designing-with-the-mind-in-mind/johnson/9780128182024</a></li>
+                    <li>Kurosu, M., &amp; Kashimura, K. (1995). Apparent usability vs. inherent usability: Experimental analysis on the determinants of the apparent usability. In <em>Conference Companion on Human Factors in Computing Systems (CHI '95)</em> (pp. 292&ndash;293). Association for Computing Machinery. <a href="https://doi.org/10.1145/223355.223680">https://doi.org/10.1145/223355.223680</a></li>
+                    <li>Norman, D. A. (2013). <em>The design of everyday things</em> (Rev. and expanded ed.). Basic Books.</li>
+                    <li>Postel, J. (1980). <em>DoD standard transmission control protocol</em> (RFC 761). Internet Engineering Task Force. <a href="https://www.rfc-editor.org/rfc/rfc761">https://www.rfc-editor.org/rfc/rfc761</a></li>
+                    <li>Yablonski, J. (2024). <em>Laws of UX: Using psychology to design better products &amp; services</em> (2nd ed.). O'Reilly Media. <a href="https://lawsofux.com/">https://lawsofux.com/</a></li>
+                </ol>
+                <p><strong>Image credits:</strong> Figures 1&ndash;3 are original illustrations created for this post.</p>
+            </footer>
+         </article>
 
          <!-- Module 3.2 Blog Post Starts here -->
 
