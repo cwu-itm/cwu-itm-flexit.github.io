@@ -9,7 +9,22 @@
    <body>
 <!-- Page Header  -->
       <header class="page-header">
-         <h1>Portfolio</h1>
+         <h1 class="logo">
+            <a href="#">
+               <span class="logo-mark" aria-hidden="true">GS</span>
+               <span class="logo-text">Geetanjali Sood <span class="logo-tagline">Designing Digital Environments</span></span>
+            </a>
+         </h1>
+         <nav class="main-nav" aria-label="Main navigation">
+            <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Module 1</a></li>
+               <li><a href="#">Module 2</a></li>
+               <li><a href="#">Module 3</a></li>
+               <li><a href="#">Design Challenges</a></li>
+               <li><a href="#">About</a></li>
+            </ul>
+         </nav>
       </header>
 <!-- Main Content Area  -->
       <main>
@@ -534,6 +549,136 @@
          </article>
 
          <!-- Module 3.2 Blog Post Starts here -->
+         <article>
+            <header class="article-header">
+               <h2>Module 3.2 Blog Post</h2>
+               <p><strong>The Last Few Seconds: How Timing, Motion, and Honest Design Shape How an Experience Feels</strong></p>
+            </header>
+
+            <section>
+               <h3>Introduction: Why We Remember the Ending</h3>
+               <p>Think about the last time you canceled a subscription online. You may not remember what the service looked like or how long you used it. But you probably remember the cancellation: the hidden link buried in account settings, the pop-up asking "Are you <em>sure</em> you want to lose all your benefits?", and the final screen offering a discount you never asked for. That ending colors how you feel about the whole company.</p>
+               <p>Digital experiences are not just a series of screens. They unfold over time, and how they <em>feel</em> depends on timing, motion, and the small moments when a system responds, or fails to respond, to what we do. They also depend on whether we trust that the system is working <em>for</em> us rather than against us.</p>
+               <p>In this post, I reflect on how feedback timing, responsiveness, and motion shape how people feel during and after an interaction. I use three UX laws, the Doherty Threshold, the Peak&ndash;End Rule, and the Goal-Gradient Effect, to explain why. Then I turn to the ethical side of interaction design, because the same techniques that make an experience feel effortless can also be used to push people into decisions they would not otherwise make.</p>
+               <div class="image-bar">
+                  <figure>
+                     <img src="images/bar-timing.png" alt="A stopwatch with a short green arc near the top, labeled Timing: under 0.4 seconds." width="600" height="400">
+                     <figcaption>Doherty Threshold</figcaption>
+                  </figure>
+                  <figure>
+                     <img src="images/bar-memory.png" alt="A wavy emotion line with green dots marking its highest point and its ending, labeled Memory: peak plus end." width="600" height="400">
+                     <figcaption>Peak&ndash;End Rule</figcaption>
+                  </figure>
+                  <figure>
+                     <img src="images/bar-ethics.png" alt="A balance scale with User on one side and Business on the other, labeled Ethics: fair balance." width="600" height="400">
+                     <figcaption>Ethical persuasion</figcaption>
+                  </figure>
+               </div>
+            </section>
+
+            <section>
+               <h3>Timing: The Hidden Emotion in Every Click</h3>
+               <p>We rarely think about timing until it goes wrong. Johnson (2020) explains that we have time requirements: our brains expect responses within certain time frames, and when a system misses them, we notice immediately.</p>
+               <ul>
+                  <li><strong>About 0.1 second</strong> feels instant, as if we caused the change directly.</li>
+                  <li><strong>About 1 second</strong> is noticeable but tolerable, as long as our flow of thought is not broken.</li>
+                  <li><strong>About 10 seconds or more</strong> and people lose focus and start to wonder whether something has gone wrong.</li>
+               </ul>
+               <p>These thresholds are not just technical details. They shape emotion. An instant response makes people feel in control. A short, explained wait makes them feel informed. An unexplained delay makes them feel anxious, impatient, or even suspicious, especially when money or personal information is involved.</p>
+               <p>This is why good feedback is about more than speed. A progress bar, a short "Saving&hellip;" message, or a skeleton screen that shows where content will appear all tell users, "I heard you, and I'm working on it." Johnson (2020) points out that even when a system cannot be faster, it can feel faster by acknowledging input immediately and showing progress honestly.</p>
+
+               <h4>The Doherty Threshold: Under 400 Milliseconds</h4>
+               <p>Yablonski (2024) describes the <a href="https://lawsofux.com/doherty-threshold/">Doherty Threshold</a>, which comes from research at IBM in the early 1980s. It suggests that productivity rises sharply when a computer and its user interact at a pace of under about 400 milliseconds, because neither one has to wait on the other. When responses stay under that threshold, people stay engaged and keep moving. When responses are slower, attention drifts.</p>
+               <p>Yablonski (2024) also notes a clever, practical idea: when a system truly needs more time, designers can use motion and animation to make the wait feel shorter and more purposeful. A loading animation that shows progress keeps the user's attention, while a frozen screen loses it.</p>
+               <figure>
+                  <img src="images/feedback-timing.png" alt="A timeline of response times. At 0.1 seconds, responses feel instant. At 0.4 seconds, the Doherty Threshold, users stay in flow. At 1 second, the delay is noticeable, so show a spinner or Saving message. At 10 seconds, attention is lost, so show a real progress bar, time left, and a way to cancel." width="800" height="427">
+                  <figcaption>Figure 1. How each delay feels, and the feedback that fits it. Original illustration created for this post, based on Johnson (2020) and Yablonski (2024).</figcaption>
+               </figure>
+            </section>
+
+            <section>
+               <h3>Motion: Animation With a Purpose</h3>
+               <p>Motion is one of the most powerful and most misused tools in interaction design. Used well, animation helps people understand what just happened:</p>
+               <ul>
+                  <li>A card that slides off the screen when dismissed shows where it went.</li>
+                  <li>A button that gently compresses when pressed confirms the tap.</li>
+                  <li>A shopping cart icon that bounces when an item is added draws the eye to the result of an action without interrupting it.</li>
+               </ul>
+               <p>This connects to Johnson's (2020) point that our peripheral vision is poor but highly sensitive to motion. Movement at the edge of the screen pulls attention, which makes animation a strong signal. That strength is exactly why it needs restraint. If everything on a screen moves, nothing stands out, and constant motion can become distracting or even physically uncomfortable for people sensitive to motion.</p>
+               <p>I think the best test for motion is simple: does it help the user understand something, or does it just decorate? Good motion is quick, meaningful, and easy to ignore once its job is done. Bad motion makes people wait to watch the designer's creativity.</p>
+            </section>
+
+            <section>
+               <h3>Remembering the Experience: The Peak&ndash;End Rule</h3>
+               <p>One of the most surprising ideas in this module is that people do not remember experiences the way they actually happened. The <a href="https://lawsofux.com/peak-end-rule/">Peak&ndash;End Rule</a> states that people judge an experience largely by how they felt at its most intense point and at its end, rather than by the total or average of every moment (Yablonski, 2024).</p>
+               <p>This comes from research by <a href="https://doi.org/10.1111/j.1467-9280.1993.tb00589.x">Kahneman et al. (1993)</a>, who asked participants to hold their hand in painfully cold water in two trials. In one trial, the cold lasted 60 seconds. In the other, it lasted the same 60 seconds and then continued for another 30 seconds at a slightly less cold temperature. Even though the second trial involved <em>more</em> total discomfort, most participants preferred to repeat it, because it ended on a better note.</p>
+               <p>For interaction design, this is a powerful lesson. Users will forgive a lot of small friction if the high points are memorable and the ending is satisfying. A clear, friendly confirmation after a payment, a small celebration when someone finishes a long form, or a simple "You're all set" message can shape how the entire experience is remembered.</p>
+               <figure>
+                  <img src="images/peak-end-rule.png" alt="An emotion curve over the course of a food delivery order. It dips during a slow restaurant search and a confusing menu, rises to a peak when a live map shows the driver arriving, dips slightly during a short wait at the door, and ends high with the message Delivered, enjoy your meal." width="800" height="427">
+                  <figcaption>Figure 2. The Peak&ndash;End Rule in a food delivery order. The small dips fade from memory, while the peak and the ending stay. Original illustration created for this post.</figcaption>
+               </figure>
+               <p>The flip side is equally important. A frustrating ending, like the subscription cancellation in my introduction, can erase the goodwill built up over months of smooth use. The ending is not a minor detail. It is often the part people take with them.</p>
+            </section>
+
+            <section>
+               <h3>Keeping People Moving: The Goal-Gradient Effect</h3>
+               <p>The third law I want to highlight is the <a href="https://lawsofux.com/goal-gradient-effect/">Goal-Gradient Effect</a>. Yablonski (2024) describes it as the tendency for people to speed up as they get closer to a goal. When we can see the finish line, we put in more effort to reach it.</p>
+               <p>This is why progress indicators work so well. In my work at a staffing and consulting firm, I help consultants complete onboarding paperwork before their start date. When an onboarding portal shows "Step 4 of 6" with a progress bar, candidates tend to finish in one sitting. When the same forms appear as a long, unlabeled list, people stop halfway and come back days later, if at all. The tasks are identical. What changes is whether people can see how close they are to done.</p>
+               <p>However, the Goal-Gradient Effect also shows how easily a helpful technique can cross an ethical line. A progress bar that honestly shows real steps helps people. A progress bar that starts at 20% "for free," or that keeps adding new steps once someone is almost finished, uses the same psychology to keep people trapped in a flow they may want to leave.</p>
+            </section>
+
+            <section>
+               <h3>The Ethical Side: When Persuasion Becomes Manipulation</h3>
+               <p>Every law in this post describes a real feature of human psychology. That is what makes them useful, and that is also what makes them dangerous. Yablonski (2024) emphasizes that designers have a responsibility to use psychological principles to help people achieve their goals, not to exploit their weaknesses for business gain.</p>
+               <p>The term for exploitative design is <strong>dark patterns</strong>, or deceptive patterns: interface choices that trick or pressure people into actions they did not intend. <a href="https://doi.org/10.1145/3359183">Mathur et al. (2019)</a> studied about 11,000 shopping websites and found 1,818 instances of dark patterns, including fake countdown timers, false claims of low stock, and hidden costs added at checkout. They also found that some of these tactics were sold as ready-made tools by third-party companies, which means manipulative design can spread quickly across the web.</p>
+               <p>Regulators are paying attention. The <a href="https://www.ftc.gov/reports/bringing-dark-patterns-light">Federal Trade Commission (2022)</a> released a staff report describing how dark patterns create false beliefs, hide important information, lead to unauthorized charges, and undermine privacy choices. One example it highlights is the kind of subscription cancellation I described in my introduction: making it easy to sign up but difficult, confusing, or emotionally manipulative to leave.</p>
+               <figure>
+                  <img src="images/ethical-cancellation.png" alt="Two cancellation screens. The manipulative version says Wait, don't leave us, uses a fake countdown timer, shows a large Keep my benefits button, and hides the cancel option as tiny gray text. The ethical version plainly explains when the plan ends and offers two equally clear buttons, Keep plan and Cancel plan." width="800" height="427">
+                  <figcaption>Figure 3. The same goal, designed two ways. The ethical version respects the user's decision. Original illustration created for this post.</figcaption>
+               </figure>
+
+               <h4>Where Is the Line?</h4>
+               <p>I find it helpful to ask three questions about any persuasive design technique:</p>
+               <ol>
+                  <li><strong>Is it honest?</strong> Does the countdown timer reflect a real deadline? Is the "only 2 left" message true?</li>
+                  <li><strong>Does it respect the user's goal?</strong> If someone came to cancel, does the design help them cancel, or does it fight them?</li>
+                  <li><strong>Would I be comfortable explaining it to the user?</strong> If a designer would be embarrassed to say, "We made the cancel button gray and tiny so fewer people would find it," the design has probably crossed the line.</li>
+               </ol>
+               <p>These questions connect back to the timing and motion ideas from earlier. A loading animation that makes a real wait feel shorter is helpful. A fake "processing" delay added to make a service seem more valuable is deceptive. A celebratory animation at the end of a purchase follows the Peak&ndash;End Rule in a positive way. A flashing "Offer expires in 2:00!" banner that resets every time the page reloads uses urgency and motion to manipulate.</p>
+            </section>
+
+            <div class="two-columns">
+               <section>
+                  <h3>A Personal Reflection: What I Want Users to Remember</h3>
+                  <p>Writing this post changed how I think about my own role, even outside of design. In staffing, I am constantly shaping experiences for candidates and clients: how quickly I respond, how clearly I explain next steps, and how I end each conversation. The Peak&ndash;End Rule applies to people as much as to software. A candidate who does not get the job but receives a quick, respectful, honest update often remembers the experience positively. A candidate who is left waiting for weeks with no response remembers that silence, no matter how well the interviews went.</p>
+                  <p>The same principle applies to digital design. People may not consciously notice a 300-millisecond response or a well-timed animation. But they feel them. And they definitely notice when a system rushes them, tricks them, or makes leaving harder than joining.</p>
+               </section>
+
+               <section>
+                  <h3>A Critical Reflection: Good Laws, Bad Uses</h3>
+                  <p>It would be easy to read the Laws of UX as a toolkit for making products more "engaging." But engagement is not always the same as value. A design that keeps people scrolling, clicking, or subscribing is not necessarily a design that serves them. The research by Mathur et al. (2019) shows that manipulative patterns are not rare edge cases. They are common enough that they can be bought off the shelf.</p>
+                  <p>I also think there is a gray area that deserves honest discussion. Reminders, nudges, and default settings can help people, such as reminding someone to finish a job application before a deadline. The same nudge becomes harmful when it serves only the company and works against the user's interests. The difference is rarely in the technique itself. It is in the intention behind it and in whether the user would agree with it if they understood what was happening.</p>
+               </section>
+            </div>
+
+            <section>
+               <h3>Conclusion: Designing Moments People Can Trust</h3>
+               <p>Timing, responsiveness, and motion shape how an interaction feels in the moment, while the Peak&ndash;End Rule reminds us that the most intense moment and the ending shape how it is remembered. The Doherty Threshold and the Goal-Gradient Effect help designers keep people engaged and moving forward (Yablonski, 2024), and Johnson's (2020) work on time requirements explains why every pause carries emotional weight.</p>
+               <p>But the most important lesson of this module is that these tools are powerful precisely because they work on real human psychology. Used honestly, they make experiences feel smooth, respectful, and even delightful. Used manipulatively, they turn users into targets (Federal Trade Commission, 2022; Mathur et al., 2019). Ethical design is not about avoiding persuasion altogether. It is about making sure that when people look back on an experience, they remember being helped, not handled.</p>
+            </section>
+
+            <footer class="article-footer">
+                <h3>Sources:</h3>
+                <ol>
+                    <li>Federal Trade Commission. (2022). <em>Bringing dark patterns to light</em> [Staff report]. <a href="https://www.ftc.gov/reports/bringing-dark-patterns-light">https://www.ftc.gov/reports/bringing-dark-patterns-light</a></li>
+                    <li>Johnson, J. (2020). <em>Designing with the mind in mind: Simple guide to understanding user interface design guidelines</em> (3rd ed.). Morgan Kaufmann. <a href="https://shop.elsevier.com/books/designing-with-the-mind-in-mind/johnson/9780128182024">https://shop.elsevier.com/books/designing-with-the-mind-in-mind/johnson/9780128182024</a></li>
+                    <li>Kahneman, D., Fredrickson, B. L., Schreiber, C. A., &amp; Redelmeier, D. A. (1993). When more pain is preferred to less: Adding a better end. <em>Psychological Science, 4</em>(6), 401&ndash;405. <a href="https://doi.org/10.1111/j.1467-9280.1993.tb00589.x">https://doi.org/10.1111/j.1467-9280.1993.tb00589.x</a></li>
+                    <li>Mathur, A., Acar, G., Friedman, M. J., Lucherini, E., Mayer, J., Chetty, M., &amp; Narayanan, A. (2019). Dark patterns at scale: Findings from a crawl of 11K shopping websites. <em>Proceedings of the ACM on Human-Computer Interaction, 3</em>(CSCW), Article 81. <a href="https://doi.org/10.1145/3359183">https://doi.org/10.1145/3359183</a></li>
+                    <li>Yablonski, J. (2024). <em>Laws of UX: Using psychology to design better products &amp; services</em> (2nd ed.). O'Reilly Media. <a href="https://lawsofux.com/">https://lawsofux.com/</a></li>
+                </ol>
+                <p><strong>Image credits:</strong> Figures 1&ndash;3 are original illustrations created for this post.</p>
+            </footer>
+         </article>
 
       </main>
 <!-- Page Footer  -->

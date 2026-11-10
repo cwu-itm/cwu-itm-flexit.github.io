@@ -365,3 +365,197 @@ blockquote {
     font-size: 1.1rem;
   }
 }
+
+
+/* ---------------------------------------------------
+   PAGE HEADER: BACKGROUND IMAGE, LOGO & NAVIGATION
+   (Module 3.2)
+--------------------------------------------------- */
+
+/* REQUIRED: background image on the main page header
+   with 16px (1rem) padding. A dark overlay keeps the
+   white logo and links readable over the image. */
+.page-header {
+  background-color: #1F3A5F;
+  background-image:
+    linear-gradient(rgba(20, 38, 63, 0.55), rgba(20, 38, 63, 0.55)),
+    url("../images/header-bg.png");
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+
+  /* REQUIRED: flexbox layout for the logo + navigation */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* Text logo replaces the plain "Portfolio" heading */
+.logo {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.1;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.logo-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #E8A33D;
+  color: #14263F;
+  font-size: 1.25rem;
+  letter-spacing: 0.05em;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-tagline {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #D9E6F5;
+  margin-top: 0.25rem;
+}
+
+/* Navigation: flexbox row of links */
+.main-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav li {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.main-nav a {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  color: #FFFFFF;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+  background-color: #FFFFFF;
+  color: #1F3A5F;
+}
+
+.main-nav a:focus-visible {
+  outline: 3px solid #E8A33D;
+  outline-offset: 2px;
+}
+
+
+/* ---------------------------------------------------
+   TWO-COLUMN LAYOUT (Module 3.2)
+--------------------------------------------------- */
+
+/* REQUIRED: flexbox layout with two columns and
+   space between them */
+.two-columns {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.two-columns > section {
+  flex: 1;
+  min-width: 0;
+}
+
+.two-columns > section + section {
+  border-left: 1px solid #ddd;
+  padding-left: 2rem;
+}
+
+
+/* ---------------------------------------------------
+   IMAGE BAR (Module 3.2)
+--------------------------------------------------- */
+
+/* REQUIRED: grid layout with three images, a contrasting
+   background color, and space around each image */
+.image-bar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  background-color: #1F3A5F;
+  border-radius: 8px;
+}
+
+.image-bar figure {
+  margin: 0;
+  padding: 0.5rem;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+}
+
+.image-bar img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.image-bar figcaption {
+  color: #1F3A5F;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 0.25rem;
+}
+
+
+/* ---------------------------------------------------
+   RESPONSIVE: HEADER, COLUMNS & IMAGE BAR
+--------------------------------------------------- */
+@media screen and (max-width: 768px) {
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Stack the two columns on smaller screens */
+  .two-columns {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .two-columns > section + section {
+    border-left: none;
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* One image per row on phones */
+  .image-bar {
+    grid-template-columns: 1fr;
+  }
+}
