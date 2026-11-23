@@ -16,27 +16,208 @@
          <!-- Module 1.1 Blog Post Starts Here-->
          <article>
             <header class="article-header">
-               <h2>Module 1.1 Blog Post</h2>
+               <h2>The Day a 50% Deposit Broke Our Checkout: A Lesson in Systems Thinking</h2>
             </header>
-            <h3>Health Cronut la Croix</h3>
-            <p>I'm baby photo booth fingerstache af enamel pin quinoa. Portland unicorn keytar paleo letterpress banjo kinfolk. Pitchfork four loko meditation, locavore marfa af listicle sriracha helvetica cred vexillologist PBR&B. Pop-up hexagon thundercats master cleanse before they sold out, fashion axe copper mug yes plz literally cred mukbang chia gluten-free. Bodega boys skateboard ugh green juice. Hella marxism succulents mumblecore forage kale chips bespoke fixie shoreditch chartreuse tofu before they sold out.</p>
-            <h3>Offal Tofu Cred Green Juice</h3>
-            <p>Microdosing portland banh mi bitters, pitchfork ethical selvage plaid keytar jianbing kickstarter cronut. Truffaut schlitz ennui, migas aesthetic letterpress la croix. Health goth 8-bit microdosing, cronut offal gluten-free tbh cornhole swag YOLO vape man bun godard. Pitchfork semiotics hella salvia kickstarter jean shorts. Air plant thundercats kombucha gentrify portland.</p>
-            <h3>Blue Roof Pour-Over Man Bun</h3>
-            <p>Yuccie mukbang pickled activated charcoal. PBR&B selfies DSA mustache authentic. Gochujang kombucha big mood retro, you probably haven't heard of them +1 lomo. Tbh pour-over yr viral gorpcore poutine four dollar toast. Bicycle rights man bun try-hard, mlkshk roof party occupy succulents taxidermy kogi enamel pin brunch paleo poutine yr. Blue bottle street art waistcoat typewriter yr hot chicken polaroid helvetica pitchfork.</p>
+            <h3>A Simple Request</h3>
+            <p>
+              A while back, our team was building a website for a hunting outfitter. The site did what most small-business
+              sites need to do: show the hunts, answer common questions, and let a customer book and pay through an online
+              form. We used Jotform for booking, and the form passed the customer's total through to the payment step. It
+              worked, the client was happy, and bookings were coming in.
+            </p>
+            <p>
+              Then the client asked for what sounded like a small change: let customers pay a 50% deposit up front instead of
+              the full price. That seemed easy enough. We updated the wording on the website so customers knew they only
+              needed to pay half today, and we changed the Jotform so the amount due reflected the deposit. On paper, two
+              small edits. In practice, the payment page stopped working. Customers who reached the checkout could not
+              complete a payment, which for an outfitter is about the worst failure a website can have. The booking form
+              looked fine, the website looked fine, and yet the one thing the whole system existed to do was broken.
+            </p>
+            <p>
+              What went wrong was not really a coding mistake. It was a thinking mistake. We had treated the website, the
+              form, the pricing logic, and the payment processor as separate pieces that we could change one at a time. They
+              were never separate. They were parts of one system, and we changed a part without understanding how it was
+              connected to the whole. That experience is the best explanation I have for why systems thinking matters.
+            </p>
+
+            <h3>What Systems Thinking Means to Me</h3>
+            <p>
+              Systems thinking is the habit of looking at the whole and the connections before looking at
+              the parts. It means asking, "What else does this touch?" before asking, "How do I fix this piece?" A system is
+              not just a collection of components; it is the components plus the relationships between them, plus the
+              purpose they serve together. If you only see the components, you will miss most of what actually makes the
+              system behave the way it does.
+            </p>
+            <p>
+              Donella Meadows describes a system as a set of elements that are interconnected in a way that produces a
+              particular pattern of behavior over time, and she argues that a system's behavior comes mostly from its
+              structure and its interconnections rather than from any single element (Meadows, 2008). That idea changed how I
+              think about our deposit problem. The elements of our booking system were easy to list: web pages, a form, a
+              price, a payment gateway, and a confirmation email. But the behavior that mattered, a customer successfully
+              paying for a hunt, came from how those elements were wired together. We changed the interconnections without
+              noticing, and the behavior changed with them.
+            </p>
+            <p>
+              The International Council on Systems Engineering (INCOSE) puts systems thinking at the foundation of the whole
+              discipline, describing it as a perspective that sharpens our awareness of wholes and of how the parts within
+              those wholes relate to each other (INCOSE, 2023). I like that wording because it frames systems thinking as a
+              kind of awareness, not a tool or a diagram. It is a way of paying attention.
+            </p>
+
+            <h3>How It Differs From Linear Thinking</h3>
+            <p>
+              Most of us are trained to think in a straight line: identify the problem, find the cause, apply the fix, move
+              on. Linear thinking is useful. It is how we troubleshoot a printer or follow a recipe. It assumes that cause and
+              effect are close together, that one change produces one result, and that if each part works on its own, the
+              whole thing will work.
+            </p>
+            <p>
+              Our deposit change was a perfect example of linear thinking. The request was "show a 50% deposit," so the fix
+              was "change the text and change the form." Each step made sense on its own. The problem was that the amount on
+              the form was not just a number on a screen. It fed the payment step, which had its own expectations about the
+              amount it would receive and how that amount was calculated. When we changed the form, we changed an input to
+              another part of the system that we were not looking at. The cause (editing the form) and the effect (a broken
+              checkout) were connected, but they showed up in different places, which is exactly what linear thinking tends
+              to miss.
+            </p>
+            <p>
+              I see three key differences between the two ways of thinking:
+            </p>
             <ul>
-               <li>Neutra umami slow-carb vegan dreamcatcher.</li>
-               <li>Tacos cornhole humblebrag ethical.</li>
-               <li>DSA santo big mood organic charcoal bitters.</li>
-               <li>Hot chicken pitchfork poutine.</li>
+              <li>
+                <strong>Parts versus relationships.</strong> Linear thinking asks whether each piece works. Systems thinking
+                asks whether the pieces work together. Our form worked. Our website worked. Together, they did not.
+              </li>
+              <li>
+                <strong>Close effects versus distant effects.</strong> Linear thinking expects results to appear right where
+                the change was made. Systems thinking expects changes to ripple outward, sometimes into parts of the system
+                that seem unrelated. Meadows (2008) points out that the effects of a change in a system can be delayed and can
+                appear far from where the change was made, which is why simple fixes often surprise us.
+              </li>
+              <li>
+                <strong>One-time fixes versus whole-life view.</strong> Linear thinking solves today's problem. Systems
+                thinking asks how a change will hold up over the life of the system. A 50% deposit also means there is a
+                balance due later, which raises new questions about reminders, records, refunds, and what the customer sees
+                in their confirmation email. A linear fix never asks those questions.
+              </li>
             </ul>
-            <h3>Mlkshk Stumptown Hot Chicken</h3>
-            <p>Next level gluten-free whatever, tacos activated charcoal bitters woke. Mlkshk photo booth bicycle rights paleo, butcher DIY ugh mukbang bespoke occupy affogato jawn adaptogen artisan tofu. Tbh gentrify you probably haven't heard of them neutra umami slow-carb vegan dreamcatcher waistcoat. Tacos cornhole humblebrag ethical austin neutra plaid. Sustainable gatekeep ugh locavore deep v, palo santo stumptown skateboard big mood organic lumbersexual mustache cornhole hot chicken. Gluten-free artisan cliche mumblecore af, edison bulb meditation messenger bag.</p>
+            <p>
+              I do not think linear thinking is wrong. It is the right tool for simple, contained problems. The trouble is
+              that modern digital systems are rarely simple or contained. A small business website today is often a
+              combination of a content management system, third-party forms, payment processors, email services, and
+              analytics, each built by a different company and connected through settings and integrations that are easy to
+              forget. In that kind of environment, linear thinking is not just incomplete; it is risky.
+            </p>
+
+            <h3>Why a Model-Based Approach Fits Complex Digital Systems</h3>
+            <p>
+              If systems thinking is the mindset, a model-based approach is one of the most practical ways to put that
+              mindset to work. In <em>Systems Engineering Demystified</em>, Jon Holt explains that systems engineering exists
+              largely to manage complexity, to build shared understanding, and to improve communication between the people
+              involved, and he argues that model-based systems engineering (MBSE) is the most effective way to do that
+              (Holt, 2023). In MBSE, the model becomes the central, connected source of information about the system, and
+              diagrams and documents are views generated from that model rather than separate, disconnected files
+              (Holt, 2023).
+            </p>
+            <p>
+              That distinction between a model and a collection of documents is the key idea for me. When we built the
+              outfitter's site, our "documentation" was scattered: some notes in an email thread, some settings inside
+              Jotform, some details inside the payment account, and a lot of knowledge that only lived in people's heads. No
+              single place showed how the price on the website, the calculation in the form, and the amount sent to payment
+              were connected. Every piece of information existed, but nothing tied it together. That is exactly the gap a
+              model is meant to close.
+            </p>
+            <p>
+              A model-based approach fits complex digital systems for several reasons:
+            </p>
+            <ul>
+              <li>
+                <strong>It makes connections visible.</strong> Even a simple model of our booking system, showing the website,
+                the form, the pricing rules, the payment gateway, and the confirmation email as connected blocks, would have
+                shown that changing the amount due affects the payment step. Holt (2023) emphasizes that systems are defined
+                by their interfaces as much as by their parts, and the interface between our form and our payment processor
+                is precisely where things broke.
+              </li>
+              <li>
+                <strong>It keeps one version of the truth.</strong> When information lives in one connected model, a change to
+                the deposit rule can be traced to every place that depends on it. When information lives in separate
+                documents, each copy can quietly drift out of date.
+              </li>
+              <li>
+                <strong>It supports impact analysis before the change.</strong> A model lets you ask, "If we change this, what
+                else moves?" before you touch the live system. That turns a surprise outage into a planned update.
+              </li>
+              <li>
+                <strong>It helps people talk to each other.</strong> The client, the web designer, and whoever manages the
+                payment account all see the system differently. A shared model gives everyone the same picture, which is the
+                communication benefit Holt (2023) describes. The client's request ("allow deposits") and the technical reality
+                ("the payment step depends on the form's calculated total") could have been discussed in the same
+                conversation.
+              </li>
+              <li>
+                <strong>It treats the system as something with a life cycle.</strong> INCOSE (2023) frames systems engineering
+                around the full life cycle of a system, not just the moment it is built. A model gives you something to
+                update as the system changes over time, so the next change starts from an accurate picture instead of a
+                guess.
+              </li>
+            </ul>
+            <p>
+              It is fair to ask whether a full MBSE effort is overkill for a small business website. Holt's examples often
+              involve large, high-stakes systems, and nobody needs a formal modeling language to run a booking form. But I do
+              not think the lesson depends on scale. The principle is to build a connected representation of the system and
+              reason from it, and that can be as light as a single diagram that shows every component and every connection.
+              The size of the model should fit the size of the risk. For a business whose income runs through one checkout
+              page, even a small model would have been worth the hour it took to draw.
+            </p>
+
+            <h3>What I Would Do Differently</h3>
+            <p>
+              Looking back, the fix for our broken payment page took far less time than the confusion before it. Once we
+              stopped looking at the form by itself and traced the whole path, from the price on the web page to the amount
+              the payment processor received, the problem was easy to see. The lesson was not "be more careful with
+              Jotform." The lesson was to think about the system first.
+            </p>
+            <p>
+              If I received the same request today, I would approach it differently:
+            </p>
+            <ol>
+              <li>
+                <strong>Map the system before changing it.</strong> Sketch every part involved in a booking, from the hunt
+                page to the confirmation email, and draw the connections between them.
+              </li>
+              <li>
+                <strong>Follow the change through the map.</strong> Ask what the deposit affects at each step: the displayed
+                price, the form calculation, the payment amount, the receipt, the balance due, and the refund policy.
+              </li>
+              <li>
+                <strong>Test the whole journey, not just the edited piece.</strong> Run a complete test booking, all the way
+                through payment, before the change goes live.
+              </li>
+              <li>
+                <strong>Update the model afterward.</strong> Record the new deposit rule and its connections so the next
+                person who touches the system starts with an accurate picture.
+              </li>
+            </ol>
+
+            <h3>Conclusion</h3>
+            <p>
+              Systems thinking sounds abstract until you watch a "simple" change take down the most important page on a
+              client's website. Linear thinking told us that changing the price on the form was a single, contained task.
+              Systems thinking would have told us that the price was a connection point between the website, the form, and the
+              payment processor, and that changing it meant changing the relationship between all three. As Meadows (2008)
+              reminds us, a system's behavior comes from its structure, and as Holt (2023) shows, a model is how we make that
+              structure visible and manageable. For anyone working in digital environments, where almost every product is
+              really a set of connected services, that combination of mindset and method is not optional. It is how we avoid
+              breaking the things our clients depend on, and it is how we build systems that keep working as they grow and
+              change.
+            </p>
             <footer class="article-footer">
                 <h3>Sources:</h3>
                 <ol>
-                    <li>Sherugar, S., & Budiu, R. (2016, August 21). <em>Direct manipulation: Definition</em>. Nielsen Norman Group. Retrieved March 19, 2025 from <a href="https://www.nngroup.com/articles/direct-manipulation/">https://www.nngroup.com/articles/direct-manipulation/</a></li>
-                    </ol>
+                    <li>Holt, J. (2023). <em>Systems engineering demystified: Apply modern, model-based systems engineering techniques to build complex systems</em> (2nd ed.). Packt Publishing.</li>
+                    <li>INCOSE. (2023). <em>INCOSE systems engineering handbook</em> (D. D. Walden, T. M. Shortell, G. J. Roedler, B. A. Delicado, O. Mornas, Y. Yew-Seng, &amp; D. Endler, Eds.; 5th ed.). Wiley.</li>
+                    <li>Meadows, D. H. (2008). <em>Thinking in systems: A primer</em> (D. Wright, Ed.). Chelsea Green Publishing.</li>
+                </ol>
             </footer>
          </article>
 
