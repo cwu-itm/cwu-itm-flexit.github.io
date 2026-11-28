@@ -222,6 +222,208 @@
          </article>
 
          <!-- Module 1.2 Blog Post Starts here -->
+         <article>
+            <header class="article-header">
+               <h2>Websites Don't Launch, They Live: Why Life Cycle Thinking Matters</h2>
+            </header>
+            <h3>The Myth of "Done"</h3>
+            <p>
+               In my last post, I wrote about a hunting outfitter's website where a "simple" switch to 50% deposits broke the
+               payment page. That story had a second lesson that I did not fully appreciate until later. When we first built
+               the site, we treated launch day as the finish line. The pages were up, the booking form worked, and in our
+               minds the project was done. But the site kept living after launch. The client changed prices, added hunts,
+               switched to deposits, and asked for new features every season. Each of those changes was a new piece of
+               development happening on a system we had stopped thinking about as a whole.
+            </p>
+            <p>
+               That is the core idea behind life cycle thinking. A system is not something you build once. It is something
+               that is conceived, developed, used, supported, changed, and eventually retired. How we plan for that full
+               journey shapes how well the system holds up over time.
+            </p>
+
+            <h3>What Is the Systems Development Life Cycle?</h3>
+            <p>
+               The systems development life cycle (SDLC) is the path a system follows from the first idea to the day it is
+               shut down. It describes not just how a system gets built, but everything that happens to it during its life:
+               defining needs, designing, building, testing, deploying, operating, maintaining, and retiring. The
+               international standard for system life cycle processes, ISO/IEC/IEEE 15288, describes a common framework of
+               processes that apply across that whole span, from concept through retirement (ISO/IEC/IEEE, 2023).
+            </p>
+            <p>
+               Holt (2023) makes a useful distinction between a <em>life cycle</em> and a <em>life cycle model</em>. The life
+               cycle is the set of stages a system passes through, such as concept, development, production, utilization,
+               support, and retirement. The life cycle model describes how a project actually moves through those stages:
+               in what order, how often, and with how much overlap. Two teams can agree on the same stages and still run
+               their projects completely differently because they chose different models. Holt groups these models into
+               three broad types: linear, iterative, and incremental (Holt, 2023).
+            </p>
+            <p>
+               I find it helpful to think of the life cycle as the map and the model as the route. The map shows every place
+               the system will go. The route is the decision about how to travel it.
+            </p>
+
+            <h3>Linear Models: One Pass, In Order</h3>
+            <p>
+               A linear model moves through the stages one at a time, in sequence. Each stage is completed and signed off
+               before the next begins. The best-known example is the waterfall model, often traced back to Winston Royce's
+               1970 paper on managing large software projects (Royce, 1970).
+            </p>
+            <p>
+               <strong>Key characteristics:</strong> Requirements are gathered up front, design is completed before building
+               begins, and testing happens near the end. Each stage produces documents that feed the next.
+            </p>
+            <p>
+               <strong>Advantages:</strong> Linear models are easy to plan, schedule, and explain. Everyone knows what stage
+               the project is in, and progress is easy to measure. They work well when requirements are clear, stable, and
+               unlikely to change, such as when a system must meet a fixed regulation or contract.
+            </p>
+            <p>
+               <strong>Drawbacks:</strong> Linear models assume we can know everything at the start, and that is rarely true.
+               Problems found late are expensive to fix because the work they depend on is already finished. The customer
+               may not see a working system until near the end, which means misunderstandings stay hidden for a long time.
+               Interestingly, Royce himself warned about this. His paper described the sequential approach and then pointed
+               out that it was risky, recommending feedback between stages and building a preliminary version first
+               (Royce, 1970). The "pure waterfall" many people criticize today is partly a misreading of the paper that made
+               it famous.
+            </p>
+
+            <h3>Iterative Models: Repeat and Refine</h3>
+            <p>
+               An iterative model moves through the life cycle stages in repeated cycles. Each cycle produces a better version
+               of the system, informed by what was learned in the previous cycle. Barry Boehm's spiral model is a classic
+               example. In the spiral, each loop includes setting objectives, identifying and reducing the biggest risks,
+               developing and testing, and planning the next loop (Boehm, 1988).
+            </p>
+            <p>
+               <strong>Key characteristics:</strong> The whole system is revisited again and again. Early versions may be
+               rough prototypes, and later versions become more complete. Feedback drives the next cycle.
+            </p>
+            <p>
+               <strong>Advantages:</strong> Iterative models handle uncertainty well. When requirements are unclear or likely
+               to change, each cycle gives the team and the customer a chance to learn and adjust. Boehm (1988) argued that
+               organizing each cycle around risk means the most dangerous unknowns get tackled first, while they are still
+               cheap to address.
+            </p>
+            <p>
+               <strong>Drawbacks:</strong> Iterative projects can be harder to schedule and budget, because the number of
+               cycles is not always known in advance. Without discipline, the project can drift, with each loop adding
+               polish but never reaching a clear finish. Iteration also requires steady customer involvement, which not
+               every client can give.
+            </p>
+
+            <h3>Incremental Models: Deliver in Pieces</h3>
+            <p>
+               An incremental model builds and delivers the system in parts. Each increment adds a usable piece of
+               functionality to what was delivered before. Instead of one big release at the end, the customer receives
+               working value early and often.
+            </p>
+            <p>
+               <strong>Key characteristics:</strong> The overall requirements and architecture are planned up front, but the
+               system is split into deliverable chunks. Each increment may itself follow a short linear sequence.
+            </p>
+            <p>
+               <strong>Advantages:</strong> Users get something useful sooner, which builds trust and produces real feedback.
+               Risk is spread across smaller releases rather than concentrated in one launch. If the budget runs short, the
+               most important features are usually already delivered.
+            </p>
+            <p>
+               <strong>Drawbacks:</strong> Incremental delivery only works if the architecture is solid from the start.
+               Every new piece has to fit with the pieces already in use, and poor planning leads to integration problems,
+               duplicated work, or a system that feels bolted together. Holt (2023) emphasizes that interfaces between
+               parts of a system are where many problems arise, and incremental models create more of those interfaces
+               over time.
+            </p>
+            <p>
+               In practice, most modern teams blend the last two approaches. Agile methods, for example, are both iterative
+               and incremental: they deliver small pieces of working software and refine them in repeated cycles. The
+               categories are less like boxes and more like ingredients that teams combine.
+            </p>
+
+            <h3>Comparing the Models at a Glance</h3>
+            <ul>
+               <li><strong>Linear:</strong> Best when requirements are stable and well understood. Biggest risk: late
+                  discovery of problems.</li>
+               <li><strong>Iterative:</strong> Best when requirements are uncertain or the technology is new. Biggest risk:
+                  drifting schedules and budgets.</li>
+               <li><strong>Incremental:</strong> Best when users need value early and the architecture is clear. Biggest
+                  risk: pieces that do not fit together.</li>
+            </ul>
+
+            <h3>Looking Back at the Outfitter Website</h3>
+            <p>
+               When I look at our outfitter project through this lens, I can see that we planned it as a linear project but
+               lived it as an incremental one. We gathered requirements, designed the pages, built them, tested them, and
+               launched. Then the real system kept growing in increments: new hunts, new pricing, the deposit option, and
+               seasonal updates. The problem was not that the project became incremental. That was natural and healthy. The
+               problem was that we never planned for it. We had no architecture designed to absorb change, no record of how
+               the parts connected, and no process for testing the whole booking journey after each update.
+            </p>
+            <p>
+               If I were starting that project today, I would choose an approach that matches reality. I would plan the core
+               architecture up front, including the website, form, pricing rules, and payment connection, and then deliver
+               and refine features in small increments with a full end-to-end test after each one. The deposit change would
+               have been just another planned increment instead of an emergency.
+            </p>
+
+            <h3>Why Life Cycle Thinking Matters for Digital Systems</h3>
+            <p>
+               Thinking in terms of the full life cycle changes how we design, sustain, and evolve digital systems in at
+               least three ways.
+            </p>
+            <ol>
+               <li>
+                  <strong>Design:</strong> When we know a system will be maintained and changed for years, we design it
+                  differently. We document how the parts connect, choose tools the client can support, and avoid shortcuts
+                  that only make sense if nothing will ever change. Holt (2023) presents the life cycle as something to be
+                  modeled and planned deliberately, not something that just happens to a project.
+               </li>
+               <li>
+                  <strong>Sustainability:</strong> Most of a digital system's life is spent in operation and support, not in
+                  development. Hosting renewals, security patches, plugin updates, payment provider changes, and staff
+                  turnover all happen after launch. ISO/IEC/IEEE 15288 treats operation, maintenance, and disposal as full
+                  life cycle processes alongside development (ISO/IEC/IEEE, 2023). A plan that ignores them leaves the
+                  client with a system that slowly falls apart.
+               </li>
+               <li>
+                  <strong>Evolution:</strong> Digital systems are under constant pressure to change. Customer expectations
+                  shift, platforms update, and business models evolve. Choosing an iterative or incremental model, and
+                  building in regular feedback, gives a system a way to grow without breaking. As Boehm (1988) showed, a
+                  process that expects change and confronts risk early is far more resilient than one that assumes the
+                  first plan was right.
+               </li>
+            </ol>
+            <p>
+               There is also a final stage that is easy to forget: retirement. Every website, app, and database will someday
+               be replaced. Planning for that, including how data will be exported, how customers will be redirected, and
+               how old accounts will be closed, protects the business and its customers when the time comes.
+            </p>
+            <p>
+               For anyone who wants to lead IT work, this may be the most practical lesson of all. A budget, a staffing
+               plan, or a vendor contract that covers only the build is really covering a small slice of the system's life.
+               Life cycle thinking pushes us to ask harder questions at the start: Who will support this in three years?
+               What will it cost to keep running? How will we know when it is time to replace it? Those questions are much
+               easier to answer before launch than after something breaks.
+            </p>
+
+            <h3>Conclusion</h3>
+            <p>
+               The biggest shift for me has been letting go of the idea that a project is "done" at launch. Launch is just
+               one point on the life cycle. Linear, iterative, and incremental models each offer a different way to travel
+               that life cycle, and none of them is right for every project. Linear models bring clarity when the path is
+               known. Iterative models help us learn when the path is uncertain. Incremental models deliver value while the
+               path is still being built. The real skill is matching the model to the situation and remembering that the
+               system will keep living, and changing, long after the first version goes live.
+            </p>
+            <footer class="article-footer">
+                <h3>Sources:</h3>
+                <ol>
+                    <li>Boehm, B. W. (1988). A spiral model of software development and enhancement. <em>Computer, 21</em>(5), 61&ndash;72. <a href="https://doi.org/10.1109/2.59">https://doi.org/10.1109/2.59</a></li>
+                    <li>Holt, J. (2023). <em>Systems engineering demystified: Apply modern, model-based systems engineering techniques to build complex systems</em> (2nd ed.). Packt Publishing.</li>
+                    <li>ISO/IEC/IEEE. (2023). <em>Systems and software engineering &mdash; System life cycle processes</em> (ISO/IEC/IEEE Standard No. 15288:2023). International Organization for Standardization.</li>
+                    <li>Royce, W. W. (1970). Managing the development of large software systems. In <em>Proceedings of IEEE WESCON</em> (pp. 1&ndash;9). IEEE.</li>
+                </ol>
+            </footer>
+         </article>
 
          <!-- Module 2.1 Blog Post Starts here -->
 
